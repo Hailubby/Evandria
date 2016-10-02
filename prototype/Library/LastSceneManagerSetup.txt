@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/NPC_interaction.unity
-  isLoaded: 1
-  isActive: 1
