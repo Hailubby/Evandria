@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class ItemInteractionScript : MonoBehaviour, Assets.Scripts.Interactable {
+public class SampleInteractionScript : MonoBehaviour, Assets.Scripts.Interactable {
 
     public void interact()
     {
