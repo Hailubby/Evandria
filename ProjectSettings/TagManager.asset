@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - ItemOrNpc
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 698848535
+    locked: 0
+  - name: ItemAndNpc
+    uniqueID: 3085560945
     locked: 0
   - name: Player
     uniqueID: 797958567

@@ -9,6 +9,7 @@ public class MovementScript : MonoBehaviour {
     public string facing = "down";
 	public float speed = 4.0f;
 
+
 	// Use this for initialization
 	void Start () {
 		boxCollider = GetComponent<BoxCollider2D> ();
@@ -28,21 +29,24 @@ public class MovementScript : MonoBehaviour {
 			anim.SetFloat ("input_x", movement_vector.x);
 			anim.SetFloat("input_y",movement_vector.y);
 
-            if (movement_vector.x == 1)
+            if (movement_vector.x == 1.0f*speed)
             {
                 facing = "right";
-            } else if (movement_vector.x == -1)
+            } else if (movement_vector.x == -1.0f*speed)
             {
                 facing = "left";
-            } else if (movement_vector.y == 1)
+            } else if (movement_vector.y == 1.0f*speed)
             {
                 facing = "up";
-            } else if (movement_vector.y == -1)
+            } else if (movement_vector.y == -1.0f*speed)
             {
                 facing = "down";
             } else
             {
                 facing = "error";
+                Debug.Log("X is: " + movement_vector.x);
+                Debug.Log("Y is: " + movement_vector.y);
+
             }
 
 
