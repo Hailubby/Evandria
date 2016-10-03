@@ -22,6 +22,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     //Prefab being used to instantiate a new window
     public GameObject DialogueWindowPrefab;
 
+    //public MovementScript player;
+
     public void interact()
     {
         Debug.Log("This NPC has been interacted with!");
@@ -30,7 +32,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
     // Use this for initialization
     void Start () {
-        dialogue = Dialogue.LoadDialogue("Assets/" + DialogueDataFilePath);
+        dialogue = Dialogue.LoadDialogue("Assets/DialogueTrees/" + DialogueDataFilePath);
 
         var canvas = GameObject.Find("Canvas");
 
@@ -40,7 +42,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         dialogue_window.SetActive(true);
 
         RectTransform dialogue_window_transform = (RectTransform)dialogue_window.transform;
-        dialogue_window_transform.localPosition = new Vector3(0, -120, 0);
+        dialogue_window_transform.localPosition = new Vector3(0, -105, 0);
 
         node_text = GameObject.Find("NPC_Response");
         option_1 = GameObject.Find("Button_Option1");
@@ -70,22 +72,28 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         //while the next node is not an exit node, traverse the dialogue tree 
         //based on the user's input
         while (node_id != -1) {
-            display_node(dialogue.Nodes[node_id]);
+            //node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
+            display_node(dialogue.Nodes[node_id]);
             selected_option = -2;
             while (selected_option == -2) {
                 yield return new WaitForSeconds(0.25f);
             }
 
             node_id = selected_option;
-        }
 
+            //option_1.SetActive(false);
+            //option_2.SetActive(false);
+            //option_3.SetActive(false);
+        }
+        //player.canMove = true;
         dialogue_window.SetActive(false);
     }
 
     private void display_node(DialogueNode node) {
-        Debug.Log("TEXT IN NODE IS: " + node.Text);
+        //Debug.Log("TEXT IN NODE IS: " + node.Text);
         node_text.GetComponentInChildren<Text>().text = node.Text;
+        //node_text.SetActive(false);
 
         option_1.SetActive(false);
         option_2.SetActive(false);

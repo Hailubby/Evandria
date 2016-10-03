@@ -8,7 +8,7 @@ public class MovementScript : MonoBehaviour {
 	Animator anim;
     public string facing = "down";
 	public float speed = 4.0f;
-
+    public bool canMove = true;
 
 	// Use this for initialization
 	void Start () {
@@ -22,8 +22,7 @@ public class MovementScript : MonoBehaviour {
 
 		Vector2 movement_vector = new Vector2 (Input.GetAxisRaw("Horizontal")*speed,Input.GetAxisRaw("Vertical")*speed);
 
-
-		if (movement_vector != Vector2.zero) {
+        if (movement_vector != Vector2.zero) {
 			//Only change to walking animation while walking, change facing direction if walking
 			anim.SetBool ("iswalking", true);
 			anim.SetFloat ("input_x", movement_vector.x);
