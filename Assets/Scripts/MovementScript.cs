@@ -22,6 +22,7 @@ public class MovementScript : MonoBehaviour {
 		rigidBody = GetComponent <Rigidbody2D>();
 		anim = GetComponent<Animator> ();
         journal = new List<GameObject>();
+        canMove = true;
 	}
 	
 	// Update is called once per frame
