@@ -110,10 +110,11 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     {
         textBox.SetActive(true);
 
-        // Prevents the player from moving when pop up is visible
+        // Prevents the player from moving when pop up is visible and prevents ability to cast E
         if (stopPlayerMovement)
         {
             player.DisableMovement();
+            player.GetComponent<InteractionScript>().interacting = true;
         }
 
     }
@@ -123,8 +124,9 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     {
         textBox.SetActive(false);
 
-        // Re-enables the player to move again
+        // Re-enables the player to move again and ability to cast E
         player.EnableMovement();
+        player.GetComponent<InteractionScript>().interacting = false;
     }
 
     // Gets the current item's name

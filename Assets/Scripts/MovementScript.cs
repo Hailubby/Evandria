@@ -12,6 +12,8 @@ public class MovementScript : MonoBehaviour {
 
     // Used to prevent movement when dialog popup is active
     public bool canMove;
+
+    // List which stores all current clues the player has found so far
     public List<GameObject> journal;
 
 	// Use this for initialization
@@ -25,6 +27,7 @@ public class MovementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // Prevents the player from moving if interacting with dialog
         if (!canMove)
         {
             return;
