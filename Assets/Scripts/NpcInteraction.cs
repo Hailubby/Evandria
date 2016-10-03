@@ -52,6 +52,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         npc_name = GameObject.Find("NPC_Name");
 
         npc_name.SetActive(false);
+        option_1.SetActive(false);
+        option_2.SetActive(false);
+        option_3.SetActive(false);
+
         dialogue_window.SetActive(false);
     }
 
@@ -63,6 +67,11 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         selected_option = x;
     }
 
+    public IEnumerator WaitForKeyDown(KeyCode keyCode) {
+        while (!Input.GetKeyDown(keyCode))
+            yield return null;
+    }
+
     public IEnumerator run() {
         dialogue_window.SetActive(true);
 
@@ -72,7 +81,9 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         //while the next node is not an exit node, traverse the dialogue tree 
         //based on the user's input
         while (node_id != -1) {
-            //node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
+            node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
+
+            yield return StartCoroutine(WaitForKeyDown(KeyCode.Space));
 
             display_node(dialogue.Nodes[node_id]);
             selected_option = -2;
@@ -82,9 +93,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
             node_id = selected_option;
 
-            //option_1.SetActive(false);
-            //option_2.SetActive(false);
-            //option_3.SetActive(false);
+            option_1.SetActive(false);
+            option_2.SetActive(false);
+            option_3.SetActive(false);
+            node_text.SetActive(true);
         }
         //player.canMove = true;
         dialogue_window.SetActive(false);
@@ -92,8 +104,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
     private void display_node(DialogueNode node) {
         //Debug.Log("TEXT IN NODE IS: " + node.Text);
-        node_text.GetComponentInChildren<Text>().text = node.Text;
-        //node_text.SetActive(false);
+        //node_text.GetComponentInChildren<Text>().text = node.Text;
+        node_text.SetActive(false);
 
         option_1.SetActive(false);
         option_2.SetActive(false);
