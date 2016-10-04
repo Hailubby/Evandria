@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 107674179}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -217,6 +218,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0
@@ -343,15 +345,15 @@ Canvas:
   m_GameObject: {fileID: 327629538}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 2133459423}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 797958567
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &327629542
@@ -520,6 +522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 481065376}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -527,6 +530,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0
@@ -745,6 +749,24 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010375169088, guid: 816cb5aaf75cab64f91a25eeebd250b9,
     type: 2}
   m_PrefabInternal: {fileID: 364419192}
+--- !u!114 &810145172 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013802632758, guid: 816cb5aaf75cab64f91a25eeebd250b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 364419192}
+  m_Script: {fileID: 11500000, guid: b47dc02a9ba89a145922175d86e49648, type: 3}
+--- !u!114 &810145175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810145167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3e8ed7c29660546b72ea6c0ba38e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 810145172}
 --- !u!1 &840587211
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 840587211}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -782,6 +805,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0
@@ -904,6 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 1262562416}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -911,6 +936,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0
@@ -1004,6 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 1343823012}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -1011,6 +1038,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0
@@ -1133,6 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 1827714978}
+  journal: {fileID: 0}
   textBox: {fileID: 573606559}
   player: {fileID: 0}
   theText: {fileID: 379934039}
@@ -1140,6 +1169,7 @@ MonoBehaviour:
   textLines: []
   itemName: 
   itemOwner: 
+  itemDesc: 
   currentLine: 0
   endLine: 0
   stopPlayerMovement: 0

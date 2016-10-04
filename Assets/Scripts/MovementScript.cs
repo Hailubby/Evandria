@@ -13,15 +13,11 @@ public class MovementScript : MonoBehaviour {
     // Used to prevent movement when dialog popup is active
     public bool canMove;
 
-    // List which stores all current clues the player has found so far
-    public List<GameObject> journal;
-
 	// Use this for initialization
 	void Start () {
 		boxCollider = GetComponent<BoxCollider2D> ();
 		rigidBody = GetComponent <Rigidbody2D>();
 		anim = GetComponent<Animator> ();
-        journal = new List<GameObject>();
         canMove = true;
 	}
 	
@@ -81,10 +77,5 @@ public class MovementScript : MonoBehaviour {
     public void DisableMovement()
     {
         canMove = false;
-    }	
-
-    public void AddToJournal(GameObject obj)
-    {
-        journal.Add(obj);
     }
 }

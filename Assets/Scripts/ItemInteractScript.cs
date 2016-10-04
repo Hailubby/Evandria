@@ -2,10 +2,14 @@
 using System.Collections;
 using System;
 using UnityEngine.UI;
+using System.Text;
+using System.Text.RegularExpressions;
 
+[System.Serializable]
 public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
 {
-    public GameObject obj;
+    public Clue clue;
+    public Journal journal;
 
     public GameObject textBox;
     public MovementScript player;
@@ -17,6 +21,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
 
     public string itemName;
     public string itemOwner;
+    public string itemDesc;
 
     public int currentLine;
     public int endLine;
@@ -41,10 +46,13 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
             EnableTextBox();
             isActive = true;
             interacted = true;
-            player.AddToJournal(obj);
-            Debug.Log("Item added to journal: " + player.journal[player.journal.Count-1].GetComponent<ItemInteractScript>().GetItemName());
-            //Debug.Log("Item added to journal: " + player.journal[0].GetComponent<AxeInteractScript>().GetItemName());
 
+            //Checks if the item is relevant to the investigation or not. If it is, it will add to the journal
+            if (!itemOwner.Equals("Dummy"))
+            {
+                journal.AddClue(clue);
+            }
+            
         }
     }
 
@@ -52,16 +60,21 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     void Start()
     {
         player = FindObjectOfType<MovementScript>();
+        journal = FindObjectOfType<Journal>();
         
         
         // Splits text file containing description of item
         if (textFile != null)
         {
-            textLines = textFile.text.Split('\n');
+            textLines = Regex.Split(textFile.text, "\r\n");
 
-            // Assigns the item name identification, and the owner from the text file
+            // Assigns the item name identification, and the owner from the text file, and description
             itemName = textLines[0];
             itemOwner = textLines[1];
+            itemDesc = textLines[3];
+
+            // Generates a clue object which holds all the necessary information of the specified clue
+            clue = new Clue(itemName, itemOwner, itemDesc);
             currentLine = 3;
         }
 
