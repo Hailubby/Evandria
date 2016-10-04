@@ -51,7 +51,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         player_name = GameObject.Find("Player_Name");
         npc_name = GameObject.Find("NPC_Name");
 
-        npc_name.SetActive(false);
+        player_name.SetActive(false);
         option_1.SetActive(false);
         option_2.SetActive(false);
         option_3.SetActive(false);
@@ -110,7 +110,9 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             option_1.SetActive(false);
             option_2.SetActive(false);
             option_3.SetActive(false);
+            player_name.SetActive(false);
             node_text.SetActive(true);
+            npc_name.SetActive(true);
         }
         //player.canMove = true;
         dialogue_window.SetActive(false);
@@ -119,6 +121,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     private void display_node(DialogueNode node) {
         //Debug.Log("TEXT IN NODE IS: " + node.Text);
         //node_text.GetComponentInChildren<Text>().text = node.Text;
+        player_name.SetActive(true);
+        npc_name.SetActive(false);
         node_text.SetActive(false);
 
         option_1.SetActive(false);
