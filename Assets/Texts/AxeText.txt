@@ -1,6 +1,4 @@
 Axe
-Gabriel
+Dummy
 
-This is an Axe.
-It is very dangerous.
-'Axe has been logged into the Journal.'
+This is an Axe. It can chop down trees.

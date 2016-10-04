@@ -2,4 +2,4 @@ Graphics Card
 Gabriel
 
 This is the latest generation Vnidia grpahics card! It seems he does lots of difficult design work for his job. 
-'Graphics card added to journal'
+'Graphics Card added to journal'
