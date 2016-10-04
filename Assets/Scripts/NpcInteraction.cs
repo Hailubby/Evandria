@@ -31,7 +31,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     }
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         dialogue = Dialogue.LoadDialogue("Assets/DialogueTrees/" + DialogueDataFilePath);
 
         var canvas = GameObject.Find("Canvas");
@@ -59,15 +60,18 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         dialogue_window.SetActive(false);
     }
 
-    public void RunDialogue() {
+    public void RunDialogue()
+    {
         StartCoroutine(run());
     }
 
-    public void SetSelectedOption(int x) {
+    public void SetSelectedOption(int x)
+    {
         selected_option = x;
     }
 
-    public IEnumerator WaitForKeyDown() {
+    public IEnumerator WaitForKeyDown()
+    {
         while (true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -86,7 +90,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         yield return null;
     }
 
-    public IEnumerator run() {
+    public IEnumerator run()
+    {
         dialogue_window.SetActive(true);
 
         //create an indexer, set it to 0 - the dialogues starting node
@@ -118,7 +123,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         dialogue_window.SetActive(false);
     }
 
-    private void display_node(DialogueNode node) {
+    private void display_node(DialogueNode node)
+    {
         //Debug.Log("TEXT IN NODE IS: " + node.Text);
         //node_text.GetComponentInChildren<Text>().text = node.Text;
         player_name.SetActive(true);
@@ -129,8 +135,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         option_2.SetActive(false);
         option_3.SetActive(false);
 
-        for (int i = 0; i < node.Options.Count; i++) {
-            switch (i) {
+        for (int i = 0; i < node.Options.Count; i++)
+        {
+            switch (i)
+            {
                 case 0:
                     set_option_button(option_1, node.Options[i]);
                     break;
@@ -144,7 +152,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         }
     }
 
-    private void set_option_button(GameObject button, DialogueOption opt) {
+    private void set_option_button(GameObject button, DialogueOption opt)
+    {
         button.SetActive(true);
         button.GetComponentInChildren<Text>().text = opt.Text;
         button.GetComponent<Button>().onClick.AddListener(delegate { SetSelectedOption(opt.DestinationNodeID); });

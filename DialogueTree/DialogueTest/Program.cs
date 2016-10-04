@@ -54,5 +54,10 @@ namespace DialogueTest
 
             serz.Serialize(writer, dialogue);
         }
+
+        public static void JessicaDialogue()
+        {
+
+        }
     }
 }
