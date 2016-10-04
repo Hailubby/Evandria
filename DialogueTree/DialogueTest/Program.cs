@@ -9,6 +9,10 @@ namespace DialogueTest
     {
         static void Main(string[] args)
         {
+            TestDialogue();
+        }
+
+        public static void TestDialogue() {
             Dialogue dialogue = new Dialogue();
 
             //create some nodes ie npc replies
