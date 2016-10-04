@@ -507,22 +507,22 @@ Prefab:
     - target: {fileID: 224000010088204532, guid: 235dbaf60b9662b4facf3872b79fdc7e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224000010088204532, guid: 235dbaf60b9662b4facf3872b79fdc7e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 222
+      value: 182
       objectReference: {fileID: 0}
     - target: {fileID: 224000010088204532, guid: 235dbaf60b9662b4facf3872b79fdc7e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -35
+      value: -306
       objectReference: {fileID: 0}
     - target: {fileID: 224000010088204532, guid: 235dbaf60b9662b4facf3872b79fdc7e,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 332
+      value: 621
       objectReference: {fileID: 0}
     - target: {fileID: 224000010088204532, guid: 235dbaf60b9662b4facf3872b79fdc7e,
         type: 2}
@@ -553,6 +553,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011701598098, guid: 235dbaf60b9662b4facf3872b79fdc7e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 235dbaf60b9662b4facf3872b79fdc7e, type: 2}
@@ -654,15 +658,15 @@ Canvas:
   m_GameObject: {fileID: 1998771835}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 2133459423}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1163299751
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1998771839

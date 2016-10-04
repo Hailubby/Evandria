@@ -42,7 +42,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         dialogue_window.SetActive(true);
 
         RectTransform dialogue_window_transform = (RectTransform)dialogue_window.transform;
-        dialogue_window_transform.localPosition = new Vector3(0, -105, 0);
+        dialogue_window_transform.localPosition = new Vector3(0, -170, 0);
 
         node_text = GameObject.Find("NPC_Response");
         option_1 = GameObject.Find("Button_Option1");
@@ -67,9 +67,23 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         selected_option = x;
     }
 
-    public IEnumerator WaitForKeyDown(KeyCode keyCode) {
-        while (!Input.GetKeyDown(keyCode))
-            yield return null;
+    public IEnumerator WaitForKeyDown() {
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                break;
+            }
+            else if (Input.GetMouseButtonDown(0))
+            {
+                break;
+            }
+            else
+            {
+                yield return null;
+            }
+        }
+        yield return null;
     }
 
     public IEnumerator run() {
@@ -83,7 +97,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         while (node_id != -1) {
             node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
-            yield return StartCoroutine(WaitForKeyDown(KeyCode.Space));
+            yield return StartCoroutine(WaitForKeyDown());
 
             display_node(dialogue.Nodes[node_id]);
             selected_option = -2;
