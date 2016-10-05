@@ -57,7 +57,7 @@ public class JournalPanelScript : MonoBehaviour
     }
 
     //function to pause the game
-    public void ShowJournal()
+    private void ShowJournal()
     {
         //enable the animator component
         anim.enabled = true;
@@ -67,7 +67,7 @@ public class JournalPanelScript : MonoBehaviour
         Time.timeScale = 0;
     }
     //function to unpause the game
-    public void HideJournal()
+    private void HideJournal()
     {
         //set the isPaused flag to false to indicate that the game is not paused
         isPaused = false;
@@ -78,7 +78,7 @@ public class JournalPanelScript : MonoBehaviour
     }
 
     // Method for (re)populating the journal with player's interactions
-    public void UpdateJournal(List<Clue> journal)
+    private void UpdateJournal(List<Clue> journal)
     {
         Debug.Log("Updating Journal -- untested");
         GameObject entry = Instantiate(journalPrefab);
@@ -86,7 +86,7 @@ public class JournalPanelScript : MonoBehaviour
     }
 
     // Method for emptying the journal upon new day (maybe)
-    public void EmptyJournal()
+    private void EmptyJournal()
     {
         Debug.Log("Emptying journal panel -- untested");
         foreach (Transform child in journalPanel.transform)
