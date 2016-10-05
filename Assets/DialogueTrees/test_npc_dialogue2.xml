@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hi</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Hello. Do you know someone named ____?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Hello, I'm Alex from the ISC. Do you have time for a few questions?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Have you heard anything fishy about ____?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Why yes i do. ___ lives a few houses down from me so we see each other quite often. Why do you ask?</Text>
+      <Options>
+        <DialogueOption>
+          <Text>I'm doing some background research as __ is a potential candidate to go to Evandria. What do you know about __?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>That's confidential sorry. Is there anything about ___ that worries you?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Sure thing. How may I help you Alex?</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Do you happen to know anyone named ____?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Our records state that ___ lives in this neighbourhood. Do you know anything about them?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Sorry I don't know anything</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you tell me something you have heard about them?</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>Ahhh _____ is a very hard worker. Animal lover too.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Our records show that they have ____. Do you know anything about that?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Are they _____?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>

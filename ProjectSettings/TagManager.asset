@@ -50,6 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 797958567
     locked: 0
-  - name: WarpMenu
-    uniqueID: 3422156977
+  - name: DialogueBox
+    uniqueID: 1163299751
     locked: 0
