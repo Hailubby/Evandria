@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class JournalPanelScript : MonoBehaviour
 {
@@ -70,5 +71,11 @@ public class JournalPanelScript : MonoBehaviour
         anim.Play("JournalSlideOut");
         //set back the time scale to normal time scale
         Time.timeScale = 1;
+    }
+
+    // Method will be for (re)populating the journal with player's interactions
+    public void UpdateJournal(List<Clue> journal)
+    {
+        //journalPanel.AddComponent<>
     }
 }
