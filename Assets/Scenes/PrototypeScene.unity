@@ -710,6 +710,11 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: -17
       objectReference: {fileID: 0}
+    - target: {fileID: 223000012495211674, guid: 9f3a7a11b6db8b944ae366b87f1e15d3,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 1163299751
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f3a7a11b6db8b944ae366b87f1e15d3, type: 2}
   m_IsPrefabParent: 0
