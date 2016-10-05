@@ -982,7 +982,7 @@ Canvas:
   m_GameObject: {fileID: 1126872880}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 2133459423}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1092,7 +1092,7 @@ Animator:
   m_GameObject: {fileID: 1129797775}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 236a33fc215172f47977a6f2adf28569, type: 2}
+  m_Controller: {fileID: 9100000, guid: fb02d39a003f6494cb62f4dc13319d0f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -1523,7 +1523,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1414010870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf7fc092ae131fc48977d1528ec6c8d2, type: 3}
+  m_Script: {fileID: 11500000, guid: e913d913bfd74dc4495cbe3290e7aad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   locationText: {fileID: 1414010872}
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2002886685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a7c80466e822a2468be6b334c9bb78a, type: 3}
+  m_Script: {fileID: 11500000, guid: 64e9ff551996ecf438c7d2737cce2bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 2002886687}
@@ -2238,9 +2238,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133459419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c73c1b688fa7d414888d61a309ede273, type: 3}
+  m_Script: {fileID: 11500000, guid: bfc206f1917d22049ac4140fa6ccd88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   journalPanel: {fileID: 1129797775}
-  journalPrefab: {fileID: 1000013244368200, guid: 207eba076184fd44fa971090e18fd69d,
+  journalPrefab: {fileID: 1000013244368200, guid: c70cff11f1131a94b8a8b2355b3f3657,
     type: 2}
