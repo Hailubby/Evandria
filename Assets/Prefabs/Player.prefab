@@ -23,8 +23,10 @@ GameObject:
   - 95: {fileID: 95000010352740368}
   - 114: {fileID: 114000013802632758}
   - 50: {fileID: 50000010775518010}
-  - 58: {fileID: 58000010281067788}
   - 114: {fileID: 114000011852191654}
+  - 61: {fileID: 61000010538482644}
+  - 114: {fileID: 114000011691478076}
+  - 114: {fileID: 114000012649576518}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -62,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58000010281067788
-CircleCollider2D:
+--- !u!61 &61000010538482644
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -73,9 +75,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Size: {x: 0.25, y: 0.25}
 --- !u!95 &95000010352740368
 Animator:
   serializedVersion: 3
@@ -93,6 +95,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000011691478076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013608347590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414f2cf2783ba494e80572f19d4f3e05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGenerated: 0
 --- !u!114 &114000011852191654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,7 +118,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0c18a10f6fe234f8641b6e4466d63e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   distance: 5
+--- !u!114 &114000012649576518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013608347590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3e8ed7c29660546b72ea6c0ba38e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journal: []
 --- !u!114 &114000013802632758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facing: down
   speed: 10
+  canMove: 0
 --- !u!212 &212000010904918342
 SpriteRenderer:
   m_ObjectHideFlags: 1
