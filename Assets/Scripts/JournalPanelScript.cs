@@ -80,15 +80,20 @@ public class JournalPanelScript : MonoBehaviour
     // Method for (re)populating the journal with player's interactions
     private void UpdateJournal(List<Clue> journal)
     {
-        Debug.Log("Updating Journal -- untested");
-        GameObject entry = Instantiate(journalPrefab);
-        entry.transform.SetParent(GameObject.Find("JournalPanel").transform,false);
+        Debug.Log("Updating Journal");
+        EmptyJournal();
+
+        foreach (Clue clue in journal)
+        {
+            GameObject entry = Instantiate(journalPrefab);
+            entry.transform.SetParent(GameObject.Find("JournalPanel").transform, false);
+        }      
     }
 
     // Method for emptying the journal upon new day (maybe)
     private void EmptyJournal()
     {
-        Debug.Log("Emptying journal panel -- untested");
+        Debug.Log("Emptying journal panel");
         foreach (Transform child in journalPanel.transform)
         {
             GameObject.Destroy(child.gameObject);
