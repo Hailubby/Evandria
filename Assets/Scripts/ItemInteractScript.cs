@@ -63,7 +63,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         // Splits text file containing description of item
         if (textFile != null)
         {
-            textLines = Regex.Split(textFile.text, "\n");
+            textLines = Regex.Split(textFile.text, "\r\n");
 
             // Assigns the item name identification, and the owner from the text file, and description
             itemName = textLines[0];
