@@ -95,7 +95,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>6</NodeID>
-      <Text>I don't know the details sorry. I think it may have been due to not being able to handle the stress at work. I don't think she got along with her team that well either as she's quite an opnionated person.</Text>
+      <Text>I don't know the details sorry. I think it may have been due to not being able to handle the stress at work. I don't think she got along with her team that well either as she's quite an opinionated person.</Text>
       <Options>
         <DialogueOption>
           <Text>What is Jessica doing now?</Text>

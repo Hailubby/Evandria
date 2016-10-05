@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Hello, do you know of Jessica Chang?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Hello, do you know of Gabriel Johan?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yes I do, why do you ask?</Text>
+      <Options>
+        <DialogueOption>
+          <Text>I'm Alex from the ISC and would like to ask you a few questions regarding Gabriel if you don't mind.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How did you and Gabriel meet?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What type of person do you see Gabriel as?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>No I don't sorry</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>That's alright, see you</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Of course Alex. Fire away!</Text>
+      <Options>
+        <DialogueOption>
+          <Text>How did you and Gabriel meet?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does Gabriel have any hobbies or things he particularly enjoys?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What kind of person is Gabriel?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>We work in the neurology department at the hospital together. He's a very smart man, I look up to him a lot.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Do you know if he's involved in anything else apart from work?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do you have to say about his attitube towards his work and peers?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>We don't see him outside of work much but when we do talk, he often mentions the ShipStar charity.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Can you tell me more about this charity?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Are you involved in this charity too?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>It seems to be a charity which supports local orphanages.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>How long has he been supporting this charity?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Are you two involved in this charity together?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>No, I don't have the time or the money.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Ahh yeah that's understandable. Thankyou for your time.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thankyou for your cooperation.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>I think it was around 6 years ago when he first started supporting it. I remember he took quite a long time off from work back then. I'm pretty sure he first mentioned it after he got back from his time off.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Why did he take a long time off work?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does he have any hobbies he enjoys?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>I'm not too sure sorry. I think it may have been something to do with his family, it was due to private reasons so none of us really know why.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for answering my questions. See you.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>Not that I know of. He is always preoccupied with his research, but I do see him looking at his family photos often and smiling during his breaks. They must give him a lot of strength when things get stressful.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Does he seem interested in any work events?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Is he involved in anything else apart from work?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thankyou for you time sir. Good day.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Text>He's a diligent worker and is polite to everyone. But he doesn't seem to socilise with others much, he's often working in the labs or his office.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Does he attend many work events?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What type of person do you see Gabriel as?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <Text>We offer him to join us but he always declines.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Any reason why?</Text>
+          <DestinationNodeID>13</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Is he involved in anything else apart from work?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <Text>Now that I think of it, he used to come to work dinners and outing quite a lot and would bring his wife along too. I guess time changes people.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your cooperation.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thankyou for answering all my questions. It was very helpful.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <Text>He may be quiet and not talk much, but I think he's a really great guy! He's not really close with any of us in the department at work, but he's always around to lend a helping hand.</Text>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialogue>
