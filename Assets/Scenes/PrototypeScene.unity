@@ -533,7 +533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012120908400, guid: fb6dd8c3487fbc54e8417860ee616b85, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb6dd8c3487fbc54e8417860ee616b85, type: 2}
@@ -1450,6 +1450,7 @@ GameObject:
   - 224: {fileID: 1414010871}
   - 222: {fileID: 1414010873}
   - 114: {fileID: 1414010872}
+  - 114: {fileID: 1414010874}
   m_Layer: 5
   m_Name: LocationText
   m_TagString: Untagged
@@ -1514,6 +1515,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414010870}
+--- !u!114 &1414010874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414010870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf7fc092ae131fc48977d1528ec6c8d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationText: {fileID: 1414010872}
 --- !u!1 &1690020316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1965,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010269380846, guid: 9f3a7a11b6db8b944ae366b87f1e15d3, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9f3a7a11b6db8b944ae366b87f1e15d3, type: 2}
