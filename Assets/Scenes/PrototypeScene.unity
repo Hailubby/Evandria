@@ -982,16 +982,16 @@ Canvas:
   m_GameObject: {fileID: 1126872880}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 2133459423}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 797958567
+  m_SortingOrder: 32767
   m_TargetDisplay: 0
 --- !u!224 &1126872884
 RectTransform:
