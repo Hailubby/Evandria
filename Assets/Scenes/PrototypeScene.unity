@@ -289,75 +289,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010375169088, guid: 816cb5aaf75cab64f91a25eeebd250b9,
     type: 2}
   m_PrefabInternal: {fileID: 364419192}
---- !u!1 &884847674 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013613841006, guid: d28bf69e06fc2c54bbf35af11cf454af,
-    type: 2}
-  m_PrefabInternal: {fileID: 1499067808}
---- !u!1 &1142925457 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000012954238700, guid: d28bf69e06fc2c54bbf35af11cf454af,
-    type: 2}
-  m_PrefabInternal: {fileID: 1499067808}
---- !u!1 &1167801847
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1167801848}
-  - 61: {fileID: 1167801850}
-  - 114: {fileID: 1167801849}
-  m_Layer: 0
-  m_Name: StartHouse2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1167801848
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1167801847}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1504.0001, y: 573, z: -1309.0916}
-  m_LocalScale: {x: 14.545454, y: 14.545454, z: 14.545454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1971367614}
-  m_RootOrder: 2
---- !u!114 &1167801849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1167801847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d4594006200844b86e6ada4ae8b603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WarpUI: {fileID: 884847674}
-  Content: {fileID: 1142925457}
-  buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
-    type: 2}
---- !u!61 &1167801850
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1167801847}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.37, y: 1.55}
 --- !u!1001 &1499067808
 Prefab:
   m_ObjectHideFlags: 0
@@ -402,22 +333,27 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2133459423}
-    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
+    - target: {fileID: 224000014195924738, guid: d28bf69e06fc2c54bbf35af11cf454af,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
+    - target: {fileID: 224000014195924738, guid: d28bf69e06fc2c54bbf35af11cf454af,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224000014195924738, guid: d28bf69e06fc2c54bbf35af11cf454af,
+    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.16666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
         type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224000014195924738, guid: d28bf69e06fc2c54bbf35af11cf454af,
+    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -452,11 +388,6 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 22.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224000014146000906, guid: d28bf69e06fc2c54bbf35af11cf454af,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 224000011073296790, guid: d28bf69e06fc2c54bbf35af11cf454af,
         type: 2}
       propertyPath: m_AnchorMax.x
@@ -481,11 +412,6 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.x
       value: -17
-      objectReference: {fileID: 0}
-    - target: {fileID: 224000010136521914, guid: d28bf69e06fc2c54bbf35af11cf454af,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0.16666657
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d28bf69e06fc2c54bbf35af11cf454af, type: 2}
@@ -616,70 +542,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4adbeb4314a45b4db044bfdaece76e3, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &1971367614 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224000010172822052, guid: d28bf69e06fc2c54bbf35af11cf454af,
-    type: 2}
-  m_PrefabInternal: {fileID: 1499067808}
---- !u!1 &1977744995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1977744996}
-  - 61: {fileID: 1977744998}
-  - 114: {fileID: 1977744997}
-  m_Layer: 0
-  m_Name: StartHouse1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1977744996
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1977744995}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1694.0001, y: 40, z: -1309.0914}
-  m_LocalScale: {x: 14.545454, y: 14.545454, z: 14.545454}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 1971367614}
-  m_RootOrder: 1
---- !u!114 &1977744997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1977744995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3d4594006200844b86e6ada4ae8b603, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WarpUI: {fileID: 884847674}
-  Content: {fileID: 1142925457}
-  buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
-    type: 2}
---- !u!61 &1977744998
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1977744995}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.37, y: 1.55}
 --- !u!1 &2133459419
 GameObject:
   m_ObjectHideFlags: 0
