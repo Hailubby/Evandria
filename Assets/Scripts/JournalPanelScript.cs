@@ -13,6 +13,10 @@ public class JournalPanelScript : MonoBehaviour
     private Animator anim;
     //variable for checking if the game is paused 
     private bool isPaused = false;
+    
+    // Prefab for journal
+    public GameObject journalPrefab;
+
     // Use this for initialization
     void Start()
     {
@@ -73,9 +77,21 @@ public class JournalPanelScript : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    // Method will be for (re)populating the journal with player's interactions
+    // Method for (re)populating the journal with player's interactions
     public void UpdateJournal(List<Clue> journal)
     {
-        //journalPanel.AddComponent<>
+        Debug.Log("Updating Journal -- untested");
+        GameObject entry = Instantiate(journalPrefab);
+        entry.transform.SetParent(GameObject.Find("JournalPanel").transform,false);
+    }
+
+    // Method for emptying the journal upon new day (maybe)
+    public void EmptyJournal()
+    {
+        Debug.Log("Emptying journal panel -- untested");
+        foreach (Transform child in journalPanel.transform)
+        {
+            GameObject.Destroy(child);
+        }
     }
 }
