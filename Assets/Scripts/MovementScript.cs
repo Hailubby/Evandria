@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class MovementScript : MonoBehaviour {
 
-	BoxCollider2D boxCollider;
 	Rigidbody2D rigidBody;
 	Animator anim;
     public string facing = "down";
@@ -15,7 +14,6 @@ public class MovementScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		boxCollider = GetComponent<BoxCollider2D> ();
 		rigidBody = GetComponent <Rigidbody2D>();
 		anim = GetComponent<Animator> ();
         canMove = true;
