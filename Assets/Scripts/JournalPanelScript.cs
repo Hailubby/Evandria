@@ -91,7 +91,7 @@ public class JournalPanelScript : MonoBehaviour
         Debug.Log("Emptying journal panel -- untested");
         foreach (Transform child in journalPanel.transform)
         {
-            GameObject.Destroy(child);
+            GameObject.Destroy(child.gameObject);
         }
     }
 }

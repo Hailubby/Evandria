@@ -1024,6 +1024,7 @@ GameObject:
   - 222: {fileID: 1129797778}
   - 114: {fileID: 1129797777}
   - 95: {fileID: 1129797779}
+  - 114: {fileID: 1129797780}
   m_Layer: 5
   m_Name: JournalPanel
   m_TagString: Untagged
@@ -1099,6 +1100,29 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1129797780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129797775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 10
+    m_Right: 0
+    m_Top: 3
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 280, y: 110}
+  m_Spacing: {x: 20, y: 6}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &1142925457 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014118332998, guid: 9f3a7a11b6db8b944ae366b87f1e15d3,
@@ -2191,3 +2215,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalPanel: {fileID: 1129797775}
+  journalPrefab: {fileID: 1000013244368200, guid: 207eba076184fd44fa971090e18fd69d,
+    type: 2}
