@@ -10,6 +10,8 @@ public class InteractionScript : MonoBehaviour {
     Rigidbody2D rigidBody;
     string facing;
 
+    public bool interacting;
+
     public float distance = 20.0f;
 
 	// Use this for initialization
@@ -20,6 +22,12 @@ public class InteractionScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
+        if (interacting)
+        {
+            return;
+        }
+
         facing = move.facing;
         Vector2 direction;
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MovementScript : MonoBehaviour {
 
@@ -8,21 +9,31 @@ public class MovementScript : MonoBehaviour {
 	Animator anim;
     public string facing = "down";
 	public float speed = 4.0f;
-    public bool canMove = true;
+
+    // Used to prevent movement when dialog popup is active
+    public bool canMove;
 
 	// Use this for initialization
 	void Start () {
 		boxCollider = GetComponent<BoxCollider2D> ();
 		rigidBody = GetComponent <Rigidbody2D>();
 		anim = GetComponent<Animator> ();
+        canMove = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+        // Prevents the player from moving if interacting with dialog
+        if (!canMove)
+        {
+            return;
+        }
+
 		Vector2 movement_vector = new Vector2 (Input.GetAxisRaw("Horizontal")*speed,Input.GetAxisRaw("Vertical")*speed);
 
-        if (movement_vector != Vector2.zero) {
+
+		if (movement_vector != Vector2.zero) {
 			//Only change to walking animation while walking, change facing direction if walking
 			anim.SetBool ("iswalking", true);
 			anim.SetFloat ("input_x", movement_vector.x);
@@ -58,7 +69,13 @@ public class MovementScript : MonoBehaviour {
 
 	}
 
-		
-
-
+	public void EnableMovement()
+    {
+        canMove = true;
+    }
+    
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
 }
