@@ -28,8 +28,8 @@
           <DestinationNodeID>4</DestinationNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>Does Jessica live alone?</Text>
-          <DestinationNodeID>8</DestinationNodeID>
+          <Text>Does Jessica have any pets?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>

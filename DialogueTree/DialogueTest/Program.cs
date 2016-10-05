@@ -102,7 +102,7 @@ namespace DialogueTest
             //node 2 options
             dialogue.AddOption("I'm Alex from the ISC. Do you have time to answer a few questions regarding Jessica?", node2, node4);
             dialogue.AddOption("What is your relationship with Jessica?", node2, node5);
-            dialogue.AddOption("Does Jessica live alone?", node2, node9);
+            dialogue.AddOption("Does Jessica have any pets?", node2, node13);
 
             //Exit option for node 3
             dialogue.AddOption("Thankyou for your time", node3, null);
