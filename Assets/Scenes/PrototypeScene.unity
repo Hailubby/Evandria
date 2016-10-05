@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueDataFilePath: test_npc_dialogue2.xml
+  DialogueDataFilePath: jessica_npc_dialogue.xml
   DialogueWindowPrefab: {fileID: 1000011701598098, guid: 235dbaf60b9662b4facf3872b79fdc7e,
     type: 2}
 --- !u!1 &416438850
