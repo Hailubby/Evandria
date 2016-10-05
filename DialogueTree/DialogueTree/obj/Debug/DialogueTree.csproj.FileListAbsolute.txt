@@ -1,0 +1,5 @@
+C:\Users\User\Documents\3rd year\306\Project2\DialogueTree\DialogueTree\bin\Debug\DialogueTree.dll
+C:\Users\User\Documents\3rd year\306\Project2\DialogueTree\DialogueTree\bin\Debug\DialogueTree.pdb
+C:\Users\User\Documents\3rd year\306\Project2\DialogueTree\DialogueTree\obj\Debug\DialogueTree.dll
+C:\Users\User\Documents\3rd year\306\Project2\DialogueTree\DialogueTree\obj\Debug\DialogueTree.pdb
+C:\Users\User\Documents\3rd year\306\Project2\DialogueTree\DialogueTree\obj\Debug\DialogueTree.csprojResolveAssemblyReference.cache
