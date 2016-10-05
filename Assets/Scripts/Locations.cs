@@ -9,8 +9,8 @@ public class Locations : MonoBehaviour {
     void Start() {
         locations = new ArrayList();
         locations.Add(new Location(new Vector3(17.5f, 24.5f, 0), "Office"));
-        locations.Add(new Location(new Vector3(99.5f, -20, 0), "House 1"));
-        locations.Add(new Location(new Vector3(-120, 6, 0), "House 2"));
+        locations.Add(new Location(new Vector3(99.5f, -20, 0), "Gabriel's House"));
+        locations.Add(new Location(new Vector3(-120, 6, 0), "Jessica's House"));
     }
 
     // Update is called once per frame
