@@ -5,8 +5,6 @@ using System.Collections.Generic;
 // Journal which the player will hold throughout the game to store clues found relevant to his investigation.
 public class Journal : MonoBehaviour
 {
-
-    public MovementScript player;
     public List<Clue> journal;
 
     // Use this for initialization
