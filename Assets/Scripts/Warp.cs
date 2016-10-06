@@ -44,8 +44,9 @@ public class Warp : MonoBehaviour {
 
 
                 Vector3 capturedLocation = loco.entrance;
+                string capturedString = loco.name;
                 thisButton.onClick.AddListener(() => {
-                    WarpTo(capturedLocation);
+                    WarpTo(capturedLocation, capturedString);
                     WarpUI.SetActive(false);
                 });
             }
@@ -57,11 +58,13 @@ public class Warp : MonoBehaviour {
 
     }
 
-    void WarpTo(Vector3 location)
+    void WarpTo(Vector3 location, string locationName)
     {
         Debug.Log("Going to X: " + location.x + " and Y: " + location.y);
         other.gameObject.transform.position = location;
         Camera.main.transform.position = location;
+        LocationTextScript script = GameObject.FindObjectOfType<LocationTextScript>();
+        script.UpdateLocationText(locationName);
     }
 
 
