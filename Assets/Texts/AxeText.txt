@@ -1,4 +1,1 @@
-Axe
-Dummy
-
-This is an Axe. It can chop down trees.
+Axe;Dummy;;This is an Axe. It can chop down trees.
