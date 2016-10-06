@@ -78,7 +78,7 @@ public class JournalPanelScript : MonoBehaviour
     }
 
     // Method for (re)populating the journal with player's interactions
-    private void UpdateJournal(List<Clue> journal)
+    public void UpdateJournal(List<Clue> journal)
     {
         Debug.Log("Updating Journal");
         EmptyJournal();

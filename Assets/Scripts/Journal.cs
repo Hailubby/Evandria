@@ -24,5 +24,6 @@ public class Journal : MonoBehaviour
     {
         journal.Add(clue);
         Debug.Log("Added item to journal: " + clue.clueName);
+        GameObject.FindObjectOfType<JournalPanelScript>().UpdateJournal(journal);
     }
 }
