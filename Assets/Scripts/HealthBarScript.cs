@@ -35,7 +35,7 @@ public class HealthBarScript : MonoBehaviour
     /// <param name="value"></param>
     public void UpdateHealth(int value)
     {
-        health = value;
+        health = (int) healthBar.value + value;
         delta = 0;
     }
 
