@@ -1723,6 +1723,36 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: 0.0000076293945
       objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 147.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012945792904, guid: d28bf69e06fc2c54bbf35af11cf454af,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 18.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d28bf69e06fc2c54bbf35af11cf454af, type: 2}
   m_IsPrefabParent: 0
@@ -2955,7 +2985,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 2133459423}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
