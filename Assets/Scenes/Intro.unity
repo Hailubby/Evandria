@@ -100,7 +100,6 @@ GameObject:
   - 224: {fileID: 247522646}
   - 222: {fileID: 247522648}
   - 114: {fileID: 247522647}
-  - 114: {fileID: 247522649}
   m_Layer: 5
   m_Name: IntroPanel
   m_TagString: Untagged
@@ -160,17 +159,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247522645}
---- !u!114 &247522649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 247522645}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b371605990aa14b90b4b591a382a96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &276108174
 GameObject:
   m_ObjectHideFlags: 0
