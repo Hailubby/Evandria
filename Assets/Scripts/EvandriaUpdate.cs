@@ -4,8 +4,11 @@ using System.Collections;
 public class EvandriaUpdate : MonoBehaviour {
 
     HealthBarScript sliderScript;
-    public Candidate chosenCandidate;
+    public string chosenCandidate;
     public bool goodOutcome;
+
+    public GameObject decisionCanvas;
+    public GameObject outcomeCanvas;
 
     void Start()
     {
@@ -15,6 +18,8 @@ public class EvandriaUpdate : MonoBehaviour {
 	
     public void DecisionMade (string candidateName)
     {
+        chosenCandidate = candidateName;
+
         //Temporarily Hardcoded attributes
         int[] gabrielGoodArray = { 3, 6, 3, 5, 5 };
         int[] gabrielBadArray = { 1, 3, 1, 2, 2 };
@@ -66,18 +71,35 @@ public class EvandriaUpdate : MonoBehaviour {
                 changeInMorale += goodArray[i];
             }
         }
-
-        if (bestCase / 2 > changeInMorale)
+        if (bestCase >= 0)
         {
-            goodOutcome = false;
-        } else
-        {
-            goodOutcome = true;
+            if (bestCase / 2 > changeInMorale)
+            {
+                goodOutcome = false;
+            }
+            else
+            {
+                goodOutcome = true;
+            }
         }
+        else {
+            if (bestCase * 2 > changeInMorale)
+            {
+                goodOutcome = false;
+            }
+            else
+            {
+                goodOutcome = true;
+            }
+        }
+            
 
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
 
+        decisionCanvas.SetActive(false);
+        outcomeCanvas.SetActive(true);
+        FindObjectOfType<OutcomeScript>().PresentOutcome();
         
     }
 }
