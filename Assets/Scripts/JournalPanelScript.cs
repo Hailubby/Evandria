@@ -15,7 +15,7 @@ public class JournalPanelScript : MonoBehaviour
     private bool isPaused = false;
     
     // Prefab for journal
-    public GameObject journalEntryPrefab;
+    public JournalEntryScript journalEntryPrefab;
 
     // Use this for initialization
     void Start()
@@ -85,8 +85,11 @@ public class JournalPanelScript : MonoBehaviour
 
         foreach (Clue clue in journal)
         {
-            GameObject entry = Instantiate(journalEntryPrefab);
+            JournalEntryScript entry = Instantiate<JournalEntryScript>(journalEntryPrefab);
             entry.transform.SetParent(GameObject.Find("JournalPanel").transform, false);
+            entry.SetTitle(clue.clueName);
+            entry.SetCandidate(clue.clueOwner);
+            entry.SetDescription(clue.clueDesc);
         }      
     }
 
