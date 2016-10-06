@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013698144572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.323687, y: -2.006462, z: 0}
+  m_LocalPosition: {x: 25.78, y: 9.27, z: 0}
   m_LocalScale: {x: 9, y: 9, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -67,6 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  journal: {fileID: 0}
+  clue_owner: Gabriel
   DialogueDataFilePath: gabriel_npc_dialogue.xml
   DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
     type: 2}

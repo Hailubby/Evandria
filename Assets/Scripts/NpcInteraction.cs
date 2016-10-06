@@ -14,8 +14,15 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     private GameObject option_1;
     private GameObject option_2;
     private GameObject option_3;
+   
 
     private int selected_option = -2;
+
+    public Journal journal;
+    private bool interacted = false;
+    private string clue_name = "NPC";
+    public string clue_owner;
+    private string clue_description = "Has talked to";
 
     //NPC dialogue
     public string DialogueDataFilePath;
@@ -28,12 +35,19 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     {
         Debug.Log("This NPC has been interacted with!");
         RunDialogue();
+        if (!interacted)
+        {
+            Clue clue = new Clue(clue_name, clue_owner, clue_description);
+            journal.AddClue(clue);
+            interacted = true;
+        }
     }
 
     // Use this for initialization
     void Start ()
     {
         dialogue = Dialogue.LoadDialogue("Assets/DialogueTrees/" + DialogueDataFilePath);
+        journal = FindObjectOfType<Journal>();
 
         var canvas = GameObject.Find("Canvas");
 
