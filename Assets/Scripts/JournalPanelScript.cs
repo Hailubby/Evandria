@@ -15,7 +15,7 @@ public class JournalPanelScript : MonoBehaviour
     private bool isPaused = false;
     
     // Prefab for journal
-    public GameObject journalPrefab;
+    public JournalEntryScript journalEntryPrefab;
 
     // Use this for initialization
     void Start()
@@ -78,15 +78,18 @@ public class JournalPanelScript : MonoBehaviour
     }
 
     // Method for (re)populating the journal with player's interactions
-    private void UpdateJournal(List<Clue> journal)
+    public void UpdateJournal(List<Clue> journal)
     {
         Debug.Log("Updating Journal");
         EmptyJournal();
 
         foreach (Clue clue in journal)
         {
-            GameObject entry = Instantiate(journalPrefab);
+            JournalEntryScript entry = Instantiate<JournalEntryScript>(journalEntryPrefab);
             entry.transform.SetParent(GameObject.Find("JournalPanel").transform, false);
+            entry.SetTitle(clue.clueName);
+            entry.SetCandidate(clue.clueOwner);
+            entry.SetDescription(clue.clueDesc);
         }      
     }
 
