@@ -43,11 +43,11 @@ public class CandidateBController : MonoBehaviour{
         Skills.GetComponent<Text>().text = "Skills: " + skills;
         Description.GetComponent<Text>().text = description;
 
-        traitString = "";
-        foreach (string trait in traits)
-        {
-            traitString += trait;
-        }
+        //traitString = "";
+        //foreach(string trait in traits)
+        //{
+        //    traitString += trait;
+        //}
         //Traits.GetComponent<Text>().text = traitString;
     }
 }
