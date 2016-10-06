@@ -56,6 +56,7 @@ GameObject:
   - 223: {fileID: 223000013936380316}
   - 114: {fileID: 114000011759093450}
   - 114: {fileID: 114000012418314286}
+  - 114: {fileID: 114000012965636188}
   m_Layer: 5
   m_Name: ItemCanvas
   m_TagString: Untagged
@@ -100,6 +101,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114000012965636188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012870771954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba0fc192e4862841a4e856cd303d7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 1000010906346858}
+  theText: {fileID: 114000013350209662}
 --- !u!114 &114000013350209662
 MonoBehaviour:
   m_ObjectHideFlags: 1
