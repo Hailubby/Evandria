@@ -5883,5 +5883,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journalPanel: {fileID: 625979884}
-  journalPrefab: {fileID: 1000013244368200, guid: b037ec09ce826904b9f0be2daa4fd098,
+  journalEntryPrefab: {fileID: 114000012219468808, guid: d11db87272501c64ab99513c5b457f33,
     type: 2}
