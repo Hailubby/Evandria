@@ -7,6 +7,12 @@
 - Decisions are critical as who Alex sends to Evandria will shape the community over there.  
 - Goal is to keep the “life” of Evandria above a certain threshold (based on Alex’s decision making)  
 
+## Running the prototype
+-Download the PROTOTYPE.exe file from the master branch.  
+-Double click the file to open.  
+-Set the resolution to 1024x768, windowed mode and graphics quality to fantastic.  
+-Click play.  
+
 ## Project Resource
 https://docs.google.com/document/d/1xM8KF6fJ4ud0Kv3r9ifR61MD_s-FxHwLjWXoI1ete08/edit?usp=sharing
 
