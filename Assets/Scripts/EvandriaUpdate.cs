@@ -13,15 +13,36 @@ public class EvandriaUpdate : MonoBehaviour {
     }
 
 	
-    void DecisionMade (Candidate candidate)
+    public void DecisionMade (string candidateName)
     {
+        //Temporarily Hardcoded attributes
+        int[] gabrielGoodArray = { 3, 6, 3, 5, 5 };
+        int[] gabrielBadArray = { 1, 3, 1, 2, 2 };
+        int[] jessicaGoodArray = { -2,-3,-2,5,-3 };
+        int[] jessicaBadArray = {-5,-5,-5,2,-5 };
+
+        int[] goodArray; //Replace with retrieving array from candidate
+        int[] badArray;
+
         int changeInMorale = 0;
-        chosenCandidate = candidate;
+
+        float badProbability = 0;
+
+        if (candidateName.Equals("Gabriel Johan"))
+        {
+            badProbability = 0.2f;
+            goodArray = gabrielGoodArray;
+            badArray = gabrielBadArray;
+        } else
+        {
+            goodArray = jessicaGoodArray;
+            badArray = jessicaBadArray;
+            badProbability = 0.8f;
+        }
 
         //Retrieve decision stats for candidate
         //5 stats good/bad values placed in array in order
-        int[] goodArray = new int[5]; //Replace with retrieving array from candidate
-        int[] badArray = new int[5];
+        
         int bestCase =0;
 
         foreach (int x in goodArray)
@@ -31,7 +52,7 @@ public class EvandriaUpdate : MonoBehaviour {
                 
 
         //Retrieve probability for candidate (e.g: 80/20)
-        int badProbability = 0;
+        
 
         
         int i;
@@ -53,7 +74,6 @@ public class EvandriaUpdate : MonoBehaviour {
         {
             goodOutcome = true;
         }
-
 
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
