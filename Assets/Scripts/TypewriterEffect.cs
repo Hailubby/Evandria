@@ -70,7 +70,7 @@ public class TypewriterEffect : MonoBehaviour {
         if (Input.GetKeyDown("n"))
         {
             // Return to main menu
-            Debug.Log("n ket was pressed");
+            SceneManager.LoadScene(0);
         }
        if (contToNextScreen & count != 2)
         {
