@@ -15,6 +15,10 @@ public class Candidate : MonoBehaviour {
     private string[] skills;
     private string description;
 
+    // Variables used to help generate Outcome Scene
+    public int option;
+    public bool decided = false;
+
     // list of clues
     private Clue[] clues;
 
@@ -25,6 +29,12 @@ public class Candidate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (decided)
+        {
+
+        }
+
 	}
 
 	// somehow get data from xml/txt files
