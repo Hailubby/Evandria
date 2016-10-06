@@ -6,11 +6,11 @@
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>
       <Ethnicity>Norwegian</Ethnicity>
-      <!--<Traits>
-        <Trait>Antisocial</Trait>
-        <Trait>Anxious</Trait>
-        <Trait>Intelligent</Trait>
-      </Traits>-->
+      <Traits>
+        <Trait id="0">Antisocial</Trait>
+        <Trait id="1">Anxious</Trait>
+        <Trait id="2">Intelligent</Trait>
+      </Traits>
       <Occupation>Neurologist</Occupation>
       <Skills>PhD in Chemistry and Biology</Skills>
       <Description>- Was really nervous.
@@ -28,11 +28,11 @@
       <Gender>Female</Gender>
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
-      <!--<Traits>
-        <Trait>Determined</Trait>
-        <Trait>Opinionated</Trait>
-        <Trait>Fickle</Trait>
-      </Traits>-->
+      <Traits>
+        <Trait id="0">Determined</Trait>
+        <Trait id="1">Opinionated</Trait>
+        <Trait id="2">Fickle</Trait>
+      </Traits>
       <Occupation>Accountant</Occupation>
       <Skills>Chartered Accountant</Skills>
       <Description>- Raised in a strict environment in China.

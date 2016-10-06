@@ -9,7 +9,7 @@ public class CandidateContainer {
 
     [XmlArray("Candidates")]
     [XmlArrayItem("Candidate")]
-    public List<CandidateXML> candidates { get; set; }
+    public List<Candidate> candidates { get; set; }
 
     public static CandidateContainer Load(string path) {
         TextAsset _xml = Resources.Load<TextAsset>(path);

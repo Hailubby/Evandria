@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 
 public class CandidateAController : MonoBehaviour{
 
@@ -10,6 +12,10 @@ public class CandidateAController : MonoBehaviour{
     public string occupation;
     public string skills;
     public string description;
+    public List<string> traits;
+
+    private StringBuilder sb;
+    private string traitString;
 
     private Transform Name;
     private Transform DOB;
@@ -25,6 +31,7 @@ public class CandidateAController : MonoBehaviour{
         Occupation = transform.Find("First Profile/First Occupation");
         Skills = transform.Find("First Profile/First Skills");
         Description = transform.Find("First Profile/First Description");
+        //Traits = transform.Find("Second Profile/Second Traits");
     }
 
     void Update() {
@@ -34,5 +41,13 @@ public class CandidateAController : MonoBehaviour{
         Occupation.GetComponent<Text>().text = occupation;
         Skills.GetComponent<Text>().text = "Skills: " + skills;
         Description.GetComponent<Text>().text = description;
+
+        sb = new StringBuilder();
+        foreach (string trait in traits)
+        {
+            sb.Append(trait);
+        }
+        traitString = sb.ToString();
+        //Traits.GetComponent<Text>().text = traitString;
     }
 }

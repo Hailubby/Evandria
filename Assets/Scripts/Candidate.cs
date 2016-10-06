@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Collections.Generic;
 
 public class Candidate
 {
@@ -20,9 +21,9 @@ public class Candidate
     [XmlElement("Ethnicity")]
     public string ethnicity;
 
-    // The loader doesn't like traits, I'll fix this tomorrow
-    //[XmlElement("Traits")]
-    //public string[] traits;
+    [XmlArray("Traits")]
+    [XmlArrayItem("Trait")]
+    public List<string> traits = new List<string>();
 
     [XmlElement("Occupation")]
     public string occupation;
