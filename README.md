@@ -8,11 +8,13 @@
 - Goal is to keep the “life” of Evandria above a certain threshold (based on Alex’s decision making)  
 
 ## Running the prototype
--Download the PROTOTYPE.exe file from the master branch.  
--Double click the file to open.  
--Set the resolution to 1024x768, windowed mode and graphics quality to fantastic.  
--Click play.  
--Press space bar or left click to continue the dialogue when interacting.  
+1. Download the PROTOTYPE.zip file from the master branch.  
+2. Extract the contents from the zip file.  
+3. Navigate to PROTOTYPE7.exe  
+4. Double click the file to open/execute.  
+5. Set the resolution to 1024x768, windowed mode and graphics quality to fantastic.  
+6. Click play.  
+7. Press space bar or left click to continue the dialogue when interacting.  
 
 ## Project Resource
 https://docs.google.com/document/d/1xM8KF6fJ4ud0Kv3r9ifR61MD_s-FxHwLjWXoI1ete08/edit?usp=sharing
