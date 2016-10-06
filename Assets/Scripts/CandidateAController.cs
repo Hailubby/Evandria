@@ -15,7 +15,6 @@ public class CandidateAController : MonoBehaviour{
     private Transform DOB;
     private Transform Ethinicity;
     private Transform Occupation;
-    private Transform Traits;
     private Transform Skills;
     private Transform Description;
 
