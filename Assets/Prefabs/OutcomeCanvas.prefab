@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 137c5508ed9e2b94e87dd10f731c90de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 1000011649898138}
 --- !u!114 &114000010457654520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,12 +160,12 @@ MonoBehaviour:
   outcome: 0
   acceptText: {fileID: 114000012801721658}
   rejectText: {fileID: 114000012511280422}
-  acceptGood1: {fileID: 4900000, guid: 996705deed6e0c84fbe11110acff56a0, type: 3}
-  acceptBad1: {fileID: 4900000, guid: 1f992b139de160749abe78fd387f49a1, type: 3}
-  reject1: {fileID: 4900000, guid: f36881c38b0869d468189c35c17476f5, type: 3}
-  acceptGood2: {fileID: 4900000, guid: 47e71d901ec5cd34e905c657106a1668, type: 3}
-  acceptBad2: {fileID: 4900000, guid: 8201c88d016365444abe5590487bfa2c, type: 3}
-  reject2: {fileID: 4900000, guid: 76d35ec6c7a8a6d49b35f3a978aaeb4d, type: 3}
+  acceptGood1: {fileID: 4900000, guid: 01263fed8ef0cd64384fe5ad627248d0, type: 3}
+  acceptBad1: {fileID: 4900000, guid: 6b6be21c1b2d65a4485fe58fb26166f4, type: 3}
+  reject1: {fileID: 4900000, guid: 86348136601165b4eb5772136ff864d2, type: 3}
+  acceptGood2: {fileID: 4900000, guid: 4d65c8bbf70b9ba43821b35778a16468, type: 3}
+  acceptBad2: {fileID: 4900000, guid: f9e69817d7b1f4f42b2d9576b7637b89, type: 3}
+  reject2: {fileID: 4900000, guid: 7695af1ef629fe147b98e23457f7191b, type: 3}
   acceptedText: 
   rejectedText: 
   acceptOption: 0

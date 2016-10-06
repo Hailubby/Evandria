@@ -27,6 +27,8 @@ GameObject:
   - 61: {fileID: 61000010538482644}
   - 114: {fileID: 114000011691478076}
   - 114: {fileID: 114000012649576518}
+  - 114: {fileID: 114000011927977894}
+  - 114: {fileID: 114000010825521994}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -95,6 +97,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010825521994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013608347590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c7f28b0f9b22b8498d53f68b09b5ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  canvas: {fileID: 0}
 --- !u!114 &114000011691478076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,6 +135,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interacting: 0
   distance: 5
+--- !u!114 &114000011927977894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013608347590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b179239500ad284a8386fadc210b0e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chosenCandidate: 
+  goodOutcome: 0
+  decisionCanvas: {fileID: 0}
+  outcomeCanvas: {fileID: 0}
 --- !u!114 &114000012649576518
 MonoBehaviour:
   m_ObjectHideFlags: 1

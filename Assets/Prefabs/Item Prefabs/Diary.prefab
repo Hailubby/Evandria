@@ -21,8 +21,9 @@ GameObject:
   - 4: {fileID: 4000013084976230}
   - 212: {fileID: 212000012930028118}
   - 61: {fileID: 61000010438873508}
+  - 114: {fileID: 114000011768019766}
   m_Layer: 8
-  m_Name: Dairy
+  m_Name: Diary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013275981802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 110.867325, y: -14.290511, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -55,6 +56,32 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.09, y: 1.25}
+--- !u!114 &114000011768019766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013275981802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb22d9c55bc9cc4f8366cf9c6db4b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clue:
+    clueName: 
+    clueOwner: 
+    clueDesc: 
+  journal: {fileID: 0}
+  canvas: {fileID: 0}
+  player: {fileID: 0}
+  textFile: {fileID: 4900000, guid: d1c3b55ab064e144ab99017eaca1b1a6, type: 3}
+  textLines: []
+  itemName: 
+  itemOwner: 
+  itemDesc: 
+  currentLine: 0
+  endLine: 0
+  stopPlayerMovement: 0
 --- !u!212 &212000012930028118
 SpriteRenderer:
   m_ObjectHideFlags: 1

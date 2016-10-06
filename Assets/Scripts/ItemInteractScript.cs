@@ -48,6 +48,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
             if (!itemOwner.Equals("Dummy"))
             {
                 journal.AddClue(clue);
+                
             }
             
         }
@@ -58,7 +59,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     {
         player = FindObjectOfType<MovementScript>();
         journal = FindObjectOfType<Journal>();
-        canvas = FindObjectOfType<ItemCanvasScript>();        
+        canvas = FindObjectOfType<ItemCanvasScript>();
         
         // Splits text file containing description of item
         if (textFile != null)

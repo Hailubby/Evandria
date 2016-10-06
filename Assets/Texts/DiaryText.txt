@@ -1,0 +1,1 @@
+Diary;Gabriel;;A regular diary. Contains an old article about the tragic break in from 6 years ago that lead to the death of Gabriel's wife and daughter.;'Item added to Journal'

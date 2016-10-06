@@ -7,11 +7,10 @@
       <DOB>06/11/1990</DOB>
       <Ethnicity>Norwegian</Ethnicity>
       <Traits>
-        <Trait id="0">Antisocial</Trait>
-        <Trait id="1">Anxious</Trait>
-        <Trait id="2">Intelligent</Trait>
-      </Traits>
-      <Occupation>Neurologist</Occupation>
+        <Trait>Antisocial</Trait>
+        <Trait>Anxious</Trait>
+        <Trait>Intelligent</Trait>
+      </Traits>      <Occupation>Neurologist</Occupation>
       <Skills>PhD in Chemistry and Biology</Skills>
       <Description>- Was really nervous.
 - Specialises in Neurological diseases.
@@ -29,9 +28,9 @@
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
       <Traits>
-        <Trait id="0">Determined</Trait>
-        <Trait id="1">Opinionated</Trait>
-        <Trait id="2">Fickle</Trait>
+        <Trait>Determined</Trait>
+        <Trait>Opinionated</Trait>
+        <Trait>Fickle</Trait>
       </Traits>
       <Occupation>Accountant</Occupation>
       <Skills>Chartered Accountant</Skills>
