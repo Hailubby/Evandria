@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 public class CandidateBController : MonoBehaviour{
 
@@ -14,6 +15,7 @@ public class CandidateBController : MonoBehaviour{
     public string description;
     public List<string> traits;
 
+    private StringBuilder sb;
     private string traitString;
 
     private Transform Name;
@@ -43,11 +45,12 @@ public class CandidateBController : MonoBehaviour{
         Skills.GetComponent<Text>().text = "Skills: " + skills;
         Description.GetComponent<Text>().text = description;
 
-        //traitString = "";
-        //foreach(string trait in traits)
-        //{
-        //    traitString += trait;
-        //}
+        sb = new StringBuilder();
+        foreach (string trait in traits)
+        {
+            sb.Append(trait);
+        }
+        traitString = sb.ToString();
         //Traits.GetComponent<Text>().text = traitString;
     }
 }
