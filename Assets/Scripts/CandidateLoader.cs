@@ -13,7 +13,7 @@ public class CandidateLoader : MonoBehaviour {
     void Start () {
         CandidateContainer ic = CandidateContainer.Load(path);
 
-        foreach (CandidateXML candidate in ic.candidates) {
+        foreach (Candidate candidate in ic.candidates) {
             if (candidate.id.Equals("0")) {
 
                 candidateA = transform.Find("First Candidate Profile");
@@ -26,6 +26,7 @@ public class CandidateLoader : MonoBehaviour {
                     candidateAController.occupation = candidate.occupation;
                     candidateAController.skills = candidate.skills;
                     candidateAController.description = candidate.description;
+                    candidateAController.traits = candidate.traits;
                 } catch (NullReferenceException) {
                     print("stupid exception");
                 }
@@ -42,6 +43,7 @@ public class CandidateLoader : MonoBehaviour {
                     candidateBController.occupation = candidate.occupation;
                     candidateBController.skills = candidate.skills;
                     candidateBController.description = candidate.description;
+                    candidateAController.traits = candidate.traits;
                 } catch (NullReferenceException) {
                     print("stupid exception");
                 }
