@@ -12,6 +12,7 @@
 -Double click the file to open.  
 -Set the resolution to 1024x768, windowed mode and graphics quality to fantastic.  
 -Click play.  
+-Press space bar or left click to continue the dialogue when interacting.  
 
 ## Project Resource
 https://docs.google.com/document/d/1xM8KF6fJ4ud0Kv3r9ifR61MD_s-FxHwLjWXoI1ete08/edit?usp=sharing
