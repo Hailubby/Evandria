@@ -25,11 +25,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     private string clue_description = "Has talked to";
 
     //NPC dialogue
-    public string DialogueDataFilePath;
+    public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
     public GameObject DialogueWindowPrefab;
 
-    //public MovementScript player;
 
     public void interact()
     {
@@ -46,7 +45,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     // Use this for initialization
     void Start ()
     {
-        dialogue = Dialogue.LoadDialogue("Assets/DialogueTrees/" + DialogueDataFilePath);
+
+        dialogue = Dialogue.LoadDialogue(new System.IO.StringReader(dialogueFile.text));
         journal = FindObjectOfType<Journal>();
 
         var canvas = GameObject.Find("Canvas");
