@@ -8,7 +8,7 @@
 - Goal is to keep the “life” of Evandria above a certain threshold (based on Alex’s decision making)  
 
 ## Running the prototype
-1. Download the PROTOTYPE.zip file from the master branch.  
+1. Download the PROTOTYPE.zip file from the prototype branch.  
 2. Extract the contents from the zip file.  
 3. Navigate to PROTOTYPE7.exe  
 4. Double click the file to open/execute.  
