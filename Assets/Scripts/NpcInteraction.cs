@@ -114,6 +114,13 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         while (node_id != -1) {
             node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
+            if (dialogue.Nodes[node_id].isClue && !foundClue)
+            {
+                Clue clue = new Clue(clue_name, clue_owner, clue_description);
+                journal.AddClue(clue);
+                foundClue = true;
+            }
+
             yield return StartCoroutine(WaitForKeyDown());
 
             display_node(dialogue.Nodes[node_id]);
@@ -123,14 +130,6 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             }
 
             node_id = selected_option;
-            if (node_id != -1) {
-                if (dialogue.Nodes[node_id].isClue && !foundClue)
-                {
-                    Clue clue = new Clue(clue_name, clue_owner, clue_description);
-                    journal.AddClue(clue);
-                    foundClue = true;
-                }
-            }
 
             option_1.SetActive(false);
             option_2.SetActive(false);
