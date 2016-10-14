@@ -131,9 +131,6 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
                     foundClue = true;
                 }
             }
-            
-            Debug.Log("Node id is: " + node_id);
-
 
             option_1.SetActive(false);
             option_2.SetActive(false);
