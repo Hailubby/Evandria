@@ -60,6 +60,9 @@ namespace DialogueTest
         {
             Dialogue dialogue = new Dialogue();
 
+            dialogue.npcName = "Sally";
+            dialogue.clue = "Jessica seems to cycle through her pets very quickly, suspicious.";
+
             var node1 = new DialogueNode("Hello!");
             var node2 = new DialogueNode("Yes I do, why do you ask?");
             var node3 = new DialogueNode("No I don't sorry");
@@ -77,6 +80,7 @@ namespace DialogueTest
 
             var node13 = new DialogueNode("She's had quite a few dogs actually, though i don't know what happened to them all.");
             var node14 = new DialogueNode("I've never seen her with the same one for more than a few months. I wonder if she keeps giving them away as she's too busy to look after them? But she always ends up getting a new one sometime later anyway.");
+            node14.isClue = true;
 
             var node15 = new DialogueNode("I don't think she has any as she's quite a workaholic. She's often quite stressed. I've told her to go see a counsellor but she doesn't seem too keen on it.");
 
@@ -167,6 +171,9 @@ namespace DialogueTest
         {
             Dialogue dialogue = new Dialogue();
 
+            dialogue.npcName = "Juarez";
+            dialogue.clue = "Gabriel started supporting a charity for orphanages 6 years ago.";
+
             var node1 = new DialogueNode("Hello!");
             var node2 = new DialogueNode("Yes I do, why do you ask?");
             var node3 = new DialogueNode("No I don't sorry");
@@ -178,6 +185,7 @@ namespace DialogueTest
             var node7 = new DialogueNode("It seems to be a charity which supports local orphanages.");
             var node8 = new DialogueNode("No, I don't have the time or the money.");
             var node9 = new DialogueNode("I think it was around 6 years ago when he first started supporting it. I remember he took quite a long time off from work back then. I'm pretty sure he first mentioned it after he got back from his time off.");
+            node9.isClue = true;
             var node10 = new DialogueNode("I'm not too sure sorry. I think it may have been something to do with his family, it was due to private reasons so none of us really know why.");
             
             var node11 = new DialogueNode("Not that I know of. He is always preoccupied with his research, but I do see him looking at his family photos often and smiling during his breaks. They must give him a lot of strength when things get stressful.");

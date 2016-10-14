@@ -4,6 +4,7 @@
     <DialogueNode>
       <NodeID>0</NodeID>
       <Text>Hello!</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Hello, do you know of Jessica Chang?</Text>
@@ -18,6 +19,7 @@
     <DialogueNode>
       <NodeID>1</NodeID>
       <Text>Yes I do, why do you ask?</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>I'm Alex from the ISC and would like to ask you a few questions regarding Gabriel if you don't mind.</Text>
@@ -36,6 +38,7 @@
     <DialogueNode>
       <NodeID>2</NodeID>
       <Text>No I don't sorry</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Thankyou for your time</Text>
@@ -50,6 +53,7 @@
     <DialogueNode>
       <NodeID>3</NodeID>
       <Text>Of course Alex. Fire away!</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>How did you and Gabriel meet?</Text>
@@ -68,6 +72,7 @@
     <DialogueNode>
       <NodeID>4</NodeID>
       <Text>We work in the neurology department at the hospital together. He's a very smart man, I look up to him a lot.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Do you know if he's involved in anything else apart from work?</Text>
@@ -82,6 +87,7 @@
     <DialogueNode>
       <NodeID>5</NodeID>
       <Text>We don't see him outside of work much but when we do talk, he often mentions the ShipStar charity.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Can you tell me more about this charity?</Text>
@@ -96,6 +102,7 @@
     <DialogueNode>
       <NodeID>6</NodeID>
       <Text>It seems to be a charity which supports local orphanages.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>How long has he been supporting this charity?</Text>
@@ -110,6 +117,7 @@
     <DialogueNode>
       <NodeID>7</NodeID>
       <Text>No, I don't have the time or the money.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Ahh yeah that's understandable. Thankyou for your time.</Text>
@@ -124,6 +132,7 @@
     <DialogueNode>
       <NodeID>8</NodeID>
       <Text>I think it was around 6 years ago when he first started supporting it. I remember he took quite a long time off from work back then. I'm pretty sure he first mentioned it after he got back from his time off.</Text>
+      <isClue>true</isClue>
       <Options>
         <DialogueOption>
           <Text>Why did he take a long time off work?</Text>
@@ -138,6 +147,7 @@
     <DialogueNode>
       <NodeID>9</NodeID>
       <Text>I'm not too sure sorry. I think it may have been something to do with his family, it was due to private reasons so none of us really know why.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Thankyou for answering my questions. See you.</Text>
@@ -148,6 +158,7 @@
     <DialogueNode>
       <NodeID>10</NodeID>
       <Text>Not that I know of. He is always preoccupied with his research, but I do see him looking at his family photos often and smiling during his breaks. They must give him a lot of strength when things get stressful.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Does he seem interested in any work events?</Text>
@@ -166,6 +177,7 @@
     <DialogueNode>
       <NodeID>11</NodeID>
       <Text>He's a diligent worker and is polite to everyone. But he doesn't seem to socilise with others much, he's often working in the labs or his office.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Does he attend many work events?</Text>
@@ -180,6 +192,7 @@
     <DialogueNode>
       <NodeID>12</NodeID>
       <Text>We offer him to join us but he always declines.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Any reason why?</Text>
@@ -194,6 +207,7 @@
     <DialogueNode>
       <NodeID>13</NodeID>
       <Text>Now that I think of it, he used to come to work dinners and outing quite a lot and would bring his wife along too. I guess time changes people.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Thankyou for your cooperation.</Text>
@@ -208,6 +222,7 @@
     <DialogueNode>
       <NodeID>14</NodeID>
       <Text>He may be quiet and not talk much, but I think he's a really great guy! He's not really close with any of us in the department at work, but he's always around to lend a helping hand.</Text>
+      <isClue>false</isClue>
       <Options>
         <DialogueOption>
           <Text>Thankyou for your time</Text>
@@ -216,4 +231,6 @@
       </Options>
     </DialogueNode>
   </Nodes>
+  <npcName>Juarez</npcName>
+  <clue>Gabriel started supporting a charity for orphanages 6 years ago.</clue>
 </Dialogue>

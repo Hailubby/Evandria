@@ -8,6 +8,7 @@ namespace DialogueTree
     {
         public int NodeID = -1;
         public string Text;
+        public bool isClue = false;
         public List<DialogueOption> Options;
 
         //default constructor for XML serialisation

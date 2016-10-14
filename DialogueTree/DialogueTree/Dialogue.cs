@@ -7,6 +7,8 @@ namespace DialogueTree
     public class Dialogue
     {
         public List<DialogueNode> Nodes;
+        public string npcName;
+        public string clue;
 
         public Dialogue() {
             Nodes = new List<DialogueNode>();

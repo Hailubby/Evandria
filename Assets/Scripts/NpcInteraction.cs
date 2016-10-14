@@ -19,10 +19,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     private int selected_option = -2;
 
     public Journal journal;
-    private bool interacted = false;
-    private string clue_name = "NPC";
+    private bool foundClue = false;
+    private string clue_name;
     public string clue_owner;
-    private string clue_description = "Has talked to";
+    private string clue_description;
 
     //NPC dialogue
     public TextAsset dialogueFile;
@@ -34,12 +34,6 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     {
         Debug.Log("This NPC has been interacted with!");
         RunDialogue();
-        if (!interacted)
-        {
-            Clue clue = new Clue(clue_name, clue_owner, clue_description);
-            journal.AddClue(clue);
-            interacted = true;
-        }
     }
 
     // Use this for initialization
@@ -65,6 +59,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         option_3 = GameObject.Find("Button_Option3");
         player_name = GameObject.Find("Player_Name");
         npc_name = GameObject.Find("NPC_Name");
+
+        npc_name.GetComponentInChildren<Text>().text = dialogue.npcName;
+        clue_name = npc_name.GetComponentInChildren<Text>().text;
+        clue_description = dialogue.clue;
 
         player_name.SetActive(false);
         option_1.SetActive(false);
@@ -125,6 +123,17 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             }
 
             node_id = selected_option;
+            if (node_id != -1) {
+                if (dialogue.Nodes[node_id].isClue && !foundClue)
+                {
+                    Clue clue = new Clue(clue_name, clue_owner, clue_description);
+                    journal.AddClue(clue);
+                    foundClue = true;
+                }
+            }
+            
+            Debug.Log("Node id is: " + node_id);
+
 
             option_1.SetActive(false);
             option_2.SetActive(false);
@@ -139,8 +148,6 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
     private void display_node(DialogueNode node)
     {
-        //Debug.Log("TEXT IN NODE IS: " + node.Text);
-        //node_text.GetComponentInChildren<Text>().text = node.Text;
         player_name.SetActive(true);
         npc_name.SetActive(false);
         node_text.SetActive(false);
