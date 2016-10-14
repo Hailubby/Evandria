@@ -114,29 +114,39 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         while (node_id != -1) {
             node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
+            yield return StartCoroutine(WaitForKeyDown());
             if (dialogue.Nodes[node_id].isClue && !foundClue)
             {
                 Clue clue = new Clue(clue_name, clue_owner, clue_description);
                 journal.AddClue(clue);
                 foundClue = true;
+                npc_name.SetActive(false);
+                node_text.GetComponentInChildren<Text>().text = "'Clue from " + clue_name + " added to journal.'";
+                yield return StartCoroutine(WaitForKeyDown());
+                player_name.SetActive(true);
+                node_text.GetComponentInChildren<Text>().text = "Thanks for your help " + clue_name;
+                yield return StartCoroutine(WaitForKeyDown());
+                node_id = -1;
             }
+            else {
+                //displaying node options
+                display_node(dialogue.Nodes[node_id]);
+                selected_option = -2;
+                while (selected_option == -2)
+                {
+                    yield return new WaitForSeconds(0.25f);
+                }
 
-            yield return StartCoroutine(WaitForKeyDown());
+                node_id = selected_option;
 
-            display_node(dialogue.Nodes[node_id]);
-            selected_option = -2;
-            while (selected_option == -2) {
-                yield return new WaitForSeconds(0.25f);
+                option_1.SetActive(false);
+                option_2.SetActive(false);
+                option_3.SetActive(false);
+                player_name.SetActive(false);
+                node_text.SetActive(true);
+                npc_name.SetActive(true);
             }
-
-            node_id = selected_option;
-
-            option_1.SetActive(false);
-            option_2.SetActive(false);
-            option_3.SetActive(false);
-            player_name.SetActive(false);
-            node_text.SetActive(true);
-            npc_name.SetActive(true);
+            
         }
         //player.canMove = true;
         dialogue_window.SetActive(false);
