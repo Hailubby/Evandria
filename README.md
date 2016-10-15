@@ -7,9 +7,14 @@
 - Decisions are critical as who Alex sends to Evandria will shape the community over there.  
 - Goal is to keep the “life” of Evandria above a certain threshold (based on Alex’s decision making)  
 
-## Unity 2D Tutorials
-- https://youtu.be/U2DU7sH1GxI?list=PL_4rJ_acBNMH3SExL3yIOzaqj5IP5CJLC
-- https://youtu.be/jTtCsOjNwJQ?list=PLX2vGYjWbI0RZ3M5zSs-cegtIzv-FBi4q
+## Running the prototype
+1. Download the PROTOTYPE.zip file from the prototype branch.  
+2. Extract the contents from the zip file.  
+3. Navigate to PROTOTYPE7.exe  
+4. Double click the file to open/execute.  
+5. Set the resolution to 1024x768, windowed mode and graphics quality to fantastic.  
+6. Click play.  
+7. Press space bar or left click to continue the dialogue when interacting.  
 
 ## Project Resource
 https://docs.google.com/document/d/1xM8KF6fJ4ud0Kv3r9ifR61MD_s-FxHwLjWXoI1ete08/edit?usp=sharing

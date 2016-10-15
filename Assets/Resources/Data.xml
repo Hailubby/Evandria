@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CandidateCollection>
+  <Candidates>
+    <Candidate id="0">
+      <Name>Gabriel Johan</Name>
+      <Gender>Male</Gender>
+      <DOB>06/11/1990</DOB>
+      <Ethnicity>Norwegian</Ethnicity>
+      <Traits>
+        <Trait>Antisocial</Trait>
+        <Trait>Anxious</Trait>
+        <Trait>Intelligent</Trait>
+      </Traits>      <Occupation>Neurologist</Occupation>
+      <Skills>PhD in Chemistry and Biology</Skills>
+      <Description>- Was really nervous.
+- Specialises in Neurological diseases.
+- No close friends</Description>
+      <background>
+        Lost wife and daughter in a tragic house break-in about six years ago.
+        He finds it hard to get close to people due to this trauma. He now supports a child orphanage charity to help support children who has no family as he has lost his
+        Spends his personal time looking at family photos and reliving his old happy memories.
+        A man trapped in his past but with no ill-intent.
+      </background>
+    </Candidate>
+    <Candidate id="1">
+      <Name>Jessica Chang</Name>
+      <Gender>Female</Gender>
+      <DOB>13/6/2020</DOB>
+      <Ethnicity>Chinese</Ethnicity>
+      <Traits>
+        <Trait>Determined</Trait>
+        <Trait>Opinionated</Trait>
+        <Trait>Fickle</Trait>
+      </Traits>
+      <Occupation>Accountant</Occupation>
+      <Skills>Chartered Accountant</Skills>
+      <Description>- Raised in a strict environment in China.
+- Workaholic and Unmarried.
+- Lives in a fairly small home</Description>
+      <background>
+        She has a tendency to resort to violence on animals to relieve her stress.
+        She sometimes loses control and abuses her family members when they do see each other as she can be quite fierce with them.
+        She also obtains drugs illegally to help deal with her out breaks (ADDERAll)
+        Her life is wasted away as all her money goes towards drugs which barely keep her stable.
+      </background>
+    </Candidate>
+  </Candidates>
+</CandidateCollection>

@@ -1,34 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Collections.Generic;
 
-public class Candidate : MonoBehaviour {
+public class Candidate
+{
+    [XmlAttribute("id")]
+    public string id;
 
-	// unique identifier
-	private int id;
+    [XmlElement("Name")]
+    public string fullname;
 
-    private string fullname;
-    private string gender;
-    private string birthdate;
-    private string ethnicity;
-    private string[] traits;
-    private string occupation;
-    private string[] skills;
-    private string description;
+    [XmlElement("Gender")]
+    public string gender;
 
-    // list of clues
-    private Clue[] clues;
+    [XmlElement("DOB")]
+    public string birthdate;
 
-    // Use this for initialization
-    void Start () {
-         getData();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-	}
+    [XmlElement("Ethnicity")]
+    public string ethnicity;
 
-	// somehow get data from xml/txt files
-	void getData() {
-		
-	}
+    [XmlArray("Traits")]
+    [XmlArrayItem("Trait")]
+    public List<string> traits = new List<string>();
+
+    [XmlElement("Occupation")]
+    public string occupation;
+
+    [XmlElement("Skills")]
+    public string skills;
+
+    [XmlElement("Description")]
+    public string description;
 }

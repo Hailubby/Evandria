@@ -5,8 +5,6 @@ using System.Collections.Generic;
 // Journal which the player will hold throughout the game to store clues found relevant to his investigation.
 public class Journal : MonoBehaviour
 {
-
-    public MovementScript player;
     public List<Clue> journal;
 
     // Use this for initialization
@@ -26,5 +24,6 @@ public class Journal : MonoBehaviour
     {
         journal.Add(clue);
         Debug.Log("Added item to journal: " + clue.clueName);
+        GameObject.FindObjectOfType<JournalPanelScript>().UpdateJournal(journal);
     }
 }

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Hello, do you know of Jessica Chang?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Hello, do you know of Gabriel Johan?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yes I do, why do you ask?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>I'm Alex from the ISC. Do you have time to answer a few questions regarding Jessica?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What is your relationship with Jessica?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does Jessica have any pets?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>No I don't sorry</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>That's alright, see you</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Of course Alex. Feel free to ask me anything.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What is your relationship with Jessica?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does Jessica live alone?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does Jessica have any pets?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>We worked at the same company a few years back. I didn't know her too well then as she wasn't there for long. We live in the same neighbourhood now so i see her more often.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What was your first impression of her?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Why wasn't she at the company for long?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>Hmmm. I thought she was a bit intimidating at first as it didn't seem like she was open to interacting with her peers and preferred to work all the time</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Why wasn't she at the company for long?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What is Jessica doing now?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>I don't know the details sorry. I think it may have been due to not being able to handle the stress at work. I don't think she got along with her team that well either as she's quite an opinionated person.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What is Jessica doing now?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does Jessica have any hobbies or pets?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>She seems to be doing quite well for herself now. Back then she was doing some entry level accounting work but now I've heard she's climbed her way up and become a chartered accountant.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thank you for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>Yes she lives alone.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What about her relatives?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What are her hobbies?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>She doesn't like to talk about them, I think she might not have a very good relationship with them.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Why doesn't she like talking about them?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Have you met any of her relatives?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>I'm not too sure. Whenever the topic is brought up she tends to get nervous. There may be parts of her private life she's trying to hide.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Interesting...</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thankyou for you time. See you.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Text>Not personally, but I have seen them visit. Her mother is often covered in bruises though. That may be why she doesn't like talking about her family.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Interesting...</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thank you for your time.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <Text>She's had quite a few dogs actually, though i don't know what happened to them all.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What do you mean by that?</Text>
+          <DestinationNodeID>13</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What are her hobbies?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <Text>I've never seen her with the same one for more than a few months. I wonder if she keeps giving them away as she's too busy to look after them? But she always ends up getting a new one sometime later anyway.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Interesting...</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Does she have any hobbies?</Text>
+          <DestinationNodeID>14</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <Text>I don't think she has any as she's quite a workaholic. She's often quite stressed. I've told her to go see a counsellor but she doesn't seem too keen on it.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thankyou for your cooperation, it was very helpful</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Thank you for your time</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Sally</npcName>
+  <clue>Jessica seems to cycle through her pets very quickly, suspicious.</clue>
+</Dialogue>

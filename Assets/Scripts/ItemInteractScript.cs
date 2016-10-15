@@ -10,11 +10,8 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
 {
     public Clue clue;
     public Journal journal;
-
-    public GameObject textBox;
+    public ItemCanvasScript canvas;
     public MovementScript player;
-
-    public Text theText;
 
     public TextAsset textFile;
     public string[] textLines;
@@ -51,6 +48,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
             if (!itemOwner.Equals("Dummy"))
             {
                 journal.AddClue(clue);
+                
             }
             
         }
@@ -61,12 +59,12 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     {
         player = FindObjectOfType<MovementScript>();
         journal = FindObjectOfType<Journal>();
-        
+        canvas = FindObjectOfType<ItemCanvasScript>();
         
         // Splits text file containing description of item
         if (textFile != null)
         {
-            textLines = Regex.Split(textFile.text, "\r\n");
+            textLines = Regex.Split(textFile.text, ";");
 
             // Assigns the item name identification, and the owner from the text file, and description
             itemName = textLines[0];
@@ -86,7 +84,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         // Default popup of text is inactive until interaction with item
         if (!isActive)
         {
-            textBox.SetActive(false);
+            canvas.DisablePanel();
         }
 
 
@@ -102,7 +100,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         }
 
         // Reads the first line of the text file
-        theText.text = textLines[currentLine];
+        canvas.ReadText(textLines, currentLine);
 
         // Goes to next line of desciption upon keyboard or mouse input
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
@@ -113,6 +111,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         // Once the entire text has been read through, can now close the dialog popup
         if (currentLine > endLine)
         {
+            // Makes text box invisible
             DisableTextBox();
             isActive = false;
         }
@@ -121,7 +120,8 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     //Enable the popup to become visible
     public void EnableTextBox()
     {
-        textBox.SetActive(true);
+        // Makes text box visible
+        canvas.EnablePanel();
 
         // Prevents the player from moving when pop up is visible and prevents ability to cast E
         if (stopPlayerMovement)
@@ -135,16 +135,11 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     // Disables the popup visibility
     public void DisableTextBox()
     {
-        textBox.SetActive(false);
+        //textBox.SetActive(false);
+        canvas.DisablePanel();
 
         // Re-enables the player to move again and ability to cast E
         player.EnableMovement();
         player.GetComponent<InteractionScript>().interacting = false;
-    }
-
-    // Gets the current item's name
-    public string GetItemName()
-    {
-        return itemName;
     }
 }
