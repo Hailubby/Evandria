@@ -12,6 +12,9 @@ public class CandidateAController : MonoBehaviour{
     public string skills;
     public string description;
     public List<string> traits;
+    public string moral;
+    public string goodArray;
+    public string badArray;
 
     private string traitString;
 

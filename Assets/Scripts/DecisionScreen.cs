@@ -34,9 +34,7 @@ public class DecisionScreen : MonoBehaviour {
         secondRejectColor.a = 1;
         secondReject.color = secondRejectColor;
 
-        Text firstName = GameObject.Find("First Name").GetComponent<Text>();
-        string firstCandidateName = firstName.text;
-        FindObjectOfType<EvandriaUpdate>().DecisionMade(firstCandidateName);
+        FindObjectOfType<EvandriaUpdate>().DecisionMade("first");
 
     }
 
@@ -51,9 +49,7 @@ public class DecisionScreen : MonoBehaviour {
         Color firstRejectColor = firstReject.color;
         firstRejectColor.a = 1;
         firstReject.color = firstRejectColor;
-
-        Text secondName = GameObject.Find("Second Name").GetComponent<Text>();
-        string secondCandidateName = secondName.text;
-        FindObjectOfType<EvandriaUpdate>().DecisionMade(secondCandidateName);
+        
+        FindObjectOfType<EvandriaUpdate>().DecisionMade("second");
     }
 }

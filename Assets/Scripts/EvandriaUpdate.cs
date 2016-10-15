@@ -6,6 +6,9 @@ public class EvandriaUpdate : MonoBehaviour {
     HealthBarScript sliderScript;
     public string chosenCandidate;
     public bool goodOutcome;
+    float badProbability;
+    CandidateAController firstCandidate;
+    CandidateBController secondCandidate;
 
     public GameObject decisionCanvas;
     public GameObject outcomeCanvas;
@@ -16,50 +19,43 @@ public class EvandriaUpdate : MonoBehaviour {
     }
 
 	
-    public void DecisionMade (string candidateName)
+    public void DecisionMade (string candidate)
     {
-        chosenCandidate = candidateName;
-
-        //Temporarily Hardcoded attributes
-        int[] gabrielGoodArray = { 3, 6, 3, 5, 5 };
-        int[] gabrielBadArray = { 1, 3, 1, 2, 2 };
-        int[] jessicaGoodArray = { -2,-3,-2,5,-3 };
-        int[] jessicaBadArray = {-5,-5,-5,2,-5 };
+        chosenCandidate = candidate;
 
         int[] goodArray; //Replace with retrieving array from candidate
         int[] badArray;
 
         int changeInMorale = 0;
 
-        float badProbability = 0;
+        badProbability = 0;
 
-        if (candidateName.Equals("Gabriel Johan"))
+        if (candidate.Equals("first"))
         {
-            badProbability = 0.2f;
-            goodArray = gabrielGoodArray;
-            badArray = gabrielBadArray;
+            firstCandidate = FindObjectOfType<CandidateAController>();
+            Probability(firstCandidate.moral);
+            goodArray = stringToArray(firstCandidate.goodArray);
+            badArray = stringToArray(firstCandidate.badArray);
         } else
         {
-            goodArray = jessicaGoodArray;
-            badArray = jessicaBadArray;
-            badProbability = 0.8f;
+            secondCandidate = FindObjectOfType<CandidateBController>();
+            Probability(secondCandidate.moral);
+            goodArray = stringToArray(secondCandidate.goodArray);
+            badArray = stringToArray(secondCandidate.badArray);
         }
 
         //Retrieve decision stats for candidate
         //5 stats good/bad values placed in array in order
-        
+
         int bestCase =0;
 
         foreach (int x in goodArray)
         {
             bestCase += x;
         }
-                
+
 
         //Retrieve probability for candidate (e.g: 80/20)
-        
-
-        
         int i;
         for (i=0; i<5; i++)
         {
@@ -92,8 +88,8 @@ public class EvandriaUpdate : MonoBehaviour {
                 goodOutcome = true;
             }
         }
-            
 
+        Debug.Log("Change in Morale: " + changeInMorale);
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
 
@@ -101,5 +97,33 @@ public class EvandriaUpdate : MonoBehaviour {
         outcomeCanvas.SetActive(true);
         FindObjectOfType<OutcomeScript>().PresentOutcome();
         
+    }
+
+    public void Probability(string moralProbability)
+    {
+        if (moralProbability.Equals("Good"))
+        {
+            badProbability = 0.2f;
+        }
+        else if (moralProbability.Equals("Bad"))
+        {
+            badProbability = 0.8f;
+        }
+        else
+        {
+            badProbability = 0.5f;
+        }
+    }
+
+    public int[] stringToArray(string array)
+    {
+        int[] intArray = { 0, 0, 0, 0, 0 };
+        string[] splitArray = array.Split(',');
+        for (int i = 0; i < splitArray.Length; i++)
+        {
+            intArray[i] = int.Parse(splitArray[i]);
+        }
+
+        return intArray;
     }
 }
