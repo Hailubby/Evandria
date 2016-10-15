@@ -20,12 +20,16 @@ public class AchievementScript : MonoBehaviour {
     public GameObject achievementText;
     public GameObject achievementMenu;
     public GameObject achievementImage;
-    bool achieve1 = false;
-    bool achieve2 = false;
-    bool achieve3 = false;
-    bool achieve4 = false;
-    bool achieve5 = false;
-    bool achieve6 = false;
+
+    public GameObject[] achievements;
+
+    //Achievement booleans
+    public bool achieve1 = false;
+    public bool achieve2 = false;
+    public bool achieve3 = false;
+    public bool achieve4 = false;
+    public bool achieve5 = false;
+    public bool achieve6 = false;
 
     //Achievement Icons
     public Sprite icon1;
@@ -41,8 +45,15 @@ public class AchievementScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        //Find the popup canvas
         achievementPopup = GameObject.Find("AchievePopup");
+        //Find the achievements
+        achievements = GameObject.FindGameObjectsWithTag("Achievement");
+
         achievementPopup.SetActive(false);
+        achievementMenu.SetActive(false);
+
+        
 	}
 	
 	// Update is called once per frame
@@ -155,6 +166,116 @@ public class AchievementScript : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             triggerAchievement(Achievement.OutOfTime);
+        }
+        else if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            
+            showAchieveMenu();
+        }
+    }
+
+
+    void showAchieveMenu()
+    {
+        achievementMenu.SetActive(!achievementMenu.activeSelf);
+
+        if (achievementMenu.activeSelf == true)
+        {
+            
+            //Populate the achievement menu
+            //If achievement is earned
+            if (achieve1)
+            {
+                GameObject achievement = achievements[5];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Find your first clue";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon1;
+            } 
+            if (achieve2)
+            {
+                GameObject achievement = achievements[4];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Find all clues relating to a single candidate";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon2;
+            } 
+            if (achieve3)
+            {
+                GameObject achievement = achievements[3];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Find all clues for the current level";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon3;
+            }
+            if (achieve4)
+            {
+                GameObject achievement = achievements[2];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Make your first decision";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon4;
+            }
+            if (achieve5)
+            {
+                GameObject achievement = achievements[1];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Make three consecutive decisions";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon5;
+            }
+            if (achieve6)
+            {
+                GameObject achievement = achievements[0];
+                var text = achievement.GetComponentsInChildren<Text>();
+                foreach (var textobj in text)
+                {
+                    if (textobj.text.Equals("To be discovered"))
+                    {
+                        textobj.text = "Run out of time in your day";
+                    }
+                }
+
+                var img = achievement.GetComponentsInChildren<Image>()[1];
+                img.sprite = icon6;
+            }
+
+
         }
     }
 }
