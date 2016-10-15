@@ -674,7 +674,7 @@ MonoBehaviour:
   timerText: {fileID: 2065009701}
   hours: {fileID: 802234369}
   minutes: {fileID: 752325500}
-  level: 2
+  level: 1
 --- !u!114 &968736051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 2065009701}
+  timer: 0
 --- !u!1 &999316712
 GameObject:
   m_ObjectHideFlags: 0

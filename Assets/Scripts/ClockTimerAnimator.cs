@@ -48,8 +48,9 @@ public class ClockTimerAnimator : MonoBehaviour {
         //update timer
         Timer();
         //update clock hands
-        Clock();
-
+        if (timer > 0) {
+            Clock();
+        }
     }
 
     public void Timer() {
