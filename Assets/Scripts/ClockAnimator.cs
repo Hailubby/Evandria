@@ -6,11 +6,11 @@ public class ClockAnimator : MonoBehaviour {
 
     public Transform hours;
     public Transform minutes;
-    //public Transform seconds;
 
     private const float hoursToDegrees = (360f / 12f)*(2f/3f);
     private const float minsToDegrees = (360f / 60f)*(2f/3f);
-    // const float secsToDegrees = 360f / 60f;
+
+    private TimeSpan myTimeSpan = new TimeSpan(0, 0, 18, 0, 0);
 
     // Use this for initialization
     void Start () {
@@ -19,10 +19,10 @@ public class ClockAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        TimeSpan timespan = DateTime.Now.TimeOfDay;
+        //TimeSpan timespan = DateTime.Now.TimeOfDay;
+        myTimeSpan += TimeSpan.FromSeconds(Time.deltaTime);
         DateTime time = DateTime.Now;
-        hours.localRotation = Quaternion.Euler(0f, 0f, (float)timespan.TotalMinutes * -hoursToDegrees);
-        minutes.localRotation = Quaternion.Euler(0f, 0f, (float)timespan.TotalSeconds * -minsToDegrees);
-        //seconds.localRotation = Quaternion.Euler(0f, 0f, time.Second * -secsToDegrees);
+        hours.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalMinutes * -hoursToDegrees);
+        minutes.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalSeconds * -minsToDegrees);
     }
 }
