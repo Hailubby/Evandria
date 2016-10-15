@@ -13,13 +13,10 @@ public class TypewriterEffect : MonoBehaviour {
     private int count = 0;
     private bool contToNextScreen = false;
 
-    //public GameObject canvas;
-    //private Animator fadeToBlack;
+    private bool isFinished = false;
 
     // Use this for initialization
     void Start() {
-       // fadeToBlack = canvas.GetComponent<Animator>();
-       // fadeToBlack.enabled = false;
         init(fullText);
 	}
 
@@ -27,7 +24,6 @@ public class TypewriterEffect : MonoBehaviour {
        public void init(string text)
     {
         currentText = "";
-        Debug.Log("Init is called!");
         text = text.Replace("NEWLINE", "\n");
         // Pass in FULL TEXT
         StartCoroutine(ShowText(text));
@@ -46,30 +42,36 @@ public class TypewriterEffect : MonoBehaviour {
             }
             else if (currentText.Substring(System.Math.Max(0, currentText.Length - 1)).Equals(","))
             {
-                yield return new WaitForSeconds(delay + 0.2f);
+                yield return new WaitForSeconds(delay + 0.1f);
             }
             else if (currentText.Substring(System.Math.Max(0, currentText.Length - 1)).Equals("."))
             {
-                yield return new WaitForSeconds(delay + 0.4f);
+                yield return new WaitForSeconds(delay + 0.2f);
             }
             else
             {
                 yield return new WaitForSeconds(delay);
             }
         }
+        isFinished = true;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("y"))
+        if (Input.GetKeyDown("y") && isFinished)
         {
-            //this.GetComponent<Text>().enabled = false;
             contToNextScreen = true;
+            isFinished = false;
             count = count + 1;
         }
-        if (Input.GetKeyDown("n"))
+        if (Input.GetKeyDown("n") && isFinished)
         {
             // Return to main menu
+            SceneManager.LoadScene(0);
+            isFinished = false;
+        }
+        if (Input.GetKey(KeyCode.Escape))
+        {
             SceneManager.LoadScene(0);
         }
        if (contToNextScreen & count != 2)
@@ -79,9 +81,7 @@ public class TypewriterEffect : MonoBehaviour {
         }
        if (contToNextScreen & count == 2)
         {
-            // Trigger animation here 
             contToNextScreen = false;
-            Debug.Log("THE GAME WILL NOW BEGIN");
             SceneManager.LoadScene(2);
         }
     }
