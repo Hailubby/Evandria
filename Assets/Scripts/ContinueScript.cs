@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ContinueScript : MonoBehaviour {
 
@@ -7,12 +8,16 @@ public class ContinueScript : MonoBehaviour {
     public int impact;
     public GameObject outcomeCanvas;
     public GameObject continueCanvas;
+    public GameObject newHighscorePanel;
     public ContinueGameOverCanvasScript continueCanvasScript;
     public EvandriaUpdate update;
 
     private string posMessage;
     private string negMessage;
     private string message;
+    public InputField userInput;
+    public int score;
+    public string user;
 
 	// This button script will activate if there are more levels to be played, and the player has not reached game over
     public void ContinueToNextLevel()
@@ -67,6 +72,7 @@ public class ContinueScript : MonoBehaviour {
         update = FindObjectOfType<EvandriaUpdate>();
         impact = update.changeInMorale;
         day = update.day;
+        //day = 3;
         
         // Close Outcome Canvas
         outcomeCanvas.SetActive(false);
@@ -88,14 +94,57 @@ public class ContinueScript : MonoBehaviour {
         }
     }
 
+    // Continues to next level
     public void ContinueButton()
     {
         //TODO continue to next level
     }
 
+    // Submits score to scoreboard before finishing the entire game
+    public void ContinueSubmitButton()
+    {
+        score = 600;
+        user = userInput.text;
+
+        // Checks if user exists in current database of scores
+        if (PlayerPrefs.HasKey(user))
+        {
+            // Checks if it beat the current score of specified user
+            if (PlayerPrefs.GetInt(user) < score)
+            {
+                // Updates specified user's score
+                PlayerPrefs.SetInt(user, score);
+                newHighscorePanel.SetActive(true);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(user, 100);
+        }
+    }
+
     public void CongratulationsButton()
     {
+        score = 200;
         // TODO enter deets for highscore stuffs
+        user = userInput.text;
+
+        // Checks if user exists in current database of scores
+        if (PlayerPrefs.HasKey(user))
+        {
+            // Checks if it beat the current score of specified user
+            if (PlayerPrefs.GetInt(user) < score)
+            {
+                // Updates specified user's score
+                PlayerPrefs.SetInt(user, score);
+                newHighscorePanel.SetActive(true);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(user, 100);
+        }
+        
     }
 
     public void GameOverButton()
