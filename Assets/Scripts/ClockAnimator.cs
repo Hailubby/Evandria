@@ -24,9 +24,10 @@ public class ClockAnimator : MonoBehaviour {
         if (analog)
         {
             TimeSpan timespan = DateTime.Now.TimeOfDay;
+            DateTime time = DateTime.Now;
             hours.localRotation = Quaternion.Euler(0f, 0f, (float)timespan.TotalHours * -hoursToDegrees);
             minutes.localRotation = Quaternion.Euler(0f, 0f, (float)timespan.TotalMinutes * -minsToDegrees);
-            seconds.localRotation = Quaternion.Euler(0f, 0f, (float)timespan.TotalSeconds * -secsToDegrees);
+            seconds.localRotation = Quaternion.Euler(0f, 0f, time.Second * -secsToDegrees);
         }
         else
         {
