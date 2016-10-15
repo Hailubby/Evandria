@@ -235,6 +235,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 968736049}
+  - 114: {fileID: 968736050}
   m_Layer: 0
   m_Name: Clock
   m_TagString: Untagged
@@ -258,6 +259,21 @@ Transform:
   - {fileID: 1725512885}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &968736050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 968736048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580dff16677cb3142b93a7e07ed51d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hours: {fileID: 802234369}
+  minutes: {fileID: 752325500}
+  seconds: {fileID: 1725512885}
+  analog: 0
 --- !u!1 &977461102
 GameObject:
   m_ObjectHideFlags: 0
