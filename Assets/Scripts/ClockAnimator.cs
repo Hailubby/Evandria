@@ -6,15 +6,35 @@ public class ClockAnimator : MonoBehaviour {
 
     public Transform hours;
     public Transform minutes;
+    public int level;
 
-    private const float hoursToDegrees = (360f / 12f)*(2f/3f);
-    private const float minsToDegrees = (360f / 60f)*(2f/3f);
+    private float hoursToDegrees;
+    private float minsToDegrees;
 
-    private TimeSpan myTimeSpan = new TimeSpan(0, 0, 18, 0, 0);
+    private TimeSpan myTimeSpan;
 
     // Use this for initialization
     void Start () {
-	
+        if (level == 1)
+        {
+            myTimeSpan = new TimeSpan(0, 0, 18, 0, 0);
+
+            hoursToDegrees = (360f / 12f) * (2f / 3f);
+            minsToDegrees = (360f / 60f) * (2f / 3f);
+        }
+        else if (level == 2)
+        {
+            myTimeSpan = new TimeSpan(0, 0, 15, 0, 0);
+
+            hoursToDegrees = (360f / 12f) * (4f / 5f);
+            minsToDegrees = (360f / 60f) * (4f / 5f);
+        }
+        else if (level == 3) {
+            myTimeSpan = new TimeSpan(0, 0, 12, 0, 0);
+
+            hoursToDegrees = (360f / 12f);
+            minsToDegrees = (360f / 60f);
+        }
 	}
 	
 	// Update is called once per frame

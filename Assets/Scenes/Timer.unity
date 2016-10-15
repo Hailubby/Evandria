@@ -644,6 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hours: {fileID: 802234369}
   minutes: {fileID: 752325500}
+  level: 1
 --- !u!1 &999316712
 GameObject:
   m_ObjectHideFlags: 0
