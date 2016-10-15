@@ -7,6 +7,8 @@ namespace DialogueTree
     public class Dialogue
     {
         public List<DialogueNode> Nodes;
+        public string npcName;
+        public string clue;
 
         public Dialogue() {
             Nodes = new List<DialogueNode>();
@@ -48,9 +50,8 @@ namespace DialogueTree
             node.Options.Add(option);
         }
 
-        public static Dialogue LoadDialogue(string path) {
+        public static Dialogue LoadDialogue(StringReader reader) {
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
-            StreamReader reader = new StreamReader(path);
 
             Dialogue dialogue = (Dialogue)serz.Deserialize(reader);
 

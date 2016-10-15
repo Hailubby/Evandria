@@ -19,34 +19,28 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     private int selected_option = -2;
 
     public Journal journal;
-    private bool interacted = false;
-    private string clue_name = "NPC";
+    private bool foundClue = false;
+    private string clue_name;
     public string clue_owner;
-    private string clue_description = "Has talked to";
+    private string clue_description;
 
     //NPC dialogue
-    public string DialogueDataFilePath;
+    public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
     public GameObject DialogueWindowPrefab;
 
-    //public MovementScript player;
 
     public void interact()
     {
         Debug.Log("This NPC has been interacted with!");
         RunDialogue();
-        if (!interacted)
-        {
-            Clue clue = new Clue(clue_name, clue_owner, clue_description);
-            journal.AddClue(clue);
-            interacted = true;
-        }
     }
 
     // Use this for initialization
     void Start ()
     {
-        dialogue = Dialogue.LoadDialogue("Assets/DialogueTrees/" + DialogueDataFilePath);
+
+        dialogue = Dialogue.LoadDialogue(new System.IO.StringReader(dialogueFile.text));
         journal = FindObjectOfType<Journal>();
 
         var canvas = GameObject.Find("Canvas");
@@ -65,6 +59,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         option_3 = GameObject.Find("Button_Option3");
         player_name = GameObject.Find("Player_Name");
         npc_name = GameObject.Find("NPC_Name");
+
+        npc_name.GetComponentInChildren<Text>().text = dialogue.npcName;
+        clue_name = npc_name.GetComponentInChildren<Text>().text;
+        clue_description = dialogue.clue;
 
         player_name.SetActive(false);
         option_1.SetActive(false);
@@ -117,21 +115,38 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
             yield return StartCoroutine(WaitForKeyDown());
-
-            display_node(dialogue.Nodes[node_id]);
-            selected_option = -2;
-            while (selected_option == -2) {
-                yield return new WaitForSeconds(0.25f);
+            if (dialogue.Nodes[node_id].isClue && !foundClue)
+            {
+                Clue clue = new Clue(clue_name, clue_owner, clue_description);
+                journal.AddClue(clue);
+                foundClue = true;
+                npc_name.SetActive(false);
+                node_text.GetComponentInChildren<Text>().text = "'Clue from " + clue_name + " added to journal.'";
+                yield return StartCoroutine(WaitForKeyDown());
+                player_name.SetActive(true);
+                node_text.GetComponentInChildren<Text>().text = "Thanks for your help " + clue_name;
+                yield return StartCoroutine(WaitForKeyDown());
+                node_id = -1;
             }
+            else {
+                //displaying node options
+                display_node(dialogue.Nodes[node_id]);
+                selected_option = -2;
+                while (selected_option == -2)
+                {
+                    yield return new WaitForSeconds(0.25f);
+                }
 
-            node_id = selected_option;
+                node_id = selected_option;
 
-            option_1.SetActive(false);
-            option_2.SetActive(false);
-            option_3.SetActive(false);
-            player_name.SetActive(false);
-            node_text.SetActive(true);
-            npc_name.SetActive(true);
+                option_1.SetActive(false);
+                option_2.SetActive(false);
+                option_3.SetActive(false);
+                player_name.SetActive(false);
+                node_text.SetActive(true);
+                npc_name.SetActive(true);
+            }
+            
         }
         //player.canMove = true;
         dialogue_window.SetActive(false);
@@ -139,8 +154,6 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
     private void display_node(DialogueNode node)
     {
-        //Debug.Log("TEXT IN NODE IS: " + node.Text);
-        //node_text.GetComponentInChildren<Text>().text = node.Text;
         player_name.SetActive(true);
         npc_name.SetActive(false);
         node_text.SetActive(false);

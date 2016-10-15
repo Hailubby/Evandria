@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 0}
   clue_owner: Jessica
-  DialogueDataFilePath: jessica_npc_dialogue.xml
+  dialogueFile: {fileID: 4900000, guid: 61f63eb1b92151d4d8821f16e203e3c9, type: 3}
   DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
     type: 2}
 --- !u!212 &212000013510502028
