@@ -6,6 +6,8 @@ public class EvandriaUpdate : MonoBehaviour {
     HealthBarScript sliderScript;
     public string chosenCandidate;
     public bool goodOutcome;
+    public int changeInMorale;
+    public int day;
 
     public GameObject decisionCanvas;
     public GameObject outcomeCanvas;
@@ -13,6 +15,7 @@ public class EvandriaUpdate : MonoBehaviour {
     void Start()
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
+        day = 1;
     }
 
 	
@@ -29,7 +32,7 @@ public class EvandriaUpdate : MonoBehaviour {
         int[] goodArray; //Replace with retrieving array from candidate
         int[] badArray;
 
-        int changeInMorale = 0;
+        changeInMorale = 0;
 
         float badProbability = 0;
 
@@ -96,6 +99,8 @@ public class EvandriaUpdate : MonoBehaviour {
 
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
+
+        // TODO if Evadndria health go below 0, Then set day=-1 else day++
 
         decisionCanvas.SetActive(false);
         outcomeCanvas.SetActive(true);
