@@ -1751,6 +1751,31 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2133459423}
+    - target: {fileID: 224000011179190162, guid: 83ca652e8b626a24c8ca116127c550a0,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011179190162, guid: 83ca652e8b626a24c8ca116127c550a0,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011179190162, guid: 83ca652e8b626a24c8ca116127c550a0,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011179190162, guid: 83ca652e8b626a24c8ca116127c550a0,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011179190162, guid: 83ca652e8b626a24c8ca116127c550a0,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83ca652e8b626a24c8ca116127c550a0, type: 2}
   m_IsPrefabParent: 0

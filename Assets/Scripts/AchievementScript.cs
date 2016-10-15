@@ -48,33 +48,8 @@ public class AchievementScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            showPopup("Niiiiiiceeeeee",icon5);
-        } else if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            triggerAchievement(Achievement.ClueSingle);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            triggerAchievement(Achievement.ClueCharacter);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            triggerAchievement(Achievement.ClueLevel);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            triggerAchievement(Achievement.DecisionSingle);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            triggerAchievement(Achievement.DecisionAll);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            triggerAchievement(Achievement.OutOfTime);
-        }
+        //Only called if Num 1-6 are to be used to test the achievement unlock popups
+        testAchievements();
 
         //If popup is being displayed, after specified popupTime close the popup
         if (executionTime != 0f)
@@ -148,5 +123,38 @@ public class AchievementScript : MonoBehaviour {
         achievementText.GetComponent<Text>().text = achievementName;
         achievementImage.GetComponent<Image>().sprite = sprite; 
         achievementPopup.SetActive(true);
+    }
+
+    //Method only used for testing
+    void testAchievements()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            showPopup("Niiiiiiceeeeee", icon5);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            triggerAchievement(Achievement.ClueSingle);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            triggerAchievement(Achievement.ClueCharacter);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            triggerAchievement(Achievement.ClueLevel);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            triggerAchievement(Achievement.DecisionSingle);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            triggerAchievement(Achievement.DecisionAll);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            triggerAchievement(Achievement.OutOfTime);
+        }
     }
 }
