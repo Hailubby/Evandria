@@ -49,8 +49,6 @@ public class AchievementScript : MonoBehaviour {
         //Find the popup canvas
         achievementPopup = GameObject.Find("AchievePopup");
         popupGroup = achievementPopup.GetComponent<CanvasGroup>();
-        //Find the achievements
-        achievements = GameObject.FindGameObjectsWithTag("Achievement");
 
 
         achievementPopup.SetActive(false);
