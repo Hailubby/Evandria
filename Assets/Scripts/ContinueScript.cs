@@ -71,7 +71,7 @@ public class ContinueScript : MonoBehaviour {
         // Finds out important values based on the decision made
         update = FindObjectOfType<EvandriaUpdate>();
         impact = update.changeInMorale;
-        day = update.day;
+        day = EvandriaUpdate.level;
         //day = 3;
         
         // Close Outcome Canvas

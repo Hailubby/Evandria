@@ -34,22 +34,29 @@ public class OutcomeScript : MonoBehaviour {
     {
         chosenCandidate = FindObjectOfType<EvandriaUpdate>().chosenCandidate;
         outcome = FindObjectOfType<EvandriaUpdate>().goodOutcome;
-        Debug.Log(chosenCandidate);
-        if (chosenCandidate.Equals("Gabriel Johan"))
+        string[] chosenFullName = FindObjectOfType<EvandriaUpdate>().chosenCandidateName.Split(' ');
+        string chosenName = chosenFullName[0];
+        string[] rejectFullName = FindObjectOfType<EvandriaUpdate>().rejectCandidateName.Split(' ');
+        string rejectName = rejectFullName[0];
+        if (chosenCandidate.Equals("first"))
         {
             if (outcome)
             {
+                acceptGood1 = Resources.Load("Outcomes/" + chosenName + "_Good") as TextAsset;
                 acceptedText = acceptGood1.text;
                 acceptText.text = acceptedText;
 
+                reject2 = Resources.Load("Outcomes/" + rejectName + "_Earth") as TextAsset;
                 rejectedText = reject2.text;
                 rejectText.text = rejectedText;
             }
             else
             {
+                acceptBad1 = Resources.Load("Outcomes/" + chosenName + "_Bad") as TextAsset;
                 acceptedText = acceptBad1.text;
                 acceptText.text = acceptedText;
 
+                reject2 = Resources.Load("Outcomes/" + rejectName + "_Earth") as TextAsset;
                 rejectedText = reject2.text;
                 rejectText.text = rejectedText;
             }
@@ -58,17 +65,21 @@ public class OutcomeScript : MonoBehaviour {
         {
             if (outcome)
             {
+                acceptGood2 = Resources.Load("Outcomes/" + chosenName + "_Good") as TextAsset;
                 acceptedText = acceptGood2.text;
                 acceptText.text = acceptedText;
 
+                reject1 = Resources.Load("Outcomes/" + rejectName + "_Earth") as TextAsset;
                 rejectedText = reject1.text;
                 rejectText.text = rejectedText;
             }
             else
             {
+                acceptBad2 = Resources.Load("Outcomes/" + chosenName + "_Bad") as TextAsset;
                 acceptedText = acceptBad2.text;
                 acceptText.text = acceptedText;
 
+                reject1 = Resources.Load("Outcomes/" + rejectName + "_Earth") as TextAsset;
                 rejectedText = reject1.text;
                 rejectText.text = rejectedText;
             }
