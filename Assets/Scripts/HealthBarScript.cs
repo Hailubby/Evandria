@@ -47,6 +47,12 @@ public class HealthBarScript : MonoBehaviour
     public void UpdateHealth(int value)
     {
         health = (int) healthBar.value + value;
+
+        // hmmm...
+        // checking making sure values are ok
+        health = health > 100 ? 100 : health;
+        health = health < 0 ? 0 : health;
+
         delta = 0;
     }
 
