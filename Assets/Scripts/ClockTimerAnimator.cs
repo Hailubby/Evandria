@@ -45,16 +45,17 @@ public class ClockTimerAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        float changeInTime = Time.deltaTime;
         //update timer
-        Timer();
+        Timer(changeInTime);
         //update clock hands
         if (timer > 0) {
-            Clock();
+            Clock(changeInTime);
         }
     }
 
-    public void Timer() {
-        timer -= Time.deltaTime;
+    public void Timer(float changeInTime) {
+        timer -= changeInTime;
 
         if (timer <= 0)
         {
@@ -68,10 +69,23 @@ public class ClockTimerAnimator : MonoBehaviour {
         timerText.text = minutes + ":" + seconds;
     }
 
-    public void Clock() {
-        myTimeSpan += TimeSpan.FromSeconds(Time.deltaTime);
-        DateTime time = DateTime.Now;
+    public void Clock(float changeInTime) {
+        myTimeSpan += TimeSpan.FromSeconds(changeInTime);
+        //DateTime time = DateTime.Now;
         hours.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalMinutes * -hoursToDegrees);
-        minutes.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalSeconds * -minsToDegrees);
+        //minutes.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalSeconds * -minsToDegrees);
+        if (level == 1)
+        {
+            minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 90) * minsToDegrees);
+        }
+        else if (level == 2)
+        {
+            minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 75) * minsToDegrees);
+        }
+        else if (level == 3)
+        {
+            minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 60) * minsToDegrees);
+        }
+        
     }
 }

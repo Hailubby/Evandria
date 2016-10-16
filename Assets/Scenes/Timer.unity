@@ -637,7 +637,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 968736049}
   - 114: {fileID: 968736050}
-  - 114: {fileID: 968736051}
   m_Layer: 5
   m_Name: Level Time
   m_TagString: Untagged
@@ -675,19 +674,6 @@ MonoBehaviour:
   hours: {fileID: 802234369}
   minutes: {fileID: 752325500}
   level: 1
---- !u!114 &968736051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 968736048}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 953c86f9a7e2e7a48b07f3ba38b895a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 2065009701}
-  timer: 0
 --- !u!1 &999316712
 GameObject:
   m_ObjectHideFlags: 0
