@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: 0
   impact: 0
-  outcomeCanvas: {fileID: 0}
+  outcomeCanvas: {fileID: 1000011649898138}
   continueCanvas: {fileID: 0}
   newHighscorePanel: {fileID: 0}
   continueCanvasScript: {fileID: 0}

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ContinueScript : MonoBehaviour {
 
@@ -99,7 +100,7 @@ public class ContinueScript : MonoBehaviour {
     {
         //TODO continue to next level
         
-        Application.LoadLevel("Exit-FinishScreens");
+        SceneManager.LoadScene("Exit-FinishScreens");
     }
 
     // Submits score to scoreboard before finishing the entire game
@@ -118,10 +119,15 @@ public class ContinueScript : MonoBehaviour {
                 PlayerPrefs.SetInt(user, score);
                 newHighscorePanel.SetActive(true);
             }
+            else
+            {
+                Reset();
+            }
         }
         else
         {
             PlayerPrefs.SetInt(user, 100);
+            Reset();
         }
     }
 
@@ -141,10 +147,15 @@ public class ContinueScript : MonoBehaviour {
                 PlayerPrefs.SetInt(user, score);
                 newHighscorePanel.SetActive(true);
             }
+            else
+            {
+                Reset();
+            }
         }
         else
         {
             PlayerPrefs.SetInt(user, 100);
+            Reset();
         }
         
     }
@@ -152,7 +163,7 @@ public class ContinueScript : MonoBehaviour {
     public void GameOverButton()
     {
         // TODO take back to main menu/restart game?
-        Application.LoadLevel("MainMenu");
+        Reset();
     }
     
     
@@ -165,4 +176,13 @@ public class ContinueScript : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    // Reset evetryhing back to start
+    public void Reset()
+    {
+        EvandriaUpdate.level = 0;
+        int[] temp = { 0, 1, 2 };
+        CandidateLoader.availableCandidates = temp; 
+        SceneManager.LoadScene("MainMenu");
+    }
 }
