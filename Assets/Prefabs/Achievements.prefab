@@ -837,7 +837,7 @@ MonoBehaviour:
   icon4: {fileID: 21300000, guid: e01cba41758c356478a66653a89cf6bf, type: 3}
   icon5: {fileID: 21300000, guid: fe7ca61264ac908499a86200ffd81e29, type: 3}
   icon6: {fileID: 21300000, guid: a674a9404b4f9164b90b7d7b671a2741, type: 3}
-  popupTime: 3
+  popupTime: 4
 --- !u!114 &114000010714591592
 MonoBehaviour:
   m_ObjectHideFlags: 1
