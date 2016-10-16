@@ -98,6 +98,8 @@ public class ContinueScript : MonoBehaviour {
     public void ContinueButton()
     {
         //TODO continue to next level
+        
+        Application.LoadLevel("Exit-FinishScreens");
     }
 
     // Submits score to scoreboard before finishing the entire game
@@ -150,6 +152,7 @@ public class ContinueScript : MonoBehaviour {
     public void GameOverButton()
     {
         // TODO take back to main menu/restart game?
+        Application.LoadLevel("MainMenu");
     }
     
     

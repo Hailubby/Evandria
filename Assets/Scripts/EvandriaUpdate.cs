@@ -7,7 +7,7 @@ public class EvandriaUpdate : MonoBehaviour {
     public string chosenCandidate;
     public bool goodOutcome;
     public int changeInMorale;
-    public int day;
+    public int day = 0;
 
     public GameObject decisionCanvas;
     public GameObject outcomeCanvas;
@@ -15,7 +15,7 @@ public class EvandriaUpdate : MonoBehaviour {
     void Start()
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
-        day = 1;
+        day++;
     }
 
 	

@@ -371,10 +371,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   day: 0
   impact: 0
-  outcomeCanvas: {fileID: 1000011649898138}
+  outcomeCanvas: {fileID: 0}
   continueCanvas: {fileID: 0}
+  newHighscorePanel: {fileID: 0}
   continueCanvasScript: {fileID: 0}
   update: {fileID: 0}
+  userInput: {fileID: 0}
+  score: 0
+  user: 
 --- !u!114 &114000012381225566
 MonoBehaviour:
   m_ObjectHideFlags: 1
