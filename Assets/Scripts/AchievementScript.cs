@@ -20,6 +20,7 @@ public class AchievementScript : MonoBehaviour {
     public GameObject achievementText;
     public GameObject achievementMenu;
     public GameObject achievementImage;
+    public CanvasGroup popupGroup;
 
     public GameObject[] achievements;
 
@@ -47,8 +48,10 @@ public class AchievementScript : MonoBehaviour {
 	void Start () {
         //Find the popup canvas
         achievementPopup = GameObject.Find("AchievePopup");
+        popupGroup = achievementPopup.GetComponent<CanvasGroup>();
         //Find the achievements
         achievements = GameObject.FindGameObjectsWithTag("Achievement");
+
 
         achievementPopup.SetActive(false);
         achievementMenu.SetActive(false);
@@ -134,6 +137,18 @@ public class AchievementScript : MonoBehaviour {
         achievementText.GetComponent<Text>().text = achievementName;
         achievementImage.GetComponent<Image>().sprite = sprite; 
         achievementPopup.SetActive(true);
+        popupGroup.alpha = 0;
+
+        StartCoroutine(fadePopupCoroutine());
+    }
+
+   private IEnumerator fadePopupCoroutine()
+    {
+        while (popupGroup.alpha < 1)
+        {
+            popupGroup.alpha += Time.deltaTime * 1f;
+            yield return null;
+        }
     }
 
     //Method only used for testing
