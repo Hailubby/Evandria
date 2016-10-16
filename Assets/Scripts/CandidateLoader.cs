@@ -8,7 +8,7 @@ public class CandidateLoader : MonoBehaviour {
     private int randCandidateA;
     private string randAMoral;
     private int randCandidateB;
-    private int[] availableCandidates = { 0, 1, 2 };
+    private static int[] availableCandidates = { 0, 1, 2 };
     private Transform candidateA;
     private Transform candidateB;
     private CandidateAController candidateAController;
@@ -16,13 +16,21 @@ public class CandidateLoader : MonoBehaviour {
     private CandidateContainer ic;
 
     void Start () {
+        
         ic = CandidateContainer.Load(path);
 
-        randCandidateA = UnityEngine.Random.Range(0, 3);
-        availableCandidates[randCandidateA] = -1;
-        randAMoral = ic.candidates[randCandidateA].moral;
         while (true) {
-            randCandidateB = findValidCandidate();
+            randCandidateA = findValidCandidate("A");
+            if (randCandidateA != -1)
+            {
+                availableCandidates[randCandidateA] = -1;
+                randAMoral = ic.candidates[randCandidateA].moral;
+                break;
+            }
+        }
+        while (true)
+        {
+            randCandidateB = findValidCandidate("B");
             if (randCandidateB != -1)
             {
                 break;
@@ -74,24 +82,35 @@ public class CandidateLoader : MonoBehaviour {
         }
 	}
 
-    public int findValidCandidate()
+    public int findValidCandidate(string candIndex)
     {
         int randNumber = UnityEngine.Random.Range(0, 3);
-        if (availableCandidates[randNumber] != -1)
-        {
-            string randMoral = ic.candidates[randNumber].moral;
-            if (randMoral.Equals(randAMoral) && !(randAMoral.Equals("Neutral")))
-            {
-                return -1;
-            }
-            else
-            {
+        if (candIndex.Equals("A")){
+            if (availableCandidates[randNumber] != -1) {
                 return randNumber;
+            }
+            else {
+                return -1;
             }
         }
         else
         {
-            return -1;
-        }
+            if (availableCandidates[randNumber] != -1)
+            {
+                string randMoral = ic.candidates[randNumber].moral;
+                if (randMoral.Equals(randAMoral) && !(randAMoral.Equals("Neutral")))
+                {
+                    return -1;
+                }
+                else
+                {
+                    return randNumber;
+                }
+            }
+            else
+            {
+                return -1;
+            }
+        } 
     }
 }

@@ -4,7 +4,10 @@ using System.Collections;
 public class EvandriaUpdate : MonoBehaviour {
 
     HealthBarScript sliderScript;
+    public static int level = 0;
     public string chosenCandidate;
+    public string chosenCandidateName;
+    public string rejectCandidateName;
     public bool goodOutcome;
     float badProbability;
     CandidateAController firstCandidate;
@@ -16,12 +19,15 @@ public class EvandriaUpdate : MonoBehaviour {
     void Start()
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
+        level++;
     }
 
 	
-    public void DecisionMade (string candidate)
+    public void DecisionMade (string candidate, string chosenName, string rejectName)
     {
         chosenCandidate = candidate;
+        chosenCandidateName = chosenName;
+        rejectCandidateName = rejectName;
 
         int[] goodArray; //Replace with retrieving array from candidate
         int[] badArray;
@@ -88,8 +94,7 @@ public class EvandriaUpdate : MonoBehaviour {
                 goodOutcome = true;
             }
         }
-
-        Debug.Log("Change in Morale: " + changeInMorale);
+        
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
 
