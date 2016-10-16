@@ -22,12 +22,14 @@ public class HealthBarScript : MonoBehaviour
     // Initial value for health
     [SerializeField]
     private int initialHealth;
-    private int health = 75;
+    private int health;
 
     // Use this for initialization
     void Start()
-    {                           
-
+    {
+        health = initialHealth;
+        healthBar.value = initialHealth;
+        fillObject.color = Color.Lerp(fillColorMin, fillColorMax, initialHealth / 100.0f);
     }
 
     // Update is called once per frame
@@ -60,7 +62,8 @@ public class HealthBarScript : MonoBehaviour
         //Debug.Log(delta);
         if (health != healthBar.value)
         {
-            healthBar.value = Mathf.Lerp(healthBar.value, health, delta);
+            healthBar.value = Mathf.Lerp(healthBar.value, health, delta);      
+            fillObject.color = Color.Lerp(fillColorMin, fillColorMax, healthBar.value / 100.0f);
             delta += 0.005f * animSpeed;
         }
 
