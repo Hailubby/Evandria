@@ -4,8 +4,8 @@ using System.Collections;
 /*
  * Allows an NPC to walk around randomly
  */
-[RequireComponent(typeof(CharacterController))]
-public class Wander : MonoBehaviour
+//[RequireComponent(typeof(CharacterController))]
+public class NPCWalking : MonoBehaviour
 {
     public float speed = 5;
     public float directionChangeInterval = 1;
