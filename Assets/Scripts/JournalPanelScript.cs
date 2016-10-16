@@ -46,13 +46,13 @@ public class JournalPanelScript : MonoBehaviour
         if (!isPaused)
         {
             HideJournal();
-            Debug.Log("Hiding, isPaused = " + isPaused);
+            //Debug.Log("Hiding, isPaused = " + isPaused);
         }
         // If not currently paused
         else
         {
             ShowJournal();
-            Debug.Log("Showing, isPaused = " + isPaused);
+            //Debug.Log("Showing, isPaused = " + isPaused);
         }
     }
 
@@ -80,7 +80,7 @@ public class JournalPanelScript : MonoBehaviour
     // Method for (re)populating the journal with player's interactions
     public void UpdateJournal(List<Clue> journal)
     {
-        Debug.Log("Updating Journal");
+        //Debug.Log("Updating Journal");
         EmptyJournal();
 
         foreach (Clue clue in journal)
@@ -96,7 +96,7 @@ public class JournalPanelScript : MonoBehaviour
     // Method for emptying the journal upon new day (maybe)
     private void EmptyJournal()
     {
-        Debug.Log("Emptying journal panel");
+        //Debug.Log("Emptying journal panel");
         foreach (Transform child in journalPanel.transform)
         {
             GameObject.Destroy(child.gameObject);
