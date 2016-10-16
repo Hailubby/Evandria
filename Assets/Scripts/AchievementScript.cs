@@ -69,13 +69,13 @@ public class AchievementScript : MonoBehaviour {
             if (Time.time > executionTime + popupTime)
             {
                 executionTime = 0f;
-                achievementPopup.SetActive(false);
+                StartCoroutine(fadeOutPopupCoroutine());
             }
         }
 	}
 
     //Used to trigger the popup for an achievement if it hasn't been earned yet
-    void triggerAchievement(Achievement achievement)
+    public void triggerAchievement(Achievement achievement)
     {
         switch (achievement)
         {
@@ -142,9 +142,19 @@ public class AchievementScript : MonoBehaviour {
 
    private IEnumerator fadePopupCoroutine()
     {
+        
         while (popupGroup.alpha < 1)
         {
             popupGroup.alpha += Time.deltaTime * 1f;
+            yield return null;
+        }
+    }
+
+    private IEnumerator fadeOutPopupCoroutine()
+    {
+        while (popupGroup.alpha > 0)
+        {
+            popupGroup.alpha -= Time.deltaTime * 1f;
             yield return null;
         }
     }
