@@ -4,20 +4,29 @@ using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour
 {
-
-    public Slider healthBar;
+    [SerializeField]
+    private Slider healthBar;
+    [SerializeField]
+    private Image fillObject;
+    [SerializeField]
+    private Color fillColorMax;
+    [SerializeField]
+    private Color fillColorMin;
 
     // Custom value for animSpeed
-    public float animSpeed;
+    [SerializeField]
+    private float animSpeed;
     // Used for Mathf.Lerp t value
     private float delta = 0;
 
     // Initial value for health
+    [SerializeField]
+    private int initialHealth;
     private int health = 75;
 
     // Use this for initialization
     void Start()
-    {
+    {                           
 
     }
 
