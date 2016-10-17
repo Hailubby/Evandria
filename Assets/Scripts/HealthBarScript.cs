@@ -8,6 +8,9 @@ public class HealthBarScript : MonoBehaviour
     private Slider healthBar;
     [SerializeField]
     private Image fillObject;
+
+    // For Color.Lerp
+    // http://answers.unity3d.com/questions/861100/unity-46-how-to-change-slider-color-via-script.html
     [SerializeField]
     private Color fillColorMax;
     [SerializeField]
