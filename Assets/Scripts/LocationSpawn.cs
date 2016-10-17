@@ -10,22 +10,23 @@ public class LocationSpawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		objects = new GameObject[3];
-		locations = new Vector3[3];
-		isPlaced = new bool[3];
+		objects = new GameObject[2];
+		locations = new Vector3[2];
+		isPlaced = new bool[2];
 
 		for (int i = 0; i < isPlaced.Length; i++) {
-			
+			isPlaced [i] = false;
 		}
 
 		System.Random rnd = new System.Random();
 
-		while (counter != 3) {
+		while (counter <= 3) {
 			int place = rnd.Next(3);
 
 			if (!isPlaced [place]) {
 				// spawn the item
 				// put objects[place] in locations[place]
+				isPlaced[place] = true;
 				counter++;
 			}
 		}
