@@ -5,7 +5,7 @@ public class LocationSpawn : MonoBehaviour {
 
 	GameObject[] objects;
 	Vector3[] locations;
-	bool[] isPlaced = false;
+	bool[] isPlaced;
 	int counter = 0;
 
 	// Use this for initialization
@@ -14,10 +14,14 @@ public class LocationSpawn : MonoBehaviour {
 		locations = new Vector3[3];
 		isPlaced = new bool[3];
 
-		Random rnd = new Random ();
+		for (int i = 0; i < isPlaced.Length; i++) {
+			
+		}
+
+		System.Random rnd = new System.Random();
 
 		while (counter != 3) {
-			int place = rnd.Next (3);
+			int place = rnd.Next(3);
 
 			if (!isPlaced [place]) {
 				// spawn the item
