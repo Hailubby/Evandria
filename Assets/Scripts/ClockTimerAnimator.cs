@@ -8,7 +8,6 @@ public class ClockTimerAnimator : MonoBehaviour {
     public Text timerText;
     public Transform hours;
     public Transform minutes;
-    public int level;
 
     private float hoursToDegrees;
     private float minsToDegrees;
@@ -18,7 +17,7 @@ public class ClockTimerAnimator : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if (level == 1)
+        if (EvandriaUpdate.level == 1)
         {
             timer = 720f;
             myTimeSpan = new TimeSpan(0, 0, 18, 0, 0);
@@ -26,7 +25,7 @@ public class ClockTimerAnimator : MonoBehaviour {
             hoursToDegrees = (360f / 12f) * (2f / 3f);
             minsToDegrees = (360f / 60f) * (2f / 3f);
         }
-        else if (level == 2)
+        else if (EvandriaUpdate.level == 2)
         {
             timer = 600f;
             myTimeSpan = new TimeSpan(0, 0, 15, 0, 0);
@@ -34,7 +33,7 @@ public class ClockTimerAnimator : MonoBehaviour {
             hoursToDegrees = (360f / 12f) * (4f / 5f);
             minsToDegrees = (360f / 60f) * (4f / 5f);
         }
-        else if (level == 3) {
+        else if (EvandriaUpdate.level == 3) {
             timer = 480f;
             myTimeSpan = new TimeSpan(0, 0, 12, 0, 0);
 
@@ -74,15 +73,15 @@ public class ClockTimerAnimator : MonoBehaviour {
         //DateTime time = DateTime.Now;
         hours.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalMinutes * -hoursToDegrees);
         //minutes.localRotation = Quaternion.Euler(0f, 0f, (float)myTimeSpan.TotalSeconds * -minsToDegrees);
-        if (level == 1)
+        if (EvandriaUpdate.level == 1)
         {
             minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 90) * minsToDegrees);
         }
-        else if (level == 2)
+        else if (EvandriaUpdate.level == 2)
         {
             minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 75) * minsToDegrees);
         }
-        else if (level == 3)
+        else if (EvandriaUpdate.level == 3)
         {
             minutes.localRotation = Quaternion.Euler(0f, 0f, (timer % 60) * minsToDegrees);
         }

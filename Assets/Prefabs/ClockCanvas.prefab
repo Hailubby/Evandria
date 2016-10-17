@@ -772,7 +772,6 @@ MonoBehaviour:
   timerText: {fileID: 114000014277063828}
   hours: {fileID: 4000014215397762}
   minutes: {fileID: 4000012048389820}
-  level: 1
 --- !u!114 &114000013982953926
 MonoBehaviour:
   m_ObjectHideFlags: 1
