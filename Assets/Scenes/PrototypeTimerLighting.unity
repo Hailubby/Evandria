@@ -637,6 +637,9 @@ MonoBehaviour:
   skills: 
   description: 
   traits: []
+  moral: 
+  goodArray: 
+  badArray: 
 --- !u!1001 &270711945
 Prefab:
   m_ObjectHideFlags: 0
@@ -801,32 +804,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 280270519}
---- !u!1 &303456177 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013608347590, guid: 816cb5aaf75cab64f91a25eeebd250b9,
-    type: 2}
-  m_PrefabInternal: {fileID: 364419192}
---- !u!114 &303456178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 303456177}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a0511e17c281c14c83ac6a6d998e1b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transitionSpeed: 0.01
-  _transitionSpeedDelay: 0.05
-  _dayLength: 40
-  _timeList: 08000000100000001800000020000000
-  _colorList:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 1, b: 1, a: 1}
-  - {r: 1, g: 0, b: 1, a: 1}
-  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - {r: 0, g: 0, b: 1, a: 1}
 --- !u!1 &359016073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,6 +2109,9 @@ MonoBehaviour:
   skills: 
   description: 
   traits: []
+  moral: 
+  goodArray: 
+  badArray: 
 --- !u!1001 &853732872
 Prefab:
   m_ObjectHideFlags: 0
