@@ -11,7 +11,7 @@ public class NPCWalk : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 
-		InvokeRepeating ("Walk", 2.0f, 2.0f);
+		InvokeRepeating ("Walk", 2.0f, 1.0f);
 	}
 
 	// Update is called once per frame
@@ -33,10 +33,36 @@ public class NPCWalk : MonoBehaviour {
 		}
 
 	void Walk () {
-		int x_direction = (int)Mathf.Round (Random.Range (-1, 1));
-		int y_direction = (int)Mathf.Round (Random.Range (-1, 1));
+		System.Random rnd = new System.Random ();
+		Vector2 movement_vector = new Vector2 (0, 0);
 
-		Vector2 movement_vector = new Vector2 (x_direction, y_direction);
+		int direction = rnd.Next (8);
+
+		switch (direction) {
+			case 0:
+				Debug.Log ("Npc is walking up.");
+				movement_vector = new Vector2 (0, 1);
+				break;
+
+			case 1:
+				Debug.Log ("NPC is walking down.");
+				movement_vector = new Vector2 (0, -1);
+				break;
+
+			case 2:
+				Debug.Log ("NPC is walking left.");
+				movement_vector = new Vector2 (-1, 0);
+				break;
+
+			case 3:
+				Debug.Log ("NPC is walking right.");
+				movement_vector = new Vector2 (1, 0);
+				break;
+			default:
+				Debug.Log("NPC is staying still.");
+				movement_vector = new Vector2 (0 , 0);
+				break;
+		}
 
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("isWalking", true);
