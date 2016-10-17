@@ -4,7 +4,8 @@ using System.Collections;
 public class EvandriaUpdate : MonoBehaviour {
 
     HealthBarScript sliderScript;
-    public static int level = 0;
+    public static int level = 1;
+    public int level1;
     public string chosenCandidate;
     public string chosenCandidateName;
     public string rejectCandidateName;
@@ -20,8 +21,7 @@ public class EvandriaUpdate : MonoBehaviour {
     void Start()
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
-
-        level++;
+        level1 = level;
     }
 
 	
