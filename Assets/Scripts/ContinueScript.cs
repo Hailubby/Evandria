@@ -99,8 +99,8 @@ public class ContinueScript : MonoBehaviour {
     public void ContinueButton()
     {
         //TODO continue to next level
-        
-        SceneManager.LoadScene("Exit-FinishScreens");
+        EvandriaUpdate.level++;
+        SceneManager.LoadScene(2);
     }
 
     // Submits score to scoreboard before finishing the entire game
@@ -180,9 +180,9 @@ public class ContinueScript : MonoBehaviour {
     // Reset evetryhing back to start
     public void Reset()
     {
-        EvandriaUpdate.level = 0;
+        EvandriaUpdate.level = 1;
         int[] temp = { 0, 1, 2 };
         CandidateLoader.availableCandidates = temp; 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 }
