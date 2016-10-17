@@ -16,14 +16,13 @@ public class PanelLightingColour : MonoBehaviour
     public static float transitionSpeed { get; private set; }
     public static float transitionSpeedDelay { get; private set; }
 
-    //Local Variables for the Editor Inspector window
-    // How fast to move through the Lerp
+
+    // How fast to move through the colour change
     public float _transitionSpeed = 0.01f;
     // How many seconds to wait before Lerping further                          
-    public float _transitionSpeedDelay = 0.05f;
-    // 720 seconds in level 1                   
+    public float _transitionSpeedDelay = 0.05f;                  
     public int _dayLength;
-    // When to trigger the color switches                                                   
+    // When to trigger the color changes                                                  
     public int[] _timeList;
     // What color to become
     // The first color is the default color, colour list must be 1 larger than time list.
@@ -99,9 +98,10 @@ public class PanelLightingColour : MonoBehaviour
         if (coloursLeft)
         { // We're still within the time list bounds
             if (curTime > PanelLightingColour.timeList[PanelLightingColour.curLightMode])
-            { // The current time of day is more than the switch event
-                PanelLightingColour.curLightMode++; // So shift to the next light mode
-                                             // Set boolean to start clerp coroutine, collur change
+            { // The current time of day is more than the time for colour to change
+                // Shift to the next light mode
+                PanelLightingColour.curLightMode++;
+                // Set boolean to start clerp coroutine, colour change                             
                 colourChanged = true;
                 if (PanelLightingColour.curLightMode >= PanelLightingColour.timeList.Length)
                 {
@@ -111,9 +111,9 @@ public class PanelLightingColour : MonoBehaviour
             }
         }
         if (colourChanged)
-        { // Something changed our color
-            colourChanged = false; // Don't restart the coroutine again
-                                   // Stop the current transition
+        { 
+            colourChanged = false; 
+            //stop current coroutine
             StopCoroutine("CLerp");
             // Lerp colour at corresponding time transition
             StartCoroutine("CLerp", colorList[curLightMode]);
@@ -126,7 +126,7 @@ public class PanelLightingColour : MonoBehaviour
         Color oldColor = img.color; // The current colour
         for (float t = 0; t < 1 + PanelLightingColour.transitionSpeed; t += PanelLightingColour.transitionSpeed)
         {
-            // Lerp current ambient light colour towards the new colour
+            // Lerp current panel colour to new colour
             img.color = Color.Lerp(oldColor, newColor, t);
             // Wait for the assigned number of seconds
             yield return new WaitForSeconds(AmbientLight.transitionSpeedDelay);
