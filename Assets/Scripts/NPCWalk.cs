@@ -38,26 +38,18 @@ public class NPCWalk : MonoBehaviour {
 
 		switch (direction) {
 		case 0:
-			Debug.Log ("NPC is walking up.");
 			movement_vector = new Vector2 (0, 1);
 			break;
-
 		case 1:
-			Debug.Log ("NPC is walking down.");
 			movement_vector = new Vector2 (0, -1);
 			break;
-
 		case 2:
-			Debug.Log ("NPC is walking left.");
 			movement_vector = new Vector2 (-1, 0);
 			break;
-
 		case 3:
-			Debug.Log ("NPC is walking right.");
 			movement_vector = new Vector2 (1, 0);
 			break;
 		default:
-			Debug.Log("NPC is staying still.");
 			movement_vector = new Vector2 (0 , 0);
 			break;
 		}
