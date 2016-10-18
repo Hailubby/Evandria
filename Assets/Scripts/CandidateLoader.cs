@@ -8,7 +8,7 @@ public class CandidateLoader : MonoBehaviour {
     private int randCandidateA;
     private string randAMoral;
     private int randCandidateB;
-    public static int[] availableCandidates = { 0, 1, 2, 3 };
+    public static int[] availableCandidates = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
     private Transform candidateA;
     private Transform candidateB;
     private CandidateAController candidateAController;
@@ -85,7 +85,7 @@ public class CandidateLoader : MonoBehaviour {
 
     public int findValidCandidate(string candIndex)
     {
-        int randNumber = UnityEngine.Random.Range(0, 4);
+        int randNumber = UnityEngine.Random.Range(0, 10);
         if (candIndex.Equals("A")){
             if (availableCandidates[randNumber] != -1) {
                 return randNumber;
