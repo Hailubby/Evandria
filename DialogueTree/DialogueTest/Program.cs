@@ -102,7 +102,6 @@ namespace DialogueTest
 
             //node 1 options
             dialogue.AddOption("Hello, do you know of Jessica Chang?", node1, node2);
-            dialogue.AddOption("Hello, do you know of Gabriel Johan?", node1, node3);
 
             //node 2 options
             dialogue.AddOption("I'm Alex from the ISC. Do you have time to answer a few questions regarding Jessica?", node2, node4);
@@ -159,7 +158,6 @@ namespace DialogueTest
 
             //node 15 exit option
             dialogue.AddOption("Thankyou for your cooperation, it was very helpful", node15, null);
-            dialogue.AddOption("Thank you for your time", node15, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("jessica_npc_dialogue.xml");
@@ -272,6 +270,71 @@ namespace DialogueTest
 
             //node 15 options
             dialogue.AddOption("Thankyou for your time", node15, null);
+
+            XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
+            StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
+
+            serz.Serialize(writer, dialogue);
+        }
+
+
+        public static void LandonDialogue()
+        {
+            Dialogue dialogue = new Dialogue();
+
+            dialogue.npcName = "Bart";
+            dialogue.clue = "Landon is an innovative designer, but with ambition designs come great risks. Hopefully it was a one time mistake that he learned from?";
+
+            var node1 = new DialogueNode("Hello!");
+            var node2 = new DialogueNode("Yeah I've known his for a few years now. What do you need to know?");
+            var node3 = new DialogueNode("Yes I work there with my apprentice Landon.");
+
+            var node4 = new DialogueNode("Well, he's a reliable worker but there was one repair we had trouble on.");
+            var node5 = new DialogueNode("Landon is a very pleasant and enthusiastic worker to be around. He is always looking for new ways to solve issues customers bring in that are better than the way I already do things.");
+
+            var node6 = new DialogueNode("Landon went off the books and gave the customer an advanced custom distributer he had made for their new car which he hoped to improve efficiency.");
+            var node7 = new DialogueNode("Well I wouldn't hold it against him, he had good intentions.");
+
+            var node8 = new DialogueNode("His custome design managed to completely ruin the customer's engine due to a minor miscalculation he made within his design. The customer was severely injured.");
+            node8.isClue = true;
+
+            var node9 = new DialogueNode("Definitely, he's a great individual that I'd hope to see achieve great things.");
+            var node10 = new DialogueNode("Ah, so he signed up to go to Evandria did he? Well it's be worth letting him go if he was making great strides for humanity.");
+
+            //node 1 options
+            dialogue.AddOption("I hear you are familiar with Landon Ortega.", node1, node2);
+            dialogue.AddOption("Do you own the local garage?", node1, node3);
+
+            //node 2 options
+            dialogue.AddOption("Have you ever had any issues with Landon?", node2, node4);
+            dialogue.AddOption("Do you enjoy working with Landon?", node2, node5);
+
+            //node 3 options
+            dialogue.AddOption("Have you ever had any issues with Landon?", node3, node4);
+            dialogue.AddOption("Do you enjoy working with Landon?", node3, node5);
+
+            //node 4 options
+            dialogue.AddOption("What went wrong?", node4, node6);
+            dialogue.AddOption("That's unfortunate, I had high hopes for him.", node4, node7);
+
+            //node 5 options
+            dialogue.AddOption("So you would vouch for his good nature?", node5, node9);
+            dialogue.AddOption("I guess you would be sad to see him go then?", node5, node10);
+
+            //node 6 options
+            dialogue.AddOption("I guess it's safe to assume it didn't work as intended.", node6, node8);
+
+            //node 7 exit option
+            dialogue.AddOption("Thanks for your help Bart!", node7, null);
+
+            //node 8 exit option
+            dialogue.AddOption("Thanks for your help Bart!", node8, null);
+
+            //node 9 exit option
+            dialogue.AddOption("Thanks for your help Bart!", node9, null);
+
+            //node 10 exit option
+            dialogue.AddOption("Thanks for your help Bart!", node10, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
