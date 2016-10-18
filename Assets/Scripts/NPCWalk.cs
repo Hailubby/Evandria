@@ -1,30 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Assets.Scripts;
 
 public class NPCWalk : MonoBehaviour {
 
 	Rigidbody2D rigidBody;
 	Animator anim;
+	private float speed = 2.0f;
+	int direction = 0;
+	bool isInteracting = false;
+
+	// counter to make walk() occur every certain number of frames
+	private int frames = 0;
 
 	// Use this for initialization
 	void Start () {
 		rigidBody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
-
-		//InvokeRepeating ("Walk", 2.0f, 1.0f);
 	}
 
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (!isInteracting) {
+			frames++;
+			Walk (direction);
 
-		System.Random rnd = new System.Random ();
+			if (frames % 20 == 0) {
+				System.Random rnd = new System.Random ();
+				direction = rnd.Next (10);
+				frames = 0;
+			}
+		}
+	}
+
+	void Walk (int direction) {
 		Vector2 movement_vector = new Vector2 (0, 0);
-
-		int direction = rnd.Next (8);
 
 		switch (direction) {
 		case 0:
-			Debug.Log ("Npc is walking up.");
+			Debug.Log ("NPC is walking up.");
 			movement_vector = new Vector2 (0, 1);
 			break;
 
@@ -48,6 +62,8 @@ public class NPCWalk : MonoBehaviour {
 			break;
 		}
 
+		movement_vector *= speed;
+
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("isWalking", true);
 			anim.SetFloat ("input_x", movement_vector.x);
@@ -57,9 +73,5 @@ public class NPCWalk : MonoBehaviour {
 		}
 
 		rigidBody.MovePosition (rigidBody.position + movement_vector * Time.deltaTime);
-		}
-
-//	void Walk () {
-
-//	}
+	}
 }
