@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LocationSpawn : MonoBehaviour {
+public class ObjectSpawn : MonoBehaviour {
 
 	GameObject[] objects;
 	Vector3[] locations;
