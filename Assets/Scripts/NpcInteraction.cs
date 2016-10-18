@@ -28,17 +28,22 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
     public GameObject DialogueWindowPrefab;
+    public MovementScript player;
+    public bool stopPlayerMovement;
 
 
     public void interact()
     {
         Debug.Log("This NPC has been interacted with!");
+        stopPlayerMovement = true;
         RunDialogue();
+        
     }
 
     // Use this for initialization
     void Start ()
     {
+        player = FindObjectOfType<MovementScript>();
 
         dialogue = Dialogue.LoadDialogue(new System.IO.StringReader(dialogueFile.text));
         journal = FindObjectOfType<Journal>();
@@ -90,6 +95,10 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             {
                 break;
             }
+            else if (Input.GetKeyDown(KeyCode.Return))
+            {
+                break;
+            }
             else if (Input.GetMouseButtonDown(0))
             {
                 break;
@@ -105,6 +114,11 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public IEnumerator run()
     {
         dialogue_window.SetActive(true);
+
+        if (stopPlayerMovement) {
+            player.DisableMovement();
+            player.GetComponent<InteractionScript>().interacting = true;
+        }
 
         //create an indexer, set it to 0 - the dialogues starting node
         int node_id = 0;
@@ -148,7 +162,9 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
             }
             
         }
-        //player.canMove = true;
+        //Reenable player movement
+        player.EnableMovement();
+        player.GetComponent<InteractionScript>().interacting = false;
         dialogue_window.SetActive(false);
     }
 

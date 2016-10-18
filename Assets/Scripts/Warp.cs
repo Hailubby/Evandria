@@ -20,6 +20,8 @@ public class Warp : MonoBehaviour {
         GameObject player = GameObject.Find("Player");
         locations = player.GetComponent<Locations>();
         sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+        this.other = player.GetComponent<Collider2D>();
+
     }
 
 
@@ -61,7 +63,8 @@ public class Warp : MonoBehaviour {
 
     }
 
-    IEnumerator WarpTo(Vector3 location, string locationName)
+    public IEnumerator WarpTo(Vector3 location, string locationName)
+
     {
         // Start fading to black
         yield return StartCoroutine(sf.FadeToBlack());
