@@ -14,6 +14,7 @@ public class ClockTimerAnimator : MonoBehaviour {
 
     private TimeSpan myTimeSpan;
     private float timer;
+    private bool timeUp = false;
 
     // Use this for initialization
     void Start () {
@@ -59,7 +60,12 @@ public class ClockTimerAnimator : MonoBehaviour {
         if (timer <= 0)
         {
             timer = 0;
-            //Go back to office here
+            if (!timeUp)
+            {
+                timeUp = true;
+                Warp warpScript = FindObjectOfType<Warp>();
+                warpScript.WarpTo(new Vector3(17.5f, 24.5f, 0), "Office");
+            }
         }
 
         string minutes = ((int)timer / 60).ToString();
