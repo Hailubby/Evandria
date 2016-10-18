@@ -23,29 +23,6 @@ public class OutcomeScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //acceptOption = 0;
-        
-
-        //switch (acceptOption)
-        //{
-        //    case 0:
-        //       acceptedText = acceptGood1.text;
-        //        theText.text = acceptedText;
-        //        break;
-        //    case 1:
-        //        acceptedText = acceptBad1.text;
-        //        theText.text = acceptedText;
-        //        break;
-        //   case 2:
-        //      acceptedText = reject1.text;
-        //    theText.text = acceptedText;
-        //  break;
-        //}
-
-
-
-
-
 	}
 	
 	// Update is called once per frame

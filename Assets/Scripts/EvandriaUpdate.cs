@@ -4,11 +4,13 @@ using System.Collections;
 public class EvandriaUpdate : MonoBehaviour {
 
     HealthBarScript sliderScript;
-    public static int level = 0;
+    public static int level = 1;
+    public int level1;
     public string chosenCandidate;
     public string chosenCandidateName;
     public string rejectCandidateName;
     public bool goodOutcome;
+    public int changeInMorale;
     float badProbability;
     CandidateAController firstCandidate;
     CandidateBController secondCandidate;
@@ -19,7 +21,7 @@ public class EvandriaUpdate : MonoBehaviour {
     void Start()
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
-        level++;
+        level1 = level;
     }
 
 	
@@ -32,7 +34,7 @@ public class EvandriaUpdate : MonoBehaviour {
         int[] goodArray; //Replace with retrieving array from candidate
         int[] badArray;
 
-        int changeInMorale = 0;
+        changeInMorale = 0;
 
         badProbability = 0;
 
@@ -97,6 +99,8 @@ public class EvandriaUpdate : MonoBehaviour {
         
         //Call UpdateSlider on morale slider with input changeInMorale
         sliderScript.UpdateHealth(changeInMorale);
+
+        // TODO if Evadndria health go below 0, Then set day=-1 else day++
 
         decisionCanvas.SetActive(false);
         outcomeCanvas.SetActive(true);

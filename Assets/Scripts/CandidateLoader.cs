@@ -8,7 +8,7 @@ public class CandidateLoader : MonoBehaviour {
     private int randCandidateA;
     private string randAMoral;
     private int randCandidateB;
-    private static int[] availableCandidates = { 0, 1, 2 };
+    public static int[] availableCandidates = { 0, 1, 2 };
     private Transform candidateA;
     private Transform candidateB;
     private CandidateAController candidateAController;
