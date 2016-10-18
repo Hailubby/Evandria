@@ -10,7 +10,8 @@ public class Warp : MonoBehaviour {
     public GameObject buttonPrefab;
     Collider2D other;
     Locations locations;
-    // ScreenFader sf;
+    ScreenFader sf;
+
     private bool isGenerated = false;
 
     void Start()
@@ -18,7 +19,7 @@ public class Warp : MonoBehaviour {
         WarpUI.SetActive(false);
         GameObject player = GameObject.Find("Player");
         locations = player.GetComponent<Locations>();
-        // sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
+        sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
     }
 
 
@@ -48,7 +49,7 @@ public class Warp : MonoBehaviour {
                 Vector3 capturedLocation = loco.entrance;
                 string capturedString = loco.name;
                 thisButton.onClick.AddListener(() => {
-                    WarpTo(capturedLocation, capturedString);
+                    StartCoroutine(WarpTo(capturedLocation, capturedString));
                     WarpUI.SetActive(false);
                 });
             }
@@ -60,17 +61,20 @@ public class Warp : MonoBehaviour {
 
     }
 
-    void WarpTo(Vector3 location, string locationName)
+    IEnumerator WarpTo(Vector3 location, string locationName)
     {
-        // yield return StartCoroutine(sf.FadeToBlack());
+        // Start fading to black
+        yield return StartCoroutine(sf.FadeToBlack());
 
+        // Warping begins
         Debug.Log("Going to X: " + location.x + " and Y: " + location.y);
         other.gameObject.transform.position = location;
         Camera.main.transform.position = location;
         LocationTextScript script = GameObject.FindObjectOfType<LocationTextScript>();
         script.UpdateLocationText(locationName);
 
-        // yield return StartCoroutine(sf.FadeToClear());
+        // Start fading to clear
+        yield return StartCoroutine(sf.FadeToClear());
     }
 
 }
