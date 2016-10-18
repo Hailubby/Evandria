@@ -29,6 +29,14 @@ public class ModalPanel : MonoBehaviour
     {
         modalPanelObject.SetActive(true);
 
+        Text firstCandidateName = GameObject.Find("First Name").GetComponent<Text>();
+        Text chooseFirst = GameObject.Find("Candidate1Text").GetComponent<Text>();
+        Text secondCandidateName = GameObject.Find("Second Name").GetComponent<Text>();
+        Text chooseSecond = GameObject.Find("Candidate2Text").GetComponent<Text>();
+
+        chooseFirst.text = firstCandidateName.text;
+        chooseSecond.text = secondCandidateName.text;
+
         firstButton.onClick.RemoveAllListeners();
         firstButton.onClick.AddListener(firstCandidate);
         firstButton.onClick.AddListener(ClosePanel);

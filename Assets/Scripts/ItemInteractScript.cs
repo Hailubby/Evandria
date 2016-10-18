@@ -13,6 +13,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     public ItemCanvasScript canvas;
     public MovementScript player;
 
+    public Sprite itemImage;
     public TextAsset textFile;
     public string[] textLines;
 
@@ -40,6 +41,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
 
             // Textbox pops up upon interaction
             stopPlayerMovement = true;
+            canvas.image.sprite = itemImage;
             EnableTextBox();
             isActive = true;
             interacted = true;
@@ -60,6 +62,7 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         player = FindObjectOfType<MovementScript>();
         journal = FindObjectOfType<Journal>();
         canvas = FindObjectOfType<ItemCanvasScript>();
+        //itemImageBox = GetComponent<Image>();
         
         // Splits text file containing description of item
         if (textFile != null)
