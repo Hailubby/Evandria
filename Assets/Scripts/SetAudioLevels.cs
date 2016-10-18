@@ -14,7 +14,6 @@ public class SetAudioLevels : MonoBehaviour
     {
         //       mainMixer.SetFloat("musicVol", LinearToDecibel(musicLvl));
         //musicLvl = (float)Math.Pow(musicLvl, 2.72);
-       Debug.Log(musicLvl);
         mainMixer.SetFloat("musicVol", musicLvl);
     }
 
@@ -32,7 +31,6 @@ public class SetAudioLevels : MonoBehaviour
             dB = 20.0f * Mathf.Log10(linear);
         else
             dB = -144.0f;
-
         return dB;
     }
 }

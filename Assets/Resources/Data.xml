@@ -3,6 +3,9 @@
   <Candidates>
     <Candidate id="0">
       <Name>Gabriel Johan</Name>
+      <Moral>Good</Moral>
+      <GoodArray>3,6,3,5,5</GoodArray>
+      <BadArray>1,3,1,2,2</BadArray>
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>
       <Ethnicity>Norwegian</Ethnicity>
@@ -24,6 +27,9 @@
     </Candidate>
     <Candidate id="1">
       <Name>Jessica Chang</Name>
+      <Moral>Bad</Moral>
+      <GoodArray>-2,-3,-2,5,-3</GoodArray>
+      <BadArray>-5,-5,-5,2,-5</BadArray>
       <Gender>Female</Gender>
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
@@ -42,6 +48,57 @@
         She sometimes loses control and abuses her family members when they do see each other as she can be quite fierce with them.
         She also obtains drugs illegally to help deal with her out breaks (ADDERAll)
         Her life is wasted away as all her money goes towards drugs which barely keep her stable.
+      </background>
+    </Candidate>
+    <Candidate id="2">
+      <Name>Thomas Reid</Name>
+      <Moral>Good</Moral>
+      <GoodArray>5,5,5,5,5</GoodArray>
+      <BadArray>1,1,1,1,1</BadArray>
+      <Gender>Male</Gender>
+      <DOB>29/7/2003</DOB>
+      <Ethnicity>Canadian</Ethnicity>
+      <Traits>
+        <Trait>Charismatic</Trait>
+        <Trait>Stubborn</Trait>
+        <Trait>Honest</Trait>
+      </Traits>
+      <Occupation>Composer</Occupation>
+      <Skills>Musical and Entertainment Knowledge</Skills>
+      <Description>- Became a composer officially at 18.
+- Composes music in many genres.
+- Has made a name for himself in the industry.
+      </Description>
+      <background>
+        Is a workaholic and very obsessive with his work to a fault. 
+        Is a perfectionist and will do any means possible to create the perfect piece, 
+        including aggressively bossing those who work under him as well as collaborators and makes everyone work overtime with no exceptions. 
+        (Is not sympathetic and understanding towards others?)
+      </background>
+    </Candidate>
+    <Candidate id ="3">
+      <Name>Asuno Touyama</Name>
+      <Moral>Neutral</Moral>
+      <GoodArray>2,1,2,6,5</GoodArray>
+      <BadArray>-2,-3,-4,3,-2</BadArray>
+      <Gender>Female</Gender>
+      <DOB>19/8/2024</DOB>
+      <Ethnicity>Japanese</Ethnicity>
+      <Traits>
+        <Trait>Skeptical</Trait>
+        <Trait>Crafty</Trait>
+        <Trait>Short-Tempered</Trait>
+      </Traits>
+      <Occupation>Graphics Designer</Occupation>
+      <Skills>3D Modelling</Skills>
+      <Description>- Has criminal record of theft
+ - Attended psychiatric sessions for anger issues
+ - Works diligently and efficiently
+      </Description>
+      <background>
+        Hospital Bills - Very expensive Leukemia treatment at local hospital for younger sister Yui Touyama.
+        Design Award - Award for excellence in contribution to the design of the recently completed Neo-Tokyo Tower.
+        NPC (Boyfriend - Fukuyama Kirito) - Says she grew up with an abusive stepmother, which lead to her anger management issues.
       </background>
     </Candidate>
   </Candidates>
