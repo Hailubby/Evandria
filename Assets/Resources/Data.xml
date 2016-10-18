@@ -76,5 +76,30 @@
         (Is not sympathetic and understanding towards others?)
       </background>
     </Candidate>
+    <Candidate id ="3">
+      <Name>Asuno Touyama</Name>
+      <Moral>Neutral</Moral>
+      <GoodArray>2,1,2,6,5</GoodArray>
+      <BadArray>-2,-3,-4,3,-2</BadArray>
+      <Gender>Female</Gender>
+      <DOB>19/8/2024</DOB>
+      <Ethnicity>Japanese</Ethnicity>
+      <Traits>
+        <Trait>Skeptical</Trait>
+        <Trait>Crafty</Trait>
+        <Trait>Short-Tempered</Trait>
+      </Traits>
+      <Occupation>Graphics Designer</Occupation>
+      <Skills>3D Modelling</Skills>
+      <Description>- Has criminal record of theft
+ - Attended psychiatric sessions for anger issues
+ - Works diligently and efficiently
+      </Description>
+      <background>
+        Hospital Bills - Very expensive Leukemia treatment at local hospital for younger sister Yui Touyama.
+        Design Award - Award for excellence in contribution to the design of the recently completed Neo-Tokyo Tower.
+        NPC (Boyfriend - Fukuyama Kirito) - Says she grew up with an abusive stepmother, which lead to her anger management issues.
+      </background>
+    </Candidate>
   </Candidates>
 </CandidateCollection>
