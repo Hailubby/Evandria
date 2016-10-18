@@ -25,5 +25,8 @@ public class Journal : MonoBehaviour
         journal.Add(clue);
         Debug.Log("Added item to journal: " + clue.clueName);
         GameObject.FindObjectOfType<JournalPanelScript>().UpdateJournal(journal);
+        
+        // Every clue gives the user 10 points for every clue they find/add into journal
+        EvandriaUpdate.score += 10;
     }
 }

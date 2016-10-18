@@ -17,7 +17,7 @@ public class ContinueScript : MonoBehaviour {
     private string negMessage;
     private string message;
     public InputField userInput;
-    public int score;
+    //public int score;
     public string user;
 
 	// This button script will activate if there are more levels to be played, and the player has not reached game over
@@ -57,7 +57,7 @@ public class ContinueScript : MonoBehaviour {
         continueCanvasScript.gameOverPanel.SetActive(true);
     }
     
-    // Detremines which screen to show upon mkaing a decision
+    // Detremines which screen to show upon making a decision upon button click on OutcomeCanvas
     public void DetermineContinue()
     {
         // Brings up the continue screen
@@ -73,7 +73,6 @@ public class ContinueScript : MonoBehaviour {
         update = FindObjectOfType<EvandriaUpdate>();
         impact = update.changeInMorale;
         day = EvandriaUpdate.level;
-        //day = 3;
         
         // Close Outcome Canvas
         outcomeCanvas.SetActive(false);
@@ -99,6 +98,9 @@ public class ContinueScript : MonoBehaviour {
     public void ContinueButton()
     {
         //TODO continue to next level
+        Debug.Log("Current score: " + EvandriaUpdate.score + " | level bonus: " + EvandriaUpdate.level * 10);
+        EvandriaUpdate.score += EvandriaUpdate.level * 10;
+        Debug.Log("Updated score: " + EvandriaUpdate.score);
         EvandriaUpdate.level++;
         SceneManager.LoadScene(2);
     }
@@ -106,17 +108,18 @@ public class ContinueScript : MonoBehaviour {
     // Submits score to scoreboard before finishing the entire game
     public void ContinueSubmitButton()
     {
-        score = 600;
         user = userInput.text;
+        EvandriaUpdate.score += EvandriaUpdate.level * 10;
+        Debug.Log("Score: " + EvandriaUpdate.score);
 
         // Checks if user exists in current database of scores
         if (PlayerPrefs.HasKey(user))
         {
             // Checks if it beat the current score of specified user
-            if (PlayerPrefs.GetInt(user) < score)
+            if (PlayerPrefs.GetInt(user) < EvandriaUpdate.score)
             {
                 // Updates specified user's score
-                PlayerPrefs.SetInt(user, score);
+                PlayerPrefs.SetInt(user, EvandriaUpdate.score);
                 newHighscorePanel.SetActive(true);
             }
             else
@@ -126,25 +129,25 @@ public class ContinueScript : MonoBehaviour {
         }
         else
         {
-            PlayerPrefs.SetInt(user, 100);
+            PlayerPrefs.SetInt(user, EvandriaUpdate.score);
             Reset();
         }
     }
 
     public void CongratulationsButton()
     {
-        score = 200;
         // TODO enter deets for highscore stuffs
         user = userInput.text;
+        EvandriaUpdate.score += EvandriaUpdate.level * 10;
 
         // Checks if user exists in current database of scores
         if (PlayerPrefs.HasKey(user))
         {
             // Checks if it beat the current score of specified user
-            if (PlayerPrefs.GetInt(user) < score)
+            if (PlayerPrefs.GetInt(user) < EvandriaUpdate.score)
             {
                 // Updates specified user's score
-                PlayerPrefs.SetInt(user, score);
+                PlayerPrefs.SetInt(user, EvandriaUpdate.score);
                 newHighscorePanel.SetActive(true);
             }
             else
@@ -154,7 +157,7 @@ public class ContinueScript : MonoBehaviour {
         }
         else
         {
-            PlayerPrefs.SetInt(user, 100);
+            PlayerPrefs.SetInt(user, EvandriaUpdate.score);
             Reset();
         }
         
@@ -181,7 +184,9 @@ public class ContinueScript : MonoBehaviour {
     public void Reset()
     {
         EvandriaUpdate.level = 1;
-        int[] temp = { 0, 1, 2 };
+        EvandriaUpdate.score = 0;
+        //EvandriaUpdate.netImpact = 0;
+        int[] temp = { 0, 1, 2, 3 };
         CandidateLoader.availableCandidates = temp; 
         SceneManager.LoadScene(0);
     }

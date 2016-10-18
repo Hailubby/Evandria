@@ -13,7 +13,7 @@ public class HealthBarScript : MonoBehaviour
     private float delta = 0;
 
     // Initial value for health
-    private int health = 75;
+    private int health = 50;
 
     // Use this for initialization
     void Start()
@@ -37,6 +37,12 @@ public class HealthBarScript : MonoBehaviour
     {
         health = (int) healthBar.value + value;
         delta = 0;
+
+        // If health reaches below threshold of 20, then they game over. 
+        if (health < 20)
+        {
+            EvandriaUpdate.level = -1;
+        }
     }
 
     /// <summary>
