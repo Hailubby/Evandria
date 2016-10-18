@@ -6,7 +6,7 @@ public class NPCWalk : MonoBehaviour {
 
 	Rigidbody2D rigidBody;
 	Animator anim;
-	private float speed = 2.0f;
+	public float speed = 2.0f;
 	int direction = 0;
 	bool isInteracting = false;
 
