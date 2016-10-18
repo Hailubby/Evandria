@@ -17,6 +17,7 @@ public class Warp : MonoBehaviour {
         WarpUI.SetActive(false);
         GameObject player = GameObject.Find("Player");
         locations = player.GetComponent<Locations>();
+        this.other = player.GetComponent<Collider2D>();
     }
 
 
@@ -58,7 +59,7 @@ public class Warp : MonoBehaviour {
 
     }
 
-    void WarpTo(Vector3 location, string locationName)
+    public void WarpTo(Vector3 location, string locationName)
     {
         Debug.Log("Going to X: " + location.x + " and Y: " + location.y);
         other.gameObject.transform.position = location;

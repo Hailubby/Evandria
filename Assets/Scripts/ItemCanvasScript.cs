@@ -7,7 +7,7 @@ public class ItemCanvasScript : MonoBehaviour {
 
     public GameObject textBox;
     public Text theText;
-
+    public Image image;
 
 	// Use this for initialization
 	void Start () {
