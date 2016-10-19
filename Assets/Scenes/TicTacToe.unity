@@ -1137,6 +1137,8 @@ MonoBehaviour:
   - {fileID: 246058435}
   - {fileID: 676348468}
   continueButton: {fileID: 2145801103}
+  playerMove: 0
+  delay: 0
 --- !u!4 &1731093431
 Transform:
   m_ObjectHideFlags: 0

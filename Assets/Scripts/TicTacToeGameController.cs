@@ -11,8 +11,13 @@ using UnityEngine.UI;
 public class TicTacToeGameController : MonoBehaviour {
 
     public Text[] buttonList;
-    private string playerSide;
     public Button continueButton;
+
+    private string playerSide;
+    private string computerSide;
+    public bool playerMove;
+    public float delay;
+    private int value;
 
     // Count the number of moves, if moves = 9, its a draw
     private int moveCount;
@@ -22,9 +27,30 @@ public class TicTacToeGameController : MonoBehaviour {
     {
         RestartGame();
         SetGameControllerReferenceOnButtons();
+        playerMove = true;
         playerSide = "X";
+        computerSide = "O";
         moveCount = 0;
         continueButton.gameObject.SetActive(false);
+    }
+
+    // Computer's turn to play Tic Tac Toe
+    void Update()
+    {
+        if (playerMove == false)
+        { 
+        delay += delay * Time.deltaTime;
+            if (delay >= 100)
+            {
+                value = Random.Range(0, 8);
+                if (buttonList[value].GetComponentInParent<Button>().interactable == true)
+                {
+                    buttonList[value].text = "O";
+                    buttonList[value].GetComponentInParent<Button>().interactable = false;
+                    EndTurn();
+                }
+            }
+        }
     }
 
     // Get the grid space componenets (which are parents of the buttons) and set the TicTacToeGameController reference in the GridSpace component on the parent GameObject.
@@ -54,55 +80,110 @@ public class TicTacToeGameController : MonoBehaviour {
         }
 
         // Check the second row
-        if (buttonList[3].text == playerSide && buttonList[4].text == playerSide && buttonList[5].text == playerSide)
+        else if (buttonList[3].text == playerSide && buttonList[4].text == playerSide && buttonList[5].text == playerSide)
         {
             GameOver();
         }
 
         // Check the third row
-        if (buttonList[6].text == playerSide && buttonList[7].text == playerSide && buttonList[8].text == playerSide)
+        else if (buttonList[6].text == playerSide && buttonList[7].text == playerSide && buttonList[8].text == playerSide)
         {
             GameOver();
         }
 
         // Check the first column
-        if (buttonList[0].text == playerSide && buttonList[3].text == playerSide && buttonList[6].text == playerSide)
+        else if (buttonList[0].text == playerSide && buttonList[3].text == playerSide && buttonList[6].text == playerSide)
         {
             GameOver();
         }
 
         // Check the second column
-        if (buttonList[1].text == playerSide && buttonList[4].text == playerSide && buttonList[7].text == playerSide)
+        else if (buttonList[1].text == playerSide && buttonList[4].text == playerSide && buttonList[7].text == playerSide)
         {
             GameOver();
         }
 
         // Check the third column
-        if (buttonList[2].text == playerSide && buttonList[5].text == playerSide && buttonList[8].text == playerSide)
+        else if (buttonList[2].text == playerSide && buttonList[5].text == playerSide && buttonList[8].text == playerSide)
         {
             GameOver();
         }
 
         // Check the left to right diagonal
-        if (buttonList[0].text == playerSide && buttonList[4].text == playerSide && buttonList[8].text == playerSide)
+        else if (buttonList[0].text == playerSide && buttonList[4].text == playerSide && buttonList[8].text == playerSide)
         {
             GameOver();
         }
 
         // Check the right to left diagonal
-        if (buttonList[2].text == playerSide && buttonList[4].text == playerSide && buttonList[6].text == playerSide)
+        else if (buttonList[2].text == playerSide && buttonList[4].text == playerSide && buttonList[6].text == playerSide)
+        {
+            GameOver();
+        }
+
+        else if (buttonList[0].text == computerSide && buttonList[1].text == computerSide && buttonList[2].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the second row
+        else if (buttonList[3].text == computerSide && buttonList[4].text == computerSide && buttonList[5].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the third row
+        else if (buttonList[6].text == computerSide && buttonList[7].text == computerSide && buttonList[8].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the first column
+        else if (buttonList[0].text == computerSide && buttonList[3].text == computerSide && buttonList[6].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the second column
+        else if (buttonList[1].text == computerSide && buttonList[4].text == computerSide && buttonList[7].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the third column
+        else if (buttonList[2].text == computerSide && buttonList[5].text == computerSide && buttonList[8].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the left to right diagonal
+        else if (buttonList[0].text == computerSide && buttonList[4].text == computerSide && buttonList[8].text == computerSide)
+        {
+            GameOver();
+        }
+
+        // Check the right to left diagonal
+        else if (buttonList[2].text == computerSide && buttonList[4].text == computerSide && buttonList[6].text == computerSide)
         {
             GameOver();
         }
 
         // Checking for ties/draws
-        if (moveCount >= 9)
+        else if (moveCount >= 9)
+        {
+            GameOver();
+        }
+        // Checking for ties/draws
+        else if (moveCount >= 9)
         {
             GameOver();
         }
 
+        else
+        { 
         // Change sides if necessary
         ChangeSides();
+        }
     }
 
     void GameOver()
@@ -119,7 +200,9 @@ public class TicTacToeGameController : MonoBehaviour {
     // Check what side we are on and change sides
     void ChangeSides()
     {
-        playerSide = (playerSide == "X") ? "O" : "X";
+        //playerSide = (playerSide == "X") ? "O" : "X";
+        playerMove = (playerMove == true) ? false : true;
+        delay = 10;
     }
 
     public void QuitScene()
@@ -136,6 +219,8 @@ public class TicTacToeGameController : MonoBehaviour {
         playerSide = "X";
         moveCount = 0;
         //gameOverPanel.SetActive(false);
+        playerMove = true;
+        delay = 10;
 
         SetBoardInteractable(true);
 
