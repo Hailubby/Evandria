@@ -13,6 +13,7 @@ public class ContinueScript : MonoBehaviour {
     public ContinueGameOverCanvasScript continueCanvasScript;
     public EvandriaUpdate update;
     public LeaderboardScript leaderboardScript;
+    public AchievementScript achievementScript;
 
     private string posMessage;
     private string negMessage;
@@ -24,6 +25,7 @@ public class ContinueScript : MonoBehaviour {
 	// This button script will activate if there are more levels to be played, and the player has not reached game over
     public void ContinueToNextLevel()
     {
+        
         // if negative impact, then bad message
         // if positive impact, then good message
         posMessage = "Your actions have positively influenced Evandria!";
@@ -40,16 +42,32 @@ public class ContinueScript : MonoBehaviour {
         }
 
         continueCanvasScript.continueText.text = message;
+        continueCanvasScript.currentScore.text = "Your current score is: " + EvandriaUpdate.score.ToString();
         continueCanvasScript.continuePanel.SetActive(true);
+
+        // Show achievement for passing level 1
+        if (day == 1)
+        {
+            achievementScript = FindObjectOfType<AchievementScript>();
+            achievementScript.triggerAchievement(AchievementScript.Achievement.DecisionSingle);
+        }
+       
     }
 
     // This button script will activate when the player places his final decision on the third/final level
     public void FinalLevelExitScreen()
     {
-        message = "SCORE GOES HERE";
+        message = EvandriaUpdate.score.ToString();
 
         continueCanvasScript.congratulationsText.text = message;
         continueCanvasScript.congratulationsPanel.SetActive(true);
+
+        // Show achievement for passing final level (level 3)
+        if (day == 3)
+        {
+            achievementScript = FindObjectOfType<AchievementScript>();
+            achievementScript.triggerAchievement(AchievementScript.Achievement.DecisionAll);
+        }
     }
 
     // This button script will activate when continue is clicked, if the player has killed Evandria with his selections
@@ -78,6 +96,9 @@ public class ContinueScript : MonoBehaviour {
         // Close Outcome Canvas
         outcomeCanvas.SetActive(false);
 
+        //Calculate score to display to user
+        Debug.Log("current score: " + EvandriaUpdate.score);
+        EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
 
         // If players decision reached a game over
         if (day == -1)
@@ -98,27 +119,18 @@ public class ContinueScript : MonoBehaviour {
     // Continues to next level
     public void ContinueButton()
     {
-        //TODO continue to next level
-        Debug.Log("Current score: " + EvandriaUpdate.score + " | level bonus: " + EvandriaUpdate.level * 10);
-        EvandriaUpdate.score += EvandriaUpdate.level * 10;
-        Debug.Log("Updated score: " + EvandriaUpdate.score);
         EvandriaUpdate.level++;
+        EvandriaUpdate.score -= HealthBarScript.health;
+        Debug.Log("Score before health bar added: " + EvandriaUpdate.score);
         SceneManager.LoadScene(2);
     }
 
     // Submits score to scoreboard before finishing the entire game
-    public void ContinueSubmitButton()
+    public void SubmitButton()
     {
         leaderboardScript = FindObjectOfType<LeaderboardScript>();
 
         user = userInput.text;
-
-        Debug.Log("Before score: " + EvandriaUpdate.score);
-
-        EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
-        Debug.Log("Level Score: " + EvandriaUpdate.level * 10);
-        Debug.Log("Health Score: " + HealthBarScript.health);
-        Debug.Log("After Score: " + EvandriaUpdate.score);
 
         // Checks if user exists in current database of scores
         if (PlayerPrefs.HasKey(user))
@@ -144,67 +156,19 @@ public class ContinueScript : MonoBehaviour {
         }
     }
 
-    public void CongratulationsButton()
-    {
-        leaderboardScript = FindObjectOfType<LeaderboardScript>();
-
-        user = userInput.text;
-        Debug.Log("Before score: " + EvandriaUpdate.score);
-
-        EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
-        Debug.Log("Level Score: " + EvandriaUpdate.level * 10);
-        Debug.Log("Health Score: " + HealthBarScript.health);
-        Debug.Log("After Score: " + EvandriaUpdate.score);
-
-        // Checks if user exists in current database of scores
-        if (PlayerPrefs.HasKey(user))
-        {
-            // Checks if it beat the current score of specified user
-            if (PlayerPrefs.GetInt(user) < EvandriaUpdate.score)
-            {
-                // Updates specified user's score
-                PlayerPrefs.SetInt(user, EvandriaUpdate.score);
-                newHighscorePanel.SetActive(true);
-            }
-            else
-            {
-                Reset();
-            }
-        }
-        // Adds new user to scoreboard
-        else
-        {
-            PlayerPrefs.SetInt(user, EvandriaUpdate.score);
-            leaderboardScript.UpdateUserArray(user);
-            Reset();
-        }
-        
-    }
+    
 
     public void GameOverButton()
     {
-        // TODO take back to main menu/restart game?
         Reset();
     }
-    
-    
-    // Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    // Reset evetryhing back to start
+    // Reset evetryhing back to default values
     public void Reset()
     {
         EvandriaUpdate.level = 1;
         EvandriaUpdate.score = 0;
         HealthBarScript.health = 50;
-        //EvandriaUpdate.netImpact = 0;
         int[] temp = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         CandidateLoader.availableCandidates = temp; 
         SceneManager.LoadScene(0);
