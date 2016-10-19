@@ -20,9 +20,9 @@ public class CandidateAssociations : MonoBehaviour {
 
     void Start()
     {
-        Vector3[] officeSpawn = { new Vector3(0, 0, 0), new Vector3(1, 1, 0), new Vector3(2, 2, 0) };
+        Vector3[] officeSpawn = { new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(0, 0, 0) };
         locations = new ArrayList();
-        locations.Add(new Locations.Location(new Vector3(17.5f, 24.5f, 0), "Office", officeSpawn));
+        locations.Add(new Locations.Location(new Vector3(-13, -5, 0), "Office", officeSpawn));
     }
 
 }
