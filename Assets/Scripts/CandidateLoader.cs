@@ -41,6 +41,8 @@ public class CandidateLoader : MonoBehaviour {
         GameObject player = GameObject.Find("Player");
         
         CandidateAssociations cAssociations = FindObjectOfType<CandidateAssociations>();
+        Vector3[] townSpawn = { new Vector3(-105.9f, -220.2f, 0), new Vector3(-109, -194.4f, 0), new Vector3(-102.8f, -162.2f, 0), new Vector3(-90, -194, 0), new Vector3(-77.2f, -210, 0), new Vector3(-70.6f, -191, 0), new Vector3(-61.5f, -200.5f, 0), new Vector3(-48.2f, -162, 0), new Vector3(-32, -213, 0), new Vector3(-23, -181.2f, 0), new Vector3(-19.7f, -162.4f, 0) };
+        cAssociations.locations.Add(new Locations.Location(new Vector3(-48, -220, 0), "Town Square", townSpawn));
 
         foreach (CandidateXML candidate in ic.candidates) {
             if (candidate.id.Equals(randCandidateA.ToString())) {
