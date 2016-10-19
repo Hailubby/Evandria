@@ -74,6 +74,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  itemImage: {fileID: 21300000, guid: 3b3fc626130f9fa499fe582e4cd1e208, type: 3}
   textFile: {fileID: 4900000, guid: 868455be3c888ec4c8766b0d9ba01418, type: 3}
   textLines: []
   itemName: 
