@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 114000012649576518}
   - 114: {fileID: 114000011927977894}
   - 114: {fileID: 114000010825521994}
+  - 114: {fileID: 114000013841564104}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -43,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013608347590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -0.3, z: 0}
+  m_LocalPosition: {x: -13, y: -5, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -146,10 +147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b179239500ad284a8386fadc210b0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level1: 0
   chosenCandidate: 
+  chosenCandidateName: 
+  rejectCandidateName: 
   goodOutcome: 0
   changeInMorale: 0
-  day: 0
   decisionCanvas: {fileID: 0}
   outcomeCanvas: {fileID: 0}
 --- !u!114 &114000012649576518
@@ -178,6 +181,18 @@ MonoBehaviour:
   facing: down
   speed: 10
   canMove: 0
+--- !u!114 &114000013841564104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013608347590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de43a8c48853bd488e29b9d9d3af5e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionCanvas: {fileID: 0}
 --- !u!212 &212000010904918342
 SpriteRenderer:
   m_ObjectHideFlags: 1

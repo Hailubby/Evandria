@@ -59,8 +59,15 @@ public class Warp : MonoBehaviour
                         GameObject.Destroy(newButton);
                     }
                 }
-                
+
                 else if (i == 1)
+                {
+                    newButton.name = "Town Square";
+                    newButton.GetComponentInChildren<Text>().text = "Town Square";
+                    loco = (Locations.Location) cAssociations.locations[1];
+                }
+                
+                else if (i == 2)
                 {
                     newButton.name = cAssociations.CandidateAName;
                     newButton.GetComponentInChildren<Text>().text = cAssociations.CandidateAName + "'s House";

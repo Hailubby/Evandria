@@ -984,11 +984,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010375169088, guid: 816cb5aaf75cab64f91a25eeebd250b9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 12.6
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 4000010375169088, guid: 816cb5aaf75cab64f91a25eeebd250b9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -171.2
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 4000010375169088, guid: 816cb5aaf75cab64f91a25eeebd250b9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1014,6 +1014,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010825521994, guid: 816cb5aaf75cab64f91a25eeebd250b9,
+        type: 2}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1272915586}
     - target: {fileID: 114000011927977894, guid: 816cb5aaf75cab64f91a25eeebd250b9,
         type: 2}
       propertyPath: decisionCanvas
@@ -1024,31 +1029,14 @@ Prefab:
       propertyPath: outcomeCanvas
       value: 
       objectReference: {fileID: 524117631}
-    - target: {fileID: 114000010825521994, guid: 816cb5aaf75cab64f91a25eeebd250b9,
+    - target: {fileID: 114000013841564104, guid: 816cb5aaf75cab64f91a25eeebd250b9,
         type: 2}
-      propertyPath: canvas
+      propertyPath: instructionCanvas
       value: 
-      objectReference: {fileID: 1272915586}
+      objectReference: {fileID: 1158341656}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 816cb5aaf75cab64f91a25eeebd250b9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &364419193 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013608347590, guid: 816cb5aaf75cab64f91a25eeebd250b9,
-    type: 2}
-  m_PrefabInternal: {fileID: 364419192}
---- !u!114 &364419194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 364419193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0de43a8c48853bd488e29b9d9d3af5e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instructionCanvas: {fileID: 1158341656}
 --- !u!1 &376489357
 GameObject:
   m_ObjectHideFlags: 0
