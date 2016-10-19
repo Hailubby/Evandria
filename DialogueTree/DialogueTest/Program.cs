@@ -11,6 +11,10 @@ namespace DialogueTest
         {
             JessicaDialogue();
             GabrielDialogue();
+            LandonDialogue();
+            SaraDialogue();
+            LouisDialogue();
+            ThomasDialogue();
         }
 
         public static void TestDialogue()
@@ -167,7 +171,7 @@ namespace DialogueTest
         {
             Dialogue dialogue = new Dialogue();
 
-            dialogue.npcName = "Juarez";
+            dialogue.npcName = "Claire";
             dialogue.clue = "Gabriel started supporting a charity for orphanages 6 years ago.";
 
             var node1 = new DialogueNode("Hello!");
@@ -209,7 +213,6 @@ namespace DialogueTest
             dialogue.AddNode(node15);
 
             //node 1 options
-            dialogue.AddOption("Hello, do you know of Jessica Chang?", node1, node3);
             dialogue.AddOption("Hello, do you know of Gabriel Johan?", node1, node2);
 
             //node 2 options
@@ -352,7 +355,7 @@ namespace DialogueTest
         {
             Dialogue dialogue = new Dialogue();
 
-            dialogue.npcName = "Paul";
+            dialogue.npcName = "Paula";
             dialogue.clue = "There’s an ongoing custody battle between Sara and her husband.";
 
             var node1 = new DialogueNode("Hello!");
@@ -513,6 +516,95 @@ namespace DialogueTest
 
             //node 12 options
             dialogue.AddOption("Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.", node12, null);
+
+            XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
+            StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
+
+            serz.Serialize(writer, dialogue);
+        }
+
+        public static void ThomasDialogue()
+        {
+            Dialogue dialogue = new Dialogue();
+
+            dialogue.npcName = "Gary";
+            dialogue.clue = "Seems to be a workaholic. Is an aggressive boss and rarely understand the needs of those around him.";
+
+            var node1 = new DialogueNode("Hello!");
+            var node2 = new DialogueNode("Why yes, I live with him. Is there a problem?");
+            var node3 = new DialogueNode("Sure thing!");
+
+            var node4 = new DialogueNode("I moved in with him approximately 2 years ago after he posted an ad saying that he wanted a roommate.");
+            var node5 = new DialogueNode("When he does come home early, he continues on with his work in his room. I often hear him holding online group calls and meetings with his coworkers and assistants.");
+            var node6 = new DialogueNode("There have been times during those online group meetings where they have argued about their heavy work load. His subordinates have tried applying for leave but I've only ever hear him rejecting them saying there's still work to be done.");
+            node6.isClue = true;
+
+            var node7 = new DialogueNode("As he's a musician and composer, he frequently plays the piano during the weekends. He also immensely enjoys listening to recent hit music across all genres. He says it helps him keep his musical creativity in top-notch standard.");
+            var node8 = new DialogueNode("He's never invited friends over, no. Whenever he does go to parties it is mainly to socialize with potential collaborators such as singers, producers or lyricists instead of going to have fun.");
+
+            var node9 = new DialogueNode("He is a lot more charasmatic than he sounds. I think this is a result of him having to perform in front of others as a musician. He is interesting to talk to and especially captivating when he's performing.");
+            var node10 = new DialogueNode("Oh yes! he is well known in the music industry, alot of producers and singers want to collaborate with him as he has made many hit songs. Everyone would've heard one of his hit songs one time or another.");
+
+            var node11 = new DialogueNode("No, not really. He seems to be a hard worker and enjoys his job. He works hard to maintain his fame as a composer but he doesn't let the fame go to his head. He is a rather down to earth person.");
+            var node12 = new DialogueNode("Not that I recall, he doesn't cause any trouble around the house. He is relatively clean and always does his share of the chores. Although, sometimes it is a little lonely around here as he is always focused on his work.");
+
+            dialogue.AddNode(node1);
+            dialogue.AddNode(node2);
+            dialogue.AddNode(node3);
+            dialogue.AddNode(node4);
+            dialogue.AddNode(node5);
+            dialogue.AddNode(node6);
+            dialogue.AddNode(node7);
+            dialogue.AddNode(node8);
+            dialogue.AddNode(node9);
+            dialogue.AddNode(node10);
+            dialogue.AddNode(node11);
+            dialogue.AddNode(node12);
+
+            //node 1 options
+            dialogue.AddOption("Excuse me, do you know Thomas Reid?", node1, node2);
+            dialogue.AddOption("I'm from the ISC and would like to ask some things about Thomas. It'd be great if you could help!", node1, node3);
+
+            //node 2 options
+            dialogue.AddOption("Do you know whether Thomas has any hoppies he regularly enjoys?", node2, node7);
+            dialogue.AddOption("Does he participate in any social events such as inviting friends over or parties?", node2, node8);
+            dialogue.AddOption("How long have you known Thomas for?", node2, node4);
+
+            //node 3 options
+            dialogue.AddOption("Do you know whether Thomas has any hoppies he regularly enjoys?", node3, node7);
+            dialogue.AddOption("Does he participate in any social events such as inviting friends over or parties?", node3, node8);
+            dialogue.AddOption("How long have you known Thomas for?", node3, node4);
+
+            //node 4 options
+            dialogue.AddOption("What struck you the most about Thomas when you first met him?", node4, node9);
+            dialogue.AddOption("What is he like at home?", node4, node5);
+
+            //node 5 options
+            dialogue.AddOption("Do you have an idea of what his coworkers and subordinates think of him?", node5, node6);
+            dialogue.AddOption("Do you find anything out of the ordinary about Thomas?", node5, node11);
+
+            //node 6 exit option
+            dialogue.AddOption("That's all for now. Thank you for your help.", node6, null);
+
+            //node 7 options
+            dialogue.AddOption("What struck you the most about Thomas when you first met him?", node7, node9);
+            dialogue.AddOption("Have you ever watched him perform or listen to his compositions?", node7, node10);
+
+            //node 8 options
+            dialogue.AddOption("Do you find anything out of the ordinary about Thomas?", node8, node11);
+            dialogue.AddOption("Have you ever encountered any problems while living with him?", node8, node12);
+
+            //node 9 exit options
+            dialogue.AddOption("That's all for now. Thank you for your help.", node6, null);
+
+            //node 10 options
+            dialogue.AddOption("Have you ever encountered any problems while living with him?", node10, node12);
+
+            //node 11 exit
+            dialogue.AddOption("That's all for now. Thank you for your help.", node11, null);
+
+            //node 12 exit
+            dialogue.AddOption("That's all for now. Thank you for your help.", node12, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
