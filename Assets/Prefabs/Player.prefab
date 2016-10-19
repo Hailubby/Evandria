@@ -148,6 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chosenCandidate: 
   goodOutcome: 0
+  changeInMorale: 0
+  day: 0
   decisionCanvas: {fileID: 0}
   outcomeCanvas: {fileID: 0}
 --- !u!114 &114000012649576518
