@@ -528,12 +528,12 @@ namespace DialogueTest
             dialogue.AddOption("I'm from the ISC and would like to ask some things about Thomas. It'd be great if you could help!", node1, node3);
 
             //node 2 options
-            dialogue.AddOption("Do you know whether Thomas has any hoppies he regularly enjoys?", node2, node7);
+            dialogue.AddOption("Do you know whether Thomas has any hobbies he regularly enjoys?", node2, node7);
             dialogue.AddOption("Does he participate in any social events such as inviting friends over or parties?", node2, node8);
             dialogue.AddOption("How long have you known Thomas for?", node2, node4);
 
             //node 3 options
-            dialogue.AddOption("Do you know whether Thomas has any hoppies he regularly enjoys?", node3, node7);
+            dialogue.AddOption("Do you know whether Thomas has any hobbies he regularly enjoys?", node3, node7);
             dialogue.AddOption("Does he participate in any social events such as inviting friends over or parties?", node3, node8);
             dialogue.AddOption("How long have you known Thomas for?", node3, node4);
 
@@ -557,7 +557,7 @@ namespace DialogueTest
             dialogue.AddOption("Have you ever encountered any problems while living with him?", node8, node12);
 
             //node 9 exit options
-            dialogue.AddOption("That's all for now. Thank you for your help.", node6, null);
+            dialogue.AddOption("That's all for now. Thank you for your help.", node9, null);
 
             //node 10 options
             dialogue.AddOption("Have you ever encountered any problems while living with him?", node10, node12);

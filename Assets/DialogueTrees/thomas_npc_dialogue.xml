@@ -22,7 +22,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Do you know whether Thomas has any hoppies he regularly enjoys?</Text>
+          <Text>Do you know whether Thomas has any hobbies he regularly enjoys?</Text>
           <DestinationNodeID>6</DestinationNodeID>
         </DialogueOption>
         <DialogueOption>
@@ -41,7 +41,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Do you know whether Thomas has any hoppies he regularly enjoys?</Text>
+          <Text>Do you know whether Thomas has any hobbies he regularly enjoys?</Text>
           <DestinationNodeID>6</DestinationNodeID>
         </DialogueOption>
         <DialogueOption>
@@ -93,10 +93,6 @@
           <Text>That's all for now. Thank you for your help.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
-        <DialogueOption>
-          <Text>That's all for now. Thank you for your help.</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -133,7 +129,12 @@
       <NodeID>8</NodeID>
       <Text>He is a lot more charasmatic than he sounds. I think this is a result of him having to perform in front of others as a musician. He is interesting to talk to and especially captivating when he's performing.</Text>
       <isClue>false</isClue>
-      <Options />
+      <Options>
+        <DialogueOption>
+          <Text>That's all for now. Thank you for your help.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
     </DialogueNode>
     <DialogueNode>
       <NodeID>9</NodeID>
