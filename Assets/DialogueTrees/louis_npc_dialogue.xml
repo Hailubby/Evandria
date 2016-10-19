@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Hello do you know a person called Louis Dubois?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I hear you work for the famous chef Louis Dubois.</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yes of course I know him! I'm Javier, his sous chef at the main restaurant in the city!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>How long have you been working there?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you know if Louis ever does anything that isn't work related?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>The public seems to like Louis quite a lot. Do you have anything to say about his private life?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Yes I do, I'm Javier, his sous chef.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>The public seems to like Louis quite a lot. Do you have anything to say about his private life?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you know if Louis ever does anything that isn't work related?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How long have you been working there?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Well he is very popular with the ladies. But it is kind of weird, he seems to move on from them pretty fast. I wouldn't be able to if it was me, I'd be devastated.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>How long have you been working there?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do you mean by that?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do the other workers think of him?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>I don't know if you've already heard or not but, his former girlfriend Miranda was recently murdered in a serial killing case.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>That sounds horrible, how did Louis take it?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>There has actually. Quite tragic really, I wouldn't be able to act the way he did if it was me. I'd be devastated.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What do you mean by that?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do the other workers think of him?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>I saw Louis the day after the news broke out, he seemed fine as if nothing happened. It happened only about a month ago too, but Louis moved on pretty quickly and started dating someone else two weeks later.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>I'm not too sure. Cooking really does seem like his life as well as women of course. I know he enjoys practising pocket knife tricks and showing it off, he always has it on him.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Isn't that dangerous?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Has anything strange been happening around him recently?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>No I don't think so, he's a chef! He knows how to handle his knives.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>Quite a while now! Louis and I go way back, I was there when he first opened his restaurant, it's probably been around 10 years now.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Oh that's great! You must know him very well then. What can you tell me about him?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do the other workers think of him?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>He is a very busy man, he's always out doing interviews or filming for cooking shows. But when he does come in to the restaurant, the dishes he makes are superb.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Text>He is a very proud person and doesn't tolerate anything not up to his standards so he's not very nice to the newbies and criticizes them quite a bit. A lot of them end up leaving because they can't handle it, but the pay is really good.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Javier</npcName>
+  <clue>Louis’s ex-girlfriend was murdered, but he quickly started dating someone else shortly after – Did her death affect him?</clue>
+</Dialogue>

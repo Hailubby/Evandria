@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Hello, do you kow a person called Asuna Touyama?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Would you mind if I asked you some questions about your girlfriend Asuna?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yes. It just so happens that I am her boyfriend!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What sort of hobbies or activities does she like to do?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you know if there is anything going on with her family at the moment?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Sure! Since it’s both for her sake and your sake, I would be glad to.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What sort of hobbies or activities does she like to do?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you know if there is anything going on with her family at the moment?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Well, she is very creative, and we love to build small things together such as Lego sets, or even plastic models!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>How long have you been together with her?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Would you happen to know anything about her work?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>She doesn’t talk too much about her family to me, but I do know she has a younger sister, and moved out her parent’s house as soon as she left High School.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Do you know why she moved out so quickly?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you think she has anything to hide?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>Hmm… I think a little over 2 years right about now. Only recently has she started opening up to me. But I’m a patient man. Everyone has their own pace in getting to know someone else, and I know deep down she’s a good girl.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Kirito.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>I know she’s got a decent paying job, but doesn’t seem to spend a lot of her money on luxuries herself. So I pamper her instead, because she doesn’t do it herself!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Kirito.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>I’m not sure if I should say this… But from the little she has told me about her family, she didn’t necessarily have a very good relationship with her stepmother…</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>I see. I was just wondering if you would happen to know anything about her childhood?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>Not that I know of, but I do know she has some secrets that she won’t tell me. But I won’t force them out of her either. Everyone has their own little secrets which they keep to themselves, and I understand that.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Would you happen to know anything about her work?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you know what she does with her money?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>Well, I’ve met her stepmother once, and it was not a pleasant experience. I could tell that she was a very “controlling” woman, and that’s where I made the connection that growing up with that kind of stepmother could have easily been the cause of Asuna’s current anger issues.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Kirito.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>Not too sure. Saving it for a house? Either way, I am happy with the way we are now, and don’t mind spoiling her a little bit here and there. I can tell she really appreciates it, but it does seem like she’s a bit too frugal at times.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Kirito.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Kirito</npcName>
+  <clue>Asuna had an abusive stepmother, she gained anger management issues from this.</clue>
+</Dialogue>
