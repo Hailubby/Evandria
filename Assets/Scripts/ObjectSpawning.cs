@@ -1,42 +1,72 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ObjectSpawning : MonoBehaviour {
 
-	//GameObject[] objects;
-	GameObject currentObject;
-	Vector3[] locations;
-	bool[] isPlaced;
-	int counter = 0;
+	CandidateAssociations associations;
+
+	//Candidate A objects
+	List<string> itemsA;
+	Locations.Location houseA;
+	string candidateA;
+	Vector3[] spawnLocations;
+	List<bool> isPlacedA = new List<bool> ();
+
+	//Candidate B objects
+	List<string> itemsB;
+	Locations.Location houseB;
+	string candidateB;
+	List<bool> isPlacedB = new List<bool> ();
+
+//	int counter = 0;
 
 	// Use this for initialization
-	void Start () {
-		//objects = new GameObject[2];
-		locations = new Vector3[4];
-		isPlaced = new bool[4];
-		currentObject = GameObject.Find ("Axe");
+	public void spawnItems () {
+		associations = FindObjectOfType<CandidateAssociations> ();
+		//itemsA = associations.itemNamesA;
+		itemsA = new List<string>{ "Pill", "Diary" };
+		candidateA = associations.CandidateAName;
+		houseA = associations.houseA;
 
-		for (int i = 0; i < isPlaced.Length; i++) {
-			if (i == 2 || i == 3) {
-				isPlaced [i] = false;
-			} else {
-				isPlaced [i] = true;
-			}
+		Debug.Log ("the size of house a is: " + houseA.size);
+
+		foreach (Vector3 location in houseA.itemSpawnLocations) {
+			isPlacedA.Add(false);
 		}
 
-		//Commented out the locations
 
-		locations [0] = new Vector3 (5, 0, 0);
-		locations [1] = new Vector3 (-5, 0, 0);
-		locations [2] = new Vector3 (0, 5, 0);
-		locations [3] = new Vector3 (0, -5, 0);
+
+
+		itemsB = associations.itemNamesB;
+		candidateB = associations.CandidateBName;
+		houseB = associations.houseB;
+		foreach (Vector3 location in houseB.itemSpawnLocations) {
+			isPlacedB.Add(false);
+		}
 
 		System.Random rnd = new System.Random();
 
-		while (counter < 1) {
-			int place = rnd.Next(4);
+		for (int i = 0; i < itemsA.Count; i++) {
+			bool hasPlaced = false;
+			Debug.Log ("itemsA[" + i + "] = " + itemsA [i]);
+			GameObject currentObject = GameObject.Find (itemsA [i]);
 
-			if (!isPlaced [place]) {
+			while (!hasPlaced) {
+				int place = rnd.Next (houseA.itemSpawnLocations.Length);
+				if (!isPlacedA [place]) {
+					currentObject.transform.position = houseA.itemSpawnLocations [place];
+					isPlacedA [place] = true;
+					hasPlaced = true;
+				}
+			}
+		}
+
+		/**
+		while (counter < itemsA.Count) {
+			int place = rnd.Next(houseA.itemSpawnLocations.Length);
+
+			if (!isPlacedA [place]) {
 				currentObject.transform.position = locations [place];
 				isPlaced [place] = true;
 				counter++;
@@ -44,6 +74,7 @@ public class ObjectSpawning : MonoBehaviour {
 				Debug.Log ("Currently isPlaced[place] = true and place = " + place);
 			}
 		}
+		*/
 	}
 
 	// Update is called once per frame
