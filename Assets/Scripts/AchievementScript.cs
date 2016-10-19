@@ -25,12 +25,12 @@ public class AchievementScript : MonoBehaviour {
     public GameObject[] achievements;
 
     //Achievement booleans
-    bool achieve1 = false;
-    bool achieve2 = false;
-    bool achieve3 = false;
-    bool achieve4 = false;
-    bool achieve5 = false;
-    bool achieve6 = false;
+    static bool achieve1 = false;
+    static bool achieve2 = false;
+    static bool achieve3 = false;
+    static bool achieve4 = false;
+    static bool achieve5 = false;
+    static bool achieve6 = false;
 
     //Achievement Icons
     public Sprite icon1;
