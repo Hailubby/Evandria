@@ -3,8 +3,9 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 
-public class Warp : MonoBehaviour {
-   
+public class Warp : MonoBehaviour
+{
+
     public GameObject WarpUI;
     public GameObject Content;
     public GameObject buttonPrefab;
@@ -22,11 +23,11 @@ public class Warp : MonoBehaviour {
         locations = player.GetComponent<Locations>();
         sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
         this.other = player.GetComponent<Collider2D>();
-
     }
 
 
-    void OnTriggerEnter2D(Collider2D other){
+    void OnTriggerEnter2D(Collider2D other)
+    {
         this.other = other;
         isGenerated = other.GetComponent<Locations>().isGenerated;
         OpenTheGui();
