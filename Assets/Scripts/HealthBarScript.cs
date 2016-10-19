@@ -13,7 +13,7 @@ public class HealthBarScript : MonoBehaviour
     private float delta = 0;
 
     // Initial value for health
-    private int health = 50;
+    public static int health = 50;
 
     // Use this for initialization
     void Start()
