@@ -8,6 +8,7 @@ public class LeaderboardScript : MonoBehaviour {
 
     string[] userArray;
     string[] updatedUserArray;
+
         
 	void Start () {
 	}
@@ -21,13 +22,6 @@ public class LeaderboardScript : MonoBehaviour {
     {
         userArray = GetUserArray();
 
-        Debug.Log("Before");
-
-        foreach (var item in userArray)
-        {
-            Debug.Log(item);
-        }
-
         // convert array to list
         List<string> userList = new List<string>(userArray);
         userList.Add(user);
@@ -35,14 +29,9 @@ public class LeaderboardScript : MonoBehaviour {
         //Convert List back to Array to be used in PlayerPrefsX
         updatedUserArray = userList.ToArray();
 
-        Debug.Log("After");
-        foreach (var item in updatedUserArray)
-        {
-            Debug.Log(item);
-        }
-
         // Update the PlayerPrefsX stored.
         PlayerPrefsX.SetStringArray("userArray", updatedUserArray);
+
 
     }
 

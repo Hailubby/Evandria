@@ -112,8 +112,13 @@ public class ContinueScript : MonoBehaviour {
         leaderboardScript = FindObjectOfType<LeaderboardScript>();
 
         user = userInput.text;
-        EvandriaUpdate.score += EvandriaUpdate.level * 10;
-        Debug.Log("Score: " + EvandriaUpdate.score);
+
+        Debug.Log("Before score: " + EvandriaUpdate.score);
+
+        EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
+        Debug.Log("Level Score: " + EvandriaUpdate.level * 10);
+        Debug.Log("Health Score: " + HealthBarScript.health);
+        Debug.Log("After Score: " + EvandriaUpdate.score);
 
         // Checks if user exists in current database of scores
         if (PlayerPrefs.HasKey(user))
@@ -141,9 +146,15 @@ public class ContinueScript : MonoBehaviour {
 
     public void CongratulationsButton()
     {
-        // TODO enter deets for highscore stuffs
+        leaderboardScript = FindObjectOfType<LeaderboardScript>();
+
         user = userInput.text;
-        EvandriaUpdate.score += EvandriaUpdate.level * 10;
+        Debug.Log("Before score: " + EvandriaUpdate.score);
+
+        EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
+        Debug.Log("Level Score: " + EvandriaUpdate.level * 10);
+        Debug.Log("Health Score: " + HealthBarScript.health);
+        Debug.Log("After Score: " + EvandriaUpdate.score);
 
         // Checks if user exists in current database of scores
         if (PlayerPrefs.HasKey(user))
