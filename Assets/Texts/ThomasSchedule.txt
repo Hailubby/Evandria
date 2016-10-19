@@ -1,0 +1,1 @@
+Schedule;Thomas;;This schedule is packed. When does he rest? Looks like he keeps to his schedule indefinitely;'Schedule added to Journal'
