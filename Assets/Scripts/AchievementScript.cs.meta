@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6f98d7c9a147542449b397209562b241
+timeCreated: 1476595598
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - achievementPopup: {instanceID: 0}
+  - popupPanel: {instanceID: 0}
+  - achievementText: {instanceID: 0}
+  - achievementMenu: {instanceID: 0}
+  - achievementImage: {instanceID: 0}
+  - popupGroup: {instanceID: 0}
+  - icon1: {fileID: 21300000, guid: 6e3e7f9ff6155414aac5c4acd6ad9e54, type: 3}
+  - icon2: {fileID: 21300000, guid: 396c66354075c724592ae2395297660d, type: 3}
+  - icon3: {fileID: 21300000, guid: 422ab8e4434b2154b84cd2f17afd42cd, type: 3}
+  - icon4: {fileID: 21300000, guid: e01cba41758c356478a66653a89cf6bf, type: 3}
+  - icon5: {fileID: 21300000, guid: fe7ca61264ac908499a86200ffd81e29, type: 3}
+  - icon6: {fileID: 21300000, guid: a674a9404b4f9164b90b7d7b671a2741, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
