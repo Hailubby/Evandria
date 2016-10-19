@@ -77,6 +77,8 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
             FindObjectOfType<Warp>().isGenerated = false;
             FindObjectOfType<Locations>().isGenerated = false;
             interacted = true;
+			ObjectSpawning objectSpawner = GameObject.Find ("Object Spawner").GetComponent<ObjectSpawning> ();
+			objectSpawner.spawnItems ();
         }
     }
 }
