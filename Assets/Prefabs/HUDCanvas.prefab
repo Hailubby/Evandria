@@ -145,7 +145,7 @@ GameObject:
   - 114: {fileID: 114000014024766104}
   - 114: {fileID: 114000013673668114}
   m_Layer: 5
-  m_Name: HUDCanvas-k
+  m_Name: HUDCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
