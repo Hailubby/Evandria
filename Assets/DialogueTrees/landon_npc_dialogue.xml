@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>I hear you are familiar with Landon Ortega.</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you own the local garage?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yeah I've known his for a few years now. What do you need to know?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Have you ever had any issues with Landon?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you enjoy working with Landon?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Yes I work there with my apprentice Landon.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Have you ever had any issues with Landon?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you enjoy working with Landon?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Well, he's a reliable worker but there was one repair we had trouble on.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What went wrong?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>That's unfortunate, I had high hopes for him.</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>Landon is a very pleasant and enthusiastic worker to be around. He is always looking for new ways to solve issues customers bring in that are better than the way I already do things.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>So you would vouch for his good nature?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I guess you would be sad to see him go then?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>Landon went off the books and gave the customer an advanced custom distributer he had made for their new car which he hoped to improve efficiency.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>I guess it's safe to assume it didn't work as intended.</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>Well I wouldn't hold it against him, he had good intentions.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Bart!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>His custome design managed to completely ruin the customer's engine due to a minor miscalculation he made within his design. The customer was severely injured.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Bart!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>Definitely, he's a great individual that I'd hope to see achieve great things.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Bart!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>Ah, so he signed up to go to Evandria did he? Well it's be worth letting him go if he was making great strides for humanity.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thanks for your help Bart!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Bart</npcName>
+  <clue>Landon is an innovative designer, but with ambition designs come great risks. Hopefully it was a one time mistake that he learned from?</clue>
+</Dialogue>
