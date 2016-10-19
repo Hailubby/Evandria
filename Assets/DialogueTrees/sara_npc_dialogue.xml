@@ -82,7 +82,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Alright, Paul, thanks so much for your help.</Text>
+          <Text>Alright, Paula, thanks so much for your help.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -104,7 +104,7 @@
       <isClue>true</isClue>
       <Options>
         <DialogueOption>
-          <Text>Alright, Paul, thanks so much for your help.</Text>
+          <Text>Alright, Paula, thanks so much for your help.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -115,7 +115,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Alright, Paul, thanks so much for your help.</Text>
+          <Text>Alright, Paula, thanks so much for your help.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -137,7 +137,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Alright, Paul, thanks so much for your help.</Text>
+          <Text>Alright, Paula, thanks so much for your help.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>

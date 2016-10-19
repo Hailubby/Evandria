@@ -371,22 +371,22 @@ namespace DialogueTest
             dialogue.AddOption("Do you have any idea why she stopped working as a teacher?", node5, node10);
 
             //node 6 exit option
-            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node6, null);
+            dialogue.AddOption("Alright, Paula, thanks so much for your help.", node6, null);
 
             //node 7 options
             dialogue.AddOption("Bigger issue? What do you mean by that?", node7, node8);
 
             //node 8 exit option
-            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node8, null);
+            dialogue.AddOption("Alright, Paula, thanks so much for your help.", node8, null);
 
             //node 9 exit option
-            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node9, null);
+            dialogue.AddOption("Alright, Paula, thanks so much for your help.", node9, null);
 
             //node 10 options
             dialogue.AddOption("What did you mean by too much?", node10, node11);
 
             //node 11 exit option
-            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node11, null);
+            dialogue.AddOption("Alright, Paula, thanks so much for your help.", node11, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("sara_npc_dialogue.xml");
