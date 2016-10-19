@@ -12,6 +12,15 @@ public class CandidateXML
     [XmlElement("Name")]
     public string fullname;
 
+    [XmlElement("Moral")]
+    public string moral;
+
+    [XmlElement("GoodArray")]
+    public string goodArray;
+
+    [XmlElement("BadArray")]
+    public string badArray;
+
     [XmlElement("Gender")]
     public string gender;
 
@@ -33,4 +42,5 @@ public class CandidateXML
 
     [XmlElement("Description")]
     public string description;
+
 }

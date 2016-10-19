@@ -8,7 +8,7 @@ public class Locations : MonoBehaviour {
     // Use this for initialization
     void Start() {
         locations = new ArrayList();
-        locations.Add(new Location(new Vector3(17.5f, 24.5f, 0), "Office"));
+        locations.Add(new Location(new Vector3(-12.5f, -8, 0), "Office"));
         locations.Add(new Location(new Vector3(99.5f, -20, 0), "Gabriel's House"));
         locations.Add(new Location(new Vector3(-120, 6, 0), "Jessica's House"));
     }

@@ -35,10 +35,11 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
         secondClue2.text = "???";
         secondClue3.text = "???";
 
+        string candidateNameA = FindObjectOfType<CandidateAController>().fullname.Split(' ')[0];
         Journal journal = FindObjectOfType<Journal>();
         for (int i = 0; i < journal.journal.Count; i++)
         {
-            if (journal.journal[i].clueOwner.Equals("Gabriel"))
+            if (journal.journal[i].clueOwner.Equals(candidateNameA))
             {
                 if(firstClue1.text.Equals("???"))
                 {
