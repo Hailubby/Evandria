@@ -13,6 +13,7 @@ public class ChangeTheme : MonoBehaviour {
         GlobalConfigSettings settings = GameObject.FindObjectOfType<GlobalConfigSettings>();
         Image img =  TopPanel.GetComponent<Image>();
         string bgColorHex = null;
+        string fontColorHex = null;
 
         // Get the active hex value
         foreach (Theme theme in settings.themeContainer.Themes)
@@ -20,16 +21,37 @@ public class ChangeTheme : MonoBehaviour {
             if (theme.Selected)
             {
                 bgColorHex = theme.BGColour;
+                fontColorHex = theme.FontColour;
                 break;
             }
         }
 
-        Debug.Log(bgColorHex);
-        Color navy = new Color();
-        ColorUtility.TryParseHtmlString(bgColorHex, out navy);
-        Debug.Log(navy);
-        img.color = navy;
+        // Set the background colour 
+        Color bgColor = new Color();
+        ColorUtility.TryParseHtmlString(bgColorHex, out bgColor);
+        img.color = bgColor;
 
+        // Set the font color
+        GameObject canvasObject = GameObject.Find("HUDCanvas/TopPanel");
+
+        Color fontColor = new Color();
+        ColorUtility.TryParseHtmlString(fontColorHex, out fontColor);
+
+        Debug.Log(canvasObject.transform.childCount);
+
+        for (int i = 0; i < canvasObject.transform.childCount; i++)
+        {
+            GameObject child = canvasObject.transform.GetChild(i).gameObject;
+            if (child.transform.childCount == 1 || child.transform.childCount == 2)
+            {
+                child.transform.GetChild(0).gameObject.GetComponent<Text>().color = fontColor;
+            }
+            else if (child.transform.childCount == 0)
+            {
+                Text targetText = child.GetComponent<Text>();
+                targetText.color = fontColor;
+            }
+        }
     }
 	
 	// Update is called once per frame
