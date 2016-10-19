@@ -13,7 +13,7 @@ public class Warp : MonoBehaviour {
     ScreenFader sf;
 
     public bool isGenerated = false;
-    public bool isRegen = false;
+    public bool isNotRegen = true;
 
     void Start()
     {
@@ -47,11 +47,11 @@ public class Warp : MonoBehaviour {
                 newButton.transform.localScale = new Vector3(1, 1, 1);
                 if (i == 0)
                 {
-                    if (!isRegen)
+                    if (isNotRegen)
                     {
                         newButton.name = "Office";
                         newButton.GetComponentInChildren<Text>().text = "Office";
-                        isRegen = true;
+                        isNotRegen = false;
                     }
                     else
                     {

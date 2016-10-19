@@ -72,11 +72,11 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
                 }
             }
         }
-        interacted = true;
-        if (interacted == true) {
+        if (interacted == false)
+        {
             FindObjectOfType<Warp>().isGenerated = false;
             FindObjectOfType<Locations>().isGenerated = false;
-            FindObjectOfType<Warp>().isRegen = true;
+            interacted = true;
         }
     }
 }
