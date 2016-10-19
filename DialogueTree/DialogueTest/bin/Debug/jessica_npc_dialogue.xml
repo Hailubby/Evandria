@@ -10,10 +10,6 @@
           <Text>Hello, do you know of Jessica Chang?</Text>
           <DestinationNodeID>1</DestinationNodeID>
         </DialogueOption>
-        <DialogueOption>
-          <Text>Hello, do you know of Gabriel Johan?</Text>
-          <DestinationNodeID>2</DestinationNodeID>
-        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -37,15 +33,11 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>2</NodeID>
-      <Text>No I don't sorry</Text>
+      <Text>No I don't sorry.</Text>
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thankyou for your time</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>That's alright, see you</Text>
+          <Text>That's alright, see you.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -86,7 +78,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>5</NodeID>
-      <Text>Hmmm. I thought she was a bit intimidating at first as it didn't seem like she was open to interacting with her peers and preferred to work all the time</Text>
+      <Text>Hmmm. I thought she was a bit intimidating at first as it didn't seem like she was open to interacting with her peers and preferred to work all the time.</Text>
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
@@ -120,7 +112,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thank you for your time</Text>
+          <Text>Thank you for your time.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -164,10 +156,6 @@
           <Text>Interesting...</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
-        <DialogueOption>
-          <Text>Thankyou for you time. See you.</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -175,10 +163,6 @@
       <Text>Not personally, but I have seen them visit. Her mother is often covered in bruises though. That may be why she doesn't like talking about her family.</Text>
       <isClue>false</isClue>
       <Options>
-        <DialogueOption>
-          <Text>Interesting...</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
         <DialogueOption>
           <Text>Thank you for your time.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
@@ -221,11 +205,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thankyou for your cooperation, it was very helpful</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>Thank you for your time</Text>
+          <Text>Thankyou for your cooperation, it was very helpful.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>

@@ -7,10 +7,6 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Hello, do you know of Jessica Chang?</Text>
-          <DestinationNodeID>2</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
           <Text>Hello, do you know of Gabriel Johan?</Text>
           <DestinationNodeID>1</DestinationNodeID>
         </DialogueOption>
@@ -37,15 +33,11 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>2</NodeID>
-      <Text>No I don't sorry</Text>
+      <Text>No I don't sorry.</Text>
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thankyou for your time</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>That's alright, see you</Text>
+          <Text>That's alright, see you.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -120,11 +112,7 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Ahh yeah that's understandable. Thankyou for your time.</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>Thankyou for your cooperation.</Text>
+          <Text>Yeah that's understandable. Thankyou for your time.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
@@ -210,10 +198,6 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thankyou for your cooperation.</Text>
-          <DestinationNodeID>-1</DestinationNodeID>
-        </DialogueOption>
-        <DialogueOption>
           <Text>Thankyou for answering all my questions. It was very helpful.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
@@ -225,12 +209,12 @@
       <isClue>false</isClue>
       <Options>
         <DialogueOption>
-          <Text>Thankyou for your time</Text>
+          <Text>Thankyou for your time.</Text>
           <DestinationNodeID>-1</DestinationNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
   </Nodes>
-  <npcName>Juarez</npcName>
+  <npcName>Claire</npcName>
   <clue>Gabriel started supporting a charity for orphanages 6 years ago.</clue>
 </Dialogue>
