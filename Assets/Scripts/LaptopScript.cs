@@ -16,6 +16,8 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
     public Text secondClue2;
     public Text secondClue3;
 
+    private bool interacted = false;
+
     public void interact()
     {
         decisionCanvas.SetActive(true);
@@ -69,6 +71,12 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
                     secondClue3.text = "Clue 3: " + journal.journal[i].clueName;
                 }
             }
+        }
+        interacted = true;
+        if (interacted == true) {
+            FindObjectOfType<Warp>().isGenerated = false;
+            FindObjectOfType<Locations>().isGenerated = false;
+            FindObjectOfType<Warp>().isRegen = true;
         }
     }
 }

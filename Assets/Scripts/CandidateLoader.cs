@@ -8,7 +8,7 @@ public class CandidateLoader : MonoBehaviour {
     private int randCandidateA;
     private string randAMoral;
     private int randCandidateB;
-    public static int[] availableCandidates = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    public static int[] availableCandidates = { 0, 1, 2, 3, 4 };
     private Transform candidateA;
     private Transform candidateB;
     private CandidateAController candidateAController;
@@ -38,6 +38,10 @@ public class CandidateLoader : MonoBehaviour {
             }
         }
 
+        GameObject player = GameObject.Find("Player");
+        
+        CandidateAssociations cAssociations = FindObjectOfType<CandidateAssociations>();
+
         foreach (CandidateXML candidate in ic.candidates) {
             if (candidate.id.Equals(randCandidateA.ToString())) {
 
@@ -46,9 +50,26 @@ public class CandidateLoader : MonoBehaviour {
                 try {
                     candidateAController = candidateA.GetComponent<CandidateAController>();
                     candidateAController.fullname = candidate.fullname;
+                    cAssociations.CandidateAName = candidate.fullname.Split(' ')[0];
                     candidateAController.moral = candidate.moral;
                     candidateAController.goodArray = candidate.goodArray;
                     candidateAController.badArray = candidate.badArray;
+                    candidateAController.houseSize = candidate.houseSize;
+                    Locations locations = player.GetComponent<Locations>();
+                    for (int i = 0; i < locations.locations.Count; i++)
+                    {
+                        Locations.Location loco = (Locations.Location)locations.locations[i];
+                        if (candidateAController.houseSize.Equals(loco.size))
+                        {
+                            cAssociations.houseA = loco;
+                            cAssociations.locations.Add(loco);
+                            locations.locations.RemoveAt(i);
+                            break;
+                        }
+                    }
+                    cAssociations.npcNameA = candidate.npcName;
+                    cAssociations.itemNamesA.Add(candidate.itemName1);
+                    cAssociations.itemNamesA.Add(candidate.itemName2);
                     candidateAController.birthdate = candidate.birthdate;
                     candidateAController.ethnicity = candidate.ethnicity;
                     candidateAController.occupation = candidate.occupation;
@@ -66,9 +87,26 @@ public class CandidateLoader : MonoBehaviour {
                 try {
                     candidateBController = candidateB.GetComponent<CandidateBController>();
                     candidateBController.fullname = candidate.fullname;
+                    cAssociations.CandidateBName = candidate.fullname.Split(' ')[0];
                     candidateBController.moral = candidate.moral;
                     candidateBController.goodArray = candidate.goodArray;
                     candidateBController.badArray = candidate.badArray;
+                    candidateBController.houseSize = candidate.houseSize;
+                    Locations locations = player.GetComponent<Locations>();
+                    for (int i = 0; i < locations.locations.Count; i++)
+                    {
+                        Locations.Location loco = (Locations.Location) locations.locations[i];
+                        if (candidateBController.houseSize.Equals(loco.size))
+                        {
+                            cAssociations.houseB = loco;
+                            cAssociations.locations.Add(loco);
+                            locations.locations.RemoveAt(i);
+                            break;
+                        }
+                    }
+                    cAssociations.npcNameB = candidate.npcName;
+                    cAssociations.itemNamesB.Add(candidate.itemName1);
+                    cAssociations.itemNamesB.Add(candidate.itemName2);
                     candidateBController.birthdate = candidate.birthdate;
                     candidateBController.ethnicity = candidate.ethnicity;
                     candidateBController.occupation = candidate.occupation;
@@ -85,7 +123,7 @@ public class CandidateLoader : MonoBehaviour {
 
     public int findValidCandidate(string candIndex)
     {
-        int randNumber = UnityEngine.Random.Range(0, 10);
+        int randNumber = UnityEngine.Random.Range(0, 5);
         if (candIndex.Equals("A")){
             if (availableCandidates[randNumber] != -1) {
                 return randNumber;
