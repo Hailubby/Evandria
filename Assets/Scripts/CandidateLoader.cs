@@ -121,6 +121,8 @@ public class CandidateLoader : MonoBehaviour {
                 
             }
         }
+
+        FindObjectOfType<ObjectSpawning>().spawnItems();
 	}
 
     public int findValidCandidate(string candIndex)

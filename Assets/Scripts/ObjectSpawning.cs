@@ -10,7 +10,6 @@ public class ObjectSpawning : MonoBehaviour {
 	List<string> itemsA;
 	Locations.Location houseA;
 	string candidateA;
-	Vector3[] spawnLocations;
 	List<bool> isPlacedA = new List<bool> ();
 
 	//Candidate B objects
