@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fader
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 797958567
+    locked: 0
+  - name: Clock
+    uniqueID: 3978766371
     locked: 0
   - name: DialogueBox
     uniqueID: 1163299751
