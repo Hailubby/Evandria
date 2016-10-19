@@ -83,6 +83,9 @@ public class TicTacToeGameController : MonoBehaviour {
         {
             GameOver();
         }
+
+        // Change sides if necessary
+        ChangeSides();
     }
 
     void GameOver()
@@ -92,7 +95,13 @@ public class TicTacToeGameController : MonoBehaviour {
             buttonList[i].GetComponentInParent<Button>().interactable = false;
         }
 
-        // Quit the scene   
+        // TODO: Quit the scene   
 
+    }
+
+    // Check what side we are on and change sides
+    void ChangeSides()
+    {
+        playerSide = (playerSide == "X") ? "O" : "X";
     }
 }
