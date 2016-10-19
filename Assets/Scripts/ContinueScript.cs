@@ -12,6 +12,7 @@ public class ContinueScript : MonoBehaviour {
     public GameObject newHighscorePanel;
     public ContinueGameOverCanvasScript continueCanvasScript;
     public EvandriaUpdate update;
+    public LeaderboardScript leaderboardScript;
 
     private string posMessage;
     private string negMessage;
@@ -108,6 +109,8 @@ public class ContinueScript : MonoBehaviour {
     // Submits score to scoreboard before finishing the entire game
     public void ContinueSubmitButton()
     {
+        leaderboardScript = FindObjectOfType<LeaderboardScript>();
+
         user = userInput.text;
         EvandriaUpdate.score += EvandriaUpdate.level * 10;
         Debug.Log("Score: " + EvandriaUpdate.score);
@@ -127,9 +130,11 @@ public class ContinueScript : MonoBehaviour {
                 Reset();
             }
         }
+        // Adds new user
         else
         {
             PlayerPrefs.SetInt(user, EvandriaUpdate.score);
+            leaderboardScript.UpdateUserArray(user);
             Reset();
         }
     }
@@ -155,9 +160,11 @@ public class ContinueScript : MonoBehaviour {
                 Reset();
             }
         }
+        // Adds new user to scoreboard
         else
         {
             PlayerPrefs.SetInt(user, EvandriaUpdate.score);
+            leaderboardScript.UpdateUserArray(user);
             Reset();
         }
         
