@@ -7,10 +7,19 @@ public class Locations : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        //hard coded filler vectors for location spawn points
+        Vector3[] officeSpawn = { new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(0, 0, 0) };
+        Vector3[] medium_1Spawn = { new Vector3(110.3f, 1.1f, 0), new Vector3(113.6f, 1.1f, 0), new Vector3(116.8f, 1.1f, 0), new Vector3(72.1f, 23.5f, 0), new Vector3(75.2f, 23.5f, 0) };
+        Vector3[] small_1Spawn = { new Vector3(-86.5f, 16.5f, 0), new Vector3(83.4f, 16.5f, 0), new Vector3(-80.2f, 16, 0), new Vector3(-77, 16, 0), new Vector3(-76.9f, -3, 0) };
+        Vector3[] medium_2Spawn = { new Vector3(95.9f, -91.2f, 0), new Vector3(73.5f, -84.7f, 0), new Vector3(67, -84.7f, 0), new Vector3(131, -75, 0), new Vector3(134.2f, -75, 0) };
+        Vector3[] small_2Spawn = { new Vector3(-102.3f, -73, 0), new Vector3(-99, -73, 0), new Vector3(-95.8f, -73, 0), new Vector3(-108.5f, -73, 0), new Vector3(-112, -73, 0) };
+
         locations = new ArrayList();
-        locations.Add(new Location(new Vector3(-12.5f, -8, 0), "Office"));
-        locations.Add(new Location(new Vector3(99.5f, -20, 0), "Gabriel's House"));
-        locations.Add(new Location(new Vector3(-120, 6, 0), "Jessica's House"));
+        locations.Add(new Location(new Vector3(-13, -5, 0), "Office", officeSpawn));
+        locations.Add(new Location(new Vector3(99.5f, -21, 0), "Medium", medium_1Spawn));
+        locations.Add(new Location(new Vector3(-123, -98.5f, 0), "Small", small_1Spawn));
+        locations.Add(new Location(new Vector3(120, -79, 0), "Medium", medium_2Spawn));
+        locations.Add(new Location(new Vector3(-123, 13, 0), "Small", small_2Spawn));
     }
 
     // Update is called once per frame
@@ -18,18 +27,20 @@ public class Locations : MonoBehaviour {
 
     }
 
-    void AddLocation(string name, Vector3 position)
+    void AddLocation(string size, Vector3 position, Vector3[] spawnLocations)
     {
-        locations.Add(new Location(position, name)); 
+        locations.Add(new Location(position, size, spawnLocations)); 
     }
 	
 	public class Location { 
 		public Vector3 entrance;
-		public string name;
+		public string size;
+        public Vector3[] itemSpawnLocations;
 
-		public Location(Vector3 entrance, string name){
+		public Location(Vector3 entrance, string size, Vector3[] itemSpawnLocations){
 			this.entrance = entrance;
-			this.name = name;
+			this.size = size;
+            this.itemSpawnLocations = itemSpawnLocations;
 		}
 	}
 
