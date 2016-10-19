@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: e91d4f32af3fd364692077048ae171c5
-timeCreated: 1476845414
+guid: 7b4b6f686ad587e45a98278709cfbe16
+timeCreated: 1476850828
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: arlington_0
-    21300002: arlington_1
-    21300004: arlington_2
-    21300006: arlington_3
-    21300008: arlington_4
-    21300010: arlington_5
-    21300012: arlington_6
-    21300014: arlington_7
-    21300016: arlington_8
-    21300018: arlington_9
-    21300020: arlington_10
-    21300022: arlington_11
-    21300024: arlington_12
-    21300026: arlington_13
-    21300028: arlington_14
-    21300030: arlington_15
+    21300000: harajuku1_0
+    21300002: harajuku1_1
+    21300004: harajuku1_2
+    21300006: harajuku1_3
+    21300008: harajuku1_4
+    21300010: harajuku1_5
+    21300012: harajuku1_6
+    21300014: harajuku1_7
+    21300016: harajuku1_8
+    21300018: harajuku1_9
+    21300020: harajuku1_10
+    21300022: harajuku1_11
+    21300024: harajuku1_12
+    21300026: harajuku1_13
+    21300028: harajuku1_14
+    21300030: harajuku1_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,208 +69,208 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arlington_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 149
-        width: 25
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: arlington_1
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 149
-        width: 25
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: arlington_2
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 149
-        width: 25
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: arlington_3
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 149
-        width: 25
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: arlington_4
+      name: harajuku1_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 100
-        width: 24
-        height: 47
+        y: 146
+        width: 23
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_5
+      name: harajuku1_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 100
-        width: 24
-        height: 46
+        x: 38
+        y: 146
+        width: 21
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_6
+      name: harajuku1_2
       rect:
         serializedVersion: 2
         x: 69
-        y: 100
-        width: 24
-        height: 47
+        y: 146
+        width: 23
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_7
+      name: harajuku1_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 100
-        width: 24
-        height: 46
+        x: 102
+        y: 146
+        width: 21
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_8
+      name: harajuku1_4
       rect:
         serializedVersion: 2
-        x: 3
-        y: 51
-        width: 24
-        height: 47
+        x: 6
+        y: 98
+        width: 19
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_9
+      name: harajuku1_5
       rect:
         serializedVersion: 2
-        x: 35
-        y: 51
-        width: 24
-        height: 46
+        x: 38
+        y: 98
+        width: 19
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_10
+      name: harajuku1_6
       rect:
         serializedVersion: 2
-        x: 67
-        y: 51
-        width: 24
-        height: 47
+        x: 70
+        y: 98
+        width: 19
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_11
+      name: harajuku1_7
       rect:
         serializedVersion: 2
-        x: 99
-        y: 51
-        width: 24
-        height: 46
+        x: 102
+        y: 98
+        width: 20
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_12
+      name: harajuku1_8
       rect:
         serializedVersion: 2
-        x: 4
+        x: 7
+        y: 50
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: harajuku1_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 50
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: harajuku1_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 50
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: harajuku1_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 50
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: harajuku1_12
+      rect:
+        serializedVersion: 2
+        x: 5
         y: 2
-        width: 25
-        height: 46
+        width: 23
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_13
+      name: harajuku1_13
       rect:
         serializedVersion: 2
-        x: 36
+        x: 38
         y: 2
-        width: 25
-        height: 45
+        width: 21
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_14
+      name: harajuku1_14
       rect:
         serializedVersion: 2
-        x: 68
+        x: 69
         y: 2
-        width: 25
-        height: 46
+        width: 23
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: arlington_15
+      name: harajuku1_15
       rect:
         serializedVersion: 2
-        x: 100
+        x: 102
         y: 2
-        width: 25
-        height: 45
+        width: 21
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
