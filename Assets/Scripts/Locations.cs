@@ -15,11 +15,11 @@ public class Locations : MonoBehaviour {
         Vector3[] small_2Spawn = { new Vector3(-100, -100, 0), new Vector3(-110, -110, 0), new Vector3(-120, -120, 0), new Vector3(-130, -130, 0), new Vector3(-140, -140, 0) };
 
         locations = new ArrayList();
-        locations.Add(new Location(new Vector3(17.5f, 24.5f, 0), "Office", officeSpawn));
-        locations.Add(new Location(new Vector3(99.5f, -20, 0), "Medium", medium_1Spawn));
-        locations.Add(new Location(new Vector3(-120, 6, 0), "Small", small_1Spawn));
-        locations.Add(new Location(new Vector3(-201.5f, -25, 0), "Medium", medium_2Spawn));
-        locations.Add(new Location(new Vector3(-321, 8, 0), "Small", small_2Spawn));
+        locations.Add(new Location(new Vector3(-13, -5, 0), "Office", officeSpawn));
+        locations.Add(new Location(new Vector3(99.5f, -21, 0), "Medium", medium_1Spawn));
+        locations.Add(new Location(new Vector3(-123, -98.5f, 0), "Small", small_1Spawn));
+        locations.Add(new Location(new Vector3(120, -79, 0), "Medium", medium_2Spawn));
+        locations.Add(new Location(new Vector3(-123, 13, 0), "Small", small_2Spawn));
     }
 
     // Update is called once per frame
