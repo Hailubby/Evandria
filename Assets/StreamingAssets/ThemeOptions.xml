@@ -3,12 +3,12 @@
   <Themes>
     <Theme selected="true">
       <Name>Light</Name>
-      <FontColour>000000</FontColour>
+      <FontColour>#000000</FontColour>
       <BGColour>#FFFFFF</BGColour>
     </Theme>
     <Theme selected="false">
       <Name>Dark</Name>
-      <FontColour>FFFFFF</FontColour>
+      <FontColour>#FFFFFF</FontColour>
       <BGColour>#1F6EF079</BGColour>
     </Theme>
   </Themes>
