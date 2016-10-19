@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012934311424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3195791, y: 0.062974036, z: 0}
+  m_LocalPosition: {x: -10.415135, y: -6.9127297, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  player: {fileID: 0}
 --- !u!114 &114000013712772092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,8 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 0}
   clue_owner: 
-  DialogueDataFilePath: 
+  dialogueFile: {fileID: 0}
   DialogueWindowPrefab: {fileID: 0}
+  player: {fileID: 0}
+  stopPlayerMovement: 0
 --- !u!212 &212000010326714474
 SpriteRenderer:
   m_ObjectHideFlags: 1
