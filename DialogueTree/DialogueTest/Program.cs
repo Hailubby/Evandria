@@ -13,7 +13,8 @@ namespace DialogueTest
             GabrielDialogue();
         }
 
-        public static void TestDialogue() {
+        public static void TestDialogue()
+        {
             Dialogue dialogue = new Dialogue();
 
             //create some nodes ie npc replies
@@ -65,11 +66,11 @@ namespace DialogueTest
 
             var node1 = new DialogueNode("Hello!");
             var node2 = new DialogueNode("Yes I do, why do you ask?");
-            var node3 = new DialogueNode("No I don't sorry");
+            var node3 = new DialogueNode("No I don't sorry.");
             var node4 = new DialogueNode("Of course Alex. Feel free to ask me anything.");
 
             var node5 = new DialogueNode("We worked at the same company a few years back. I didn't know her too well then as she wasn't there for long. We live in the same neighbourhood now so i see her more often.");
-            var node6 = new DialogueNode("Hmmm. I thought she was a bit intimidating at first as it didn't seem like she was open to interacting with her peers and preferred to work all the time");
+            var node6 = new DialogueNode("Hmmm. I thought she was a bit intimidating at first as it didn't seem like she was open to interacting with her peers and preferred to work all the time.");
             var node7 = new DialogueNode("I don't know the details sorry. I think it may have been due to not being able to handle the stress at work. I don't think she got along with her team that well either as she's quite an opinionated person.");
             var node8 = new DialogueNode("She seems to be doing quite well for herself now. Back then she was doing some entry level accounting work but now I've heard she's climbed her way up and become a chartered accountant.");
 
@@ -109,8 +110,7 @@ namespace DialogueTest
             dialogue.AddOption("Does Jessica have any pets?", node2, node13);
 
             //Exit option for node 3
-            dialogue.AddOption("Thankyou for your time", node3, null);
-            dialogue.AddOption("That's alright, see you", node3, null);
+            dialogue.AddOption("That's alright, see you.", node3, null);
 
             //node 4 options
             dialogue.AddOption("What is your relationship with Jessica?", node4, node5);
@@ -130,7 +130,7 @@ namespace DialogueTest
             dialogue.AddOption("Does Jessica have any hobbies or pets?", node7, node13);
 
             //node 8 options
-            dialogue.AddOption("Thank you for your time", node8, null);
+            dialogue.AddOption("Thank you for your time.", node8, null);
 
             //node 9 options
             dialogue.AddOption("What about her relatives?", node9, node10);
@@ -142,10 +142,8 @@ namespace DialogueTest
 
             //node 11 exit options
             dialogue.AddOption("Interesting...", node11, null);
-            dialogue.AddOption("Thankyou for you time. See you.", node11, null);
 
             //node 12 exit options
-            dialogue.AddOption("Interesting...", node12, null);
             dialogue.AddOption("Thank you for your time.", node12, null);
 
             //node 13 options
@@ -157,7 +155,7 @@ namespace DialogueTest
             dialogue.AddOption("Does she have any hobbies?", node14, node15);
 
             //node 15 exit option
-            dialogue.AddOption("Thankyou for your cooperation, it was very helpful", node15, null);
+            dialogue.AddOption("Thankyou for your cooperation, it was very helpful.", node15, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("jessica_npc_dialogue.xml");
@@ -174,7 +172,7 @@ namespace DialogueTest
 
             var node1 = new DialogueNode("Hello!");
             var node2 = new DialogueNode("Yes I do, why do you ask?");
-            var node3 = new DialogueNode("No I don't sorry");
+            var node3 = new DialogueNode("No I don't sorry.");
             var node4 = new DialogueNode("Of course Alex. Fire away!");
 
             var node5 = new DialogueNode("We work in the neurology department at the hospital together. He's a very smart man, I look up to him a lot.");
@@ -185,13 +183,13 @@ namespace DialogueTest
             var node9 = new DialogueNode("I think it was around 6 years ago when he first started supporting it. I remember he took quite a long time off from work back then. I'm pretty sure he first mentioned it after he got back from his time off.");
             node9.isClue = true;
             var node10 = new DialogueNode("I'm not too sure sorry. I think it may have been something to do with his family, it was due to private reasons so none of us really know why.");
-            
+
             var node11 = new DialogueNode("Not that I know of. He is always preoccupied with his research, but I do see him looking at his family photos often and smiling during his breaks. They must give him a lot of strength when things get stressful.");
-            
+
             var node12 = new DialogueNode("He's a diligent worker and is polite to everyone. But he doesn't seem to socilise with others much, he's often working in the labs or his office.");
             var node13 = new DialogueNode("We offer him to join us but he always declines.");
             var node14 = new DialogueNode("Now that I think of it, he used to come to work dinners and outing quite a lot and would bring his wife along too. I guess time changes people.");
-            
+
             var node15 = new DialogueNode("He may be quiet and not talk much, but I think he's a really great guy! He's not really close with any of us in the department at work, but he's always around to lend a helping hand.");
 
             dialogue.AddNode(node1);
@@ -220,8 +218,7 @@ namespace DialogueTest
             dialogue.AddOption("What type of person do you see Gabriel as?", node2, node15);
 
             //Exit option for node 3
-            dialogue.AddOption("Thankyou for your time", node3, null);
-            dialogue.AddOption("That's alright, see you", node3, null);
+            dialogue.AddOption("That's alright, see you.", node3, null);
 
             //node 4 options
             dialogue.AddOption("How did you and Gabriel meet?", node4, node5);
@@ -241,8 +238,7 @@ namespace DialogueTest
             dialogue.AddOption("Are you two involved in this charity together?", node7, node8);
 
             //node 8 options
-            dialogue.AddOption("Ahh yeah that's understandable. Thankyou for your time.", node8, null);
-            dialogue.AddOption("Thankyou for your cooperation.", node8, null);
+            dialogue.AddOption("Yeah that's understandable. Thankyou for your time.", node8, null);
 
             //node 9 options
             dialogue.AddOption("Why did he take a long time off work?", node9, node10);
@@ -265,11 +261,10 @@ namespace DialogueTest
             dialogue.AddOption("Is he involved in anything else apart from work?", node13, node6);
 
             //node 14 options
-            dialogue.AddOption("Thankyou for your cooperation.", node14, null);
             dialogue.AddOption("Thankyou for answering all my questions. It was very helpful.", node14, null);
 
             //node 15 options
-            dialogue.AddOption("Thankyou for your time", node15, null);
+            dialogue.AddOption("Thankyou for your time.", node15, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
@@ -300,6 +295,17 @@ namespace DialogueTest
 
             var node9 = new DialogueNode("Definitely, he's a great individual that I'd hope to see achieve great things.");
             var node10 = new DialogueNode("Ah, so he signed up to go to Evandria did he? Well it's be worth letting him go if he was making great strides for humanity.");
+
+            dialogue.AddNode(node1);
+            dialogue.AddNode(node2);
+            dialogue.AddNode(node3);
+            dialogue.AddNode(node4);
+            dialogue.AddNode(node5);
+            dialogue.AddNode(node6);
+            dialogue.AddNode(node7);
+            dialogue.AddNode(node8);
+            dialogue.AddNode(node9);
+            dialogue.AddNode(node10);
 
             //node 1 options
             dialogue.AddOption("I hear you are familiar with Landon Ortega.", node1, node2);
@@ -335,6 +341,178 @@ namespace DialogueTest
 
             //node 10 exit option
             dialogue.AddOption("Thanks for your help Bart!", node10, null);
+
+            XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
+            StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
+
+            serz.Serialize(writer, dialogue);
+        }
+
+        public static void SaraDialogue()
+        {
+            Dialogue dialogue = new Dialogue();
+
+            dialogue.npcName = "Paul";
+            dialogue.clue = "There’s an ongoing custody battle between Sara and her husband.";
+
+            var node1 = new DialogueNode("Hello!");
+            var node2 = new DialogueNode("Oh, yes! I've been her neighbour for almost 5 years now.");
+            var node3 = new DialogueNode("My neighbour, Sara used to work there actually.");
+
+            var node4 = new DialogueNode("Tommy and Lara! They are two energetic young children and they love their mother so much. It's a shame that their father is no longer around.");
+            var node5 = new DialogueNode("She's a hard working lady! I remember during her time as a teacher she received multiple awards for being such an inspiring woman!");
+
+            var node6 = new DialogueNode("I guess he just found it too difficult to live with Sara. There have been rumours around the neighbourhood that there were cases of domestic violence.");
+            var node7 = new DialogueNode("They seem to be coping well, although I think there's a bigger issue at hand.");
+
+            var node8 = new DialogueNode("You didn't hear this from me, but apparently there's a custody battle going on between the parents. There's been multiple incidents of Sara neglecting her children.");
+            node8.isClue = true;
+
+            var node9 = new DialogueNode("Actually, she helped me organise a large book-a-thon, where kids around the neighbourhood were able to get free books.");
+            var node10 = new DialogueNode("Personally, I just think her hands became way too full handling Tommy and Lara. There's only so much a strong woman can handle before it becomes too much.");
+
+            var node11 = new DialogueNode("Oh, nothing really. Sara's been such a good person to me, it'd be rude of me to gossip about her.");
+
+            dialogue.AddNode(node1);
+            dialogue.AddNode(node2);
+            dialogue.AddNode(node3);
+            dialogue.AddNode(node4);
+            dialogue.AddNode(node5);
+            dialogue.AddNode(node6);
+            dialogue.AddNode(node7);
+            dialogue.AddNode(node8);
+            dialogue.AddNode(node9);
+            dialogue.AddNode(node10);
+            dialogue.AddNode(node11);
+
+            //node 1 options
+            dialogue.AddOption("Do you know of Sara Van Haver?", node1, node2);
+            dialogue.AddOption("Hi, do you know of Oak Stark Primary School?", node1, node3);
+
+            //node 2 options
+            dialogue.AddOption("I hear that Sara has two children.", node2, node4);
+            dialogue.AddOption("What kind of person is Sara?", node2, node5);
+
+            //node 3 optiona
+            dialogue.AddOption("I hear that Sara has two children.", node3, node4);
+            dialogue.AddOption("What kind of person is Sara?", node3, node5);
+
+            //node 4 options
+            dialogue.AddOption("What ever happened to their father?", node4, node6);
+            dialogue.AddOption("Do you know how their children feel about the split between Sara and her Husband?", node4, node7);
+
+            //node 5 options
+            dialogue.AddOption("Awards you say? Have you personally worked with Sara before?", node5, node9);
+            dialogue.AddOption("Do you have any idea why she stopped working as a teacher?", node5, node10);
+
+            //node 6 exit option
+            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node6, null);
+
+            //node 7 options
+            dialogue.AddOption("Bigger issue? What do you mean by that?", node7, node8);
+
+            //node 8 exit option
+            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node8, null);
+
+            //node 9 exit option
+            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node9, null);
+
+            //node 10 options
+            dialogue.AddOption("What did you mean by too much?", node10, node11);
+
+            //node 11 exit option
+            dialogue.AddOption("Alright, Paul, thanks so much for your help.", node11, null);
+
+            XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
+            StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
+
+            serz.Serialize(writer, dialogue);
+        }
+
+        public static void LouisDialogue()
+        {
+            Dialogue dialogue = new Dialogue();
+
+            dialogue.npcName = "Javier";
+            dialogue.clue = "Louis’s ex-girlfriend was murdered, but he quickly started dating someone else shortly after – Did her death affect him?";
+
+            var node1 = new DialogueNode("Hello!");
+            var node2 = new DialogueNode("Yes of course I know him! I'm Javier, his sous chef at the main restaurant in the city!");
+            var node3 = new DialogueNode("Yes I do, I'm Javier, his sous chef.");
+
+            var node4 = new DialogueNode("Well he is very popular with the ladies. But it is kind of weird, he seems to move on from them pretty fast. I wouldn't be able to if it was me, I'd be devastated.");
+            var node5 = new DialogueNode("I don't know if you've already heard or not but, his former girlfriend Miranda was recently murdered in a serial killing case.");
+            var node6 = new DialogueNode("There has actually. Quite tragic really, I wouldn't be able to act the way he did if it was me. I'd be devastated.");
+            var node7 = new DialogueNode("I saw Louis the day after the news broke out, he seemed fine as if nothing happened. It happened only about a month ago too, but Louis moved on pretty quickly and started dating someone else two weeks later.");
+            node7.isClue = true;
+
+            var node8 = new DialogueNode("I'm not too sure. Cooking really does seem like his life as well as women of course. I know he enjoys practising pocket knife tricks and showing it off, he always has it on him.");
+            var node9 = new DialogueNode("No I don't think so, he's a chef! He knows how to handle his knives.");
+
+            var node10 = new DialogueNode("Quite a while now! Louis and I go way back, I was there when he first opened his restaurant, it's probably been around 10 years now.");
+            var node11 = new DialogueNode("He is a very busy man, he's always out doing interviews or filming for cooking shows. But when he does come in to the restaurant, the dishes he makes are superb.");
+
+            var node12 = new DialogueNode("He is a very proud person and doesn't tolerate anything not up to his standards so he's not very nice to the newbies and criticizes them quite a bit. A lot of them end up leaving because they can't handle it, but the pay is really good.");
+
+            dialogue.AddNode(node1);
+            dialogue.AddNode(node2);
+            dialogue.AddNode(node3);
+            dialogue.AddNode(node4);
+            dialogue.AddNode(node5);
+            dialogue.AddNode(node6);
+            dialogue.AddNode(node7);
+            dialogue.AddNode(node8);
+            dialogue.AddNode(node9);
+            dialogue.AddNode(node10);
+            dialogue.AddNode(node11);
+            dialogue.AddNode(node12);
+
+            //node 1 options
+            dialogue.AddOption("Hello do you know a person called Louis Dubois?", node1, node2);
+            dialogue.AddOption("I hear you work for the famous chef Louis Dubois.", node1, node3);
+
+            //node 2 options
+            dialogue.AddOption("How long have you been working there?", node2, node10);
+            dialogue.AddOption("Do you know if Louis ever does anything that isn't work related?", node2, node8);
+            dialogue.AddOption("The public seems to like Louis quite a lot. Do you have anything to say about his private life?", node2, node4);
+
+
+            //node 3 options
+            dialogue.AddOption("The public seems to like Louis quite a lot. Do you have anything to say about his private life?", node3, node4);
+            dialogue.AddOption("Do you know if Louis ever does anything that isn't work related?", node3, node8);
+            dialogue.AddOption("How long have you been working there?", node3, node10);
+
+            //node 4 options
+            dialogue.AddOption("How long have you been working there?", node4, node10);
+            dialogue.AddOption("What do you mean by that?", node4, node5);
+            dialogue.AddOption("What do the other workers think of him?", node4, node12);
+
+            //node 5 options
+            dialogue.AddOption("That sounds horrible, how did Louis take it?", node5, node7);
+
+            //node 6 options
+            dialogue.AddOption("What do you mean by that?", node6, node5);
+            dialogue.AddOption("What do the other workers think of him?", node6, node12);
+
+            //node 7 exit option
+            dialogue.AddOption("Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.", node7, null);
+
+            //node 8 options
+            dialogue.AddOption("Isn't that dangerous?", node8, node9);
+            dialogue.AddOption("Has anything strange been happening around him recently?", node8, node6);
+
+            //node 9 exit option
+            dialogue.AddOption("Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.", node9, null);
+
+            //node 10 options
+            dialogue.AddOption("Oh that's great! You must know him very well then. What can you tell me about him?", node10, node11);
+            dialogue.AddOption("What do the other workers think of him?", node10, node12);
+
+            //node 11 options
+            dialogue.AddOption("Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.", node11, null);
+
+            //node 12 options
+            dialogue.AddOption("Thanks for your help Javier. I'll make sure to come by the restaurant and have a meal.", node12, null);
 
             XmlSerializer serz = new XmlSerializer(typeof(Dialogue));
             StreamWriter writer = new StreamWriter("gabriel_npc_dialogue.xml");
