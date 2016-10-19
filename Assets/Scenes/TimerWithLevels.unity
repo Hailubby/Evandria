@@ -539,9 +539,31 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013315891438, guid: a0267ddc179324745bde771fc30a7409,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0267ddc179324745bde771fc30a7409, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &198179153 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011025548024, guid: a0267ddc179324745bde771fc30a7409,
+    type: 2}
+  m_PrefabInternal: {fileID: 198179152}
+--- !u!114 &198179154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 198179153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0374943940c384c9a653198edbd512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopPanel: {fileID: 198179153}
 --- !u!1 &222193605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,6 +1946,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb6dd8c3487fbc54e8417860ee616b85, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &690892856 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012120908400, guid: fb6dd8c3487fbc54e8417860ee616b85,
+    type: 2}
+  m_PrefabInternal: {fileID: 690892855}
 --- !u!1001 &691127014
 Prefab:
   m_ObjectHideFlags: 0
@@ -7277,7 +7304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightingPanel: {fileID: 576633475}
-  currentLocation: {fileID: 0}
+  currentLocation: {fileID: 690892856}
   _transitionSpeed: 0.01
   _transitionSpeedDelay: 0.05
   _dayLength: 0
