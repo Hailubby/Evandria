@@ -9,6 +9,7 @@ public class NPCWalk : MonoBehaviour {
 	public float speed = 2.0f;
 	int direction = 0;
 	bool isInteracting = false;
+	public MovementScript player;
 
 	// counter to make walk() occur every certain number of frames
 	private int frames = 0;
@@ -17,10 +18,14 @@ public class NPCWalk : MonoBehaviour {
 	void Start () {
 		rigidBody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
+		player = FindObjectOfType<MovementScript> ();
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
+		isInteracting = player.GetComponent<InteractionScript> ().interacting;
+		Debug.Log ("Interacting = " + isInteracting);
+
 		if (!isInteracting) {
 			frames++;
 			Walk (direction);
