@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Hi there, does the name Anzio Romano mean anything to you?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I work for the ISC, would you mind if I ask you a few questions regarding Anzio?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Yes, I’m his colleague. Why do you ask?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What do you think of Anzio?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you describe to me what you and Anzio do on a daily basis?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you tell me a bit about his family?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Ah I see. No I don’t mind at all, ask away!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What do you think of Anzio?</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you describe to me what you and Anzio do on a daily basis?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you tell me a bit about his family?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Between you and me, even though we’ve been working together for three years now, I still can’t stand that prick. His arrogant and condescending personality is a pain to work with.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Has he caused any trouble in the workplace?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Can you describe to me what you and Anzio do on a daily basis?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>Every day we would receive new software builds from the development team to test for bugs and errors. The job itself is tedious and boring, but we do get to see the latest secret projects that the company is working on. I guess you can consider that a perk of our job.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Can you tell me a bit about his family?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Is there anything special or strange that you noticed about Anzio recently?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>Anzio himself is single right now, he mentioned before that he thinks marriage is nothing but trouble. But everybody in the department knows that he really loves his parents.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Oh? Could you elaborate on that?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>Not really, he works just as hard as any other employees. He arrives on time to work every day, never misses the deadline, and stays for over hour if he needs to.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thank you for you time James.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>I’ve heard that he recently moved in to a massive house. I honestly wonder how he managed that, seeing that we’re doing the same job and we make so little money.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Interesting, but is it possible that he simply comes from a wealthy family?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>He takes great care of his parents like no other. This one time he got a phone call from the hospital saying that his mother hurt herself by falling from the staircase, Anzio rushed to the hospital immediately without even telling his supervisor!</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thank you for you time James.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>Well I guess that may be true. I don't find our job particularly exciting, but maybe he does. I guess the pay won't matter to him too much then.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Thank you for you time James.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>James</npcName>
+  <clue>Anzio values his family greatly</clue>
+</Dialogue>

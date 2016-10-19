@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Hey there young man, my name is Alex from the ISC. Can I ask you some questions about your dad Scott?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>My name is Alex, and I'm from the ISC. I have some questions for you kiddo.</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>Sure thing!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me a bit about your mother.</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Tell me a bit about your father.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Tell me a bit about yourself</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>Umm, ok Mr.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me a bit about your mother.</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Tell me a bit about your father.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Tell me a bit about yourself</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>He's my hero! He's always worked so hard, yet always happy and cheerful and lightening up everyone's day. I don't get to see him a lot because of his work though.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>He works as a cleaner, correct?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>He studied for a Diploma in Arts. Would you say it's one of his passions?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>I don't rememeber much about my mom... She passed away 5 years ago, I was only 6 then.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Are there any things that might stick out in your mind?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How do you think she would describe your father?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>I don't know what to say, I'm 11, I go to school? I do the dishes and I like trains?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me a bit about your father.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Tell me a bit about your mother.</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>Yes he does. He says he works overtime a lot and doesn't come home overnight sometimes. It's a bit weird when he comes home like he's had the time of his life.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Why would he seem so happy after work?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you think he enjoys his job?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>He doesn't talk too much about it, like it's something he kind of avoids. But from what he's told me, I think he loves that kind of stuff!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Ok, thanks for answering my questions kiddo.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>I asked him that too, but he never really says much. I feel like he's hiding something, but I'm too afraid to ask.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Ok, thanks for answering my questions kiddo.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>He thinks that the small and under-appreciated things still matter, so I believe he's content with it.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What else do you think he'd enjoy or be passionate about?</Text>
+          <DestinationNodeID>13</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>He studied for a Diploma in Arts. Would you say it’s one of his passions?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>Hmm... I guess that she was always cheerful like my dad.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>How did she pass away?</Text>
+          <DestinationNodeID>12</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How do you think she would describe your father?</Text>
+          <DestinationNodeID>11</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <Text>She would say what I would say! He's the hapiest, most cheerful person in the world who works super hard!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Ok, thanks for answering my questions kiddo.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <Text>I don't actually know. My dad never told me.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Ok, thanks for answering my questions kiddo.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <Text>I think a better question is what doesn't he enjoy!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Ok, thanks for answering my questions kiddo.</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Jeffrey</npcName>
+  <clue>He works overnight sometimes supposedly, but it seems like he's hiding something...</clue>
+</Dialogue>
