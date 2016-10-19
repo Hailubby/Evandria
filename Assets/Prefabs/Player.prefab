@@ -146,10 +146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b179239500ad284a8386fadc210b0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level1: 0
   chosenCandidate: 
+  chosenCandidateName: 
+  rejectCandidateName: 
   goodOutcome: 0
   changeInMorale: 0
-  day: 0
   decisionCanvas: {fileID: 0}
   outcomeCanvas: {fileID: 0}
 --- !u!114 &114000012649576518
@@ -176,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facing: down
-  speed: 10
+  speed: 20
   canMove: 0
 --- !u!212 &212000010904918342
 SpriteRenderer:
