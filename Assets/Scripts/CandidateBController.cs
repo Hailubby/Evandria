@@ -16,6 +16,7 @@ public class CandidateBController : MonoBehaviour{
     public string moral;
     public string goodArray;
     public string badArray;
+    public string houseSize;
 
     private string traitString;
 
