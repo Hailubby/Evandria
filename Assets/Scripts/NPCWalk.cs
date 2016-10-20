@@ -24,7 +24,7 @@ public class NPCWalk : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		isInteracting = player.GetComponent<InteractionScript> ().interacting;
-		Debug.Log ("Interacting = " + isInteracting);
+		// Debug.Log ("Interacting = " + isInteracting);
 
 		if (!isInteracting) {
 			frames++;

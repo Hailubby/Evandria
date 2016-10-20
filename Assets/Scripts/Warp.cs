@@ -34,8 +34,14 @@ public class Warp : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         this.other = other;
-        isGenerated = other.GetComponent<Locations>().isGenerated;
-        OpenTheGui();
+
+        var locations = other.GetComponent<Locations>();
+
+        if (locations != null)
+        {
+            isGenerated = locations.isGenerated;
+            OpenTheGui();
+        }
     }
 
     void OpenTheGui()

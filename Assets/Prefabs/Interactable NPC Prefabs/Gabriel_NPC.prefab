@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 0}
   clue_owner: Gabriel
+  wonGame: 0
   dialogueFile: {fileID: 4900000, guid: c0299b349f4aa894d8a2d5b863012328, type: 3}
   DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
     type: 2}
@@ -151,8 +152,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1209406351
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 3a2dc49b875d6af46a66d6a178083984, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
