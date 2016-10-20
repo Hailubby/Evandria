@@ -21,6 +21,18 @@ public class CandidateXML
     [XmlElement("BadArray")]
     public string badArray;
 
+    [XmlElement("HouseSize")]
+    public string houseSize;
+
+    [XmlElement("NPCName")]
+    public string npcName;
+
+    [XmlElement("ItemName1")]
+    public string itemName1;
+
+    [XmlElement("ItemName2")]
+    public string itemName2;
+
     [XmlElement("Gender")]
     public string gender;
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -7,6 +8,7 @@ public class Journal : MonoBehaviour
 {
     AchievementScript achievements;
     public List<Clue> journal;
+    public GameObject chooseButton;
     bool ClueSingle = false;
     bool ClueCharacter = false;
     bool ClueLevel = false;
@@ -28,6 +30,8 @@ public class Journal : MonoBehaviour
     public void AddClue(Clue clue)
     {
         journal.Add(clue);
+
+        chooseButton.GetComponent<Button>().interactable = true;
         Debug.Log("Added item to journal: " + clue.clueName);
         GameObject.FindObjectOfType<JournalPanelScript>().UpdateJournal(journal);
         
