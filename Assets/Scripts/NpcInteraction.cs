@@ -43,8 +43,15 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         if (EvandriaUpdate.level == 2 || EvandriaUpdate.level == 3) {
             if (!wonGame)
             {
+                if (stopPlayerMovement)
+                {
+                    player.DisableMovement();
+                    player.GetComponent<InteractionScript>().interacting = true;
+                }
                 //call amys stuff
 
+                player.EnableMovement();
+                player.GetComponent<InteractionScript>().interacting = false;
             }
             else
             {
