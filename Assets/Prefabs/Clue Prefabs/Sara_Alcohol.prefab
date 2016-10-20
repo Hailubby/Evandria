@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000011705819930}
   - 61: {fileID: 61000010486552340}
   m_Layer: 8
-  m_Name: SaraAlcohol
+  m_Name: Sara_Alcohol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

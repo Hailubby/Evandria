@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010734168676}
   - 61: {fileID: 61000010979798700}
   m_Layer: 8
-  m_Name: Tara_Bin
+  m_Name: Tara_ExamTimetable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

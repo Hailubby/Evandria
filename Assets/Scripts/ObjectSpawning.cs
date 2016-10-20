@@ -37,8 +37,7 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 
 		// generating objects for candidate A
-		//itemsA = associations.itemNamesA;
-		itemsA = new List<string> { "Pill", "Diary" };
+		itemsA = associations.itemNamesA;
 		candidateA = associations.CandidateAName;
 		houseA = associations.houseA;
 		foreach (Vector3 location in houseA.itemSpawnLocations) {
@@ -47,8 +46,7 @@ public class ObjectSpawning : MonoBehaviour {
 		npcNameA = candidateA + "_NPC";
 
 		// generating objects for candidate B
-		//itemsB = associations.itemNamesB;
-		itemsB = new List<string> { "Old Disc" };
+		itemsB = associations.itemNamesB;
 		candidateB = associations.CandidateBName;
 		houseB = associations.houseB;
 		foreach (Vector3 location in houseB.itemSpawnLocations) {
@@ -65,7 +63,9 @@ public class ObjectSpawning : MonoBehaviour {
 		// randomly placing clue items for candidate A
 		for (int i = 0; i < itemsA.Count; i++) {
 			bool hasPlaced = false;
-			GameObject currentObject = GameObject.Find(itemsA[i]);
+			string itemName = candidateA + "_" + itemsA [i];
+			Debug.Log ("Going to instantiate: " + itemName);
+			GameObject currentObject = GameObject.Find(itemName);
 
 			while (!hasPlaced) {
 				int place = rnd.Next(houseA.itemSpawnLocations.Length);
@@ -80,8 +80,9 @@ public class ObjectSpawning : MonoBehaviour {
 		// randomly placing clue items for candidate B
 		for (int i = 0; i < itemsB.Count; i++) {
 			bool hasPlaced = false;
-			GameObject currentObject = GameObject.Find(itemsB[i]);
-			Debug.Log ("itemsB[" + i + "] is: " + itemsB [i]);
+			string itemName = candidateB + "_" + itemsB [i];
+			Debug.Log ("Going to instantiate: " + itemName);
+			GameObject currentObject = GameObject.Find(itemName);
 
 			while (!hasPlaced) {
 				int place = rnd.Next(houseB.itemSpawnLocations.Length);
