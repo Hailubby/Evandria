@@ -5938,6 +5938,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1653246055}
+--- !u!114 &1680694096 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011852191654, guid: 816cb5aaf75cab64f91a25eeebd250b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 364419192}
+  m_Script: {fileID: 11500000, guid: 1d0c18a10f6fe234f8641b6e4466d63e, type: 3}
 --- !u!1 &1701366229
 GameObject:
   m_ObjectHideFlags: 0
@@ -7413,6 +7419,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1442557429}
         m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1680694096}
+        m_MethodName: DisableInteracting
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
