@@ -69,6 +69,8 @@ public class ClockTimerAnimator : MonoBehaviour {
                 laptopScript.interact();
                 GameObject investigateButton = GameObject.Find("Investigate Button");
                 investigateButton.GetComponent<Button>().interactable = false;
+                GameObject chooseButton = GameObject.Find("Choose Button");
+                chooseButton.GetComponent<Button>().interactable = true;
             }
         }
 

@@ -37,17 +37,17 @@ public class PanelLightingColour : MonoBehaviour
         if (EvandriaUpdate.level == 1)
         {
             _dayLength = 720;
-            _timeList = new int[] { 5, 10, 20, 30 };
+            _timeList = new int[] { 270, 450, 540, 630 };
         }
         else if (EvandriaUpdate.level == 2)
         {
             _dayLength = 600;
-            _timeList = new int[] { 10, 20, 30, 40 };
+            _timeList = new int[] { 225, 375, 450, 525 };
         }
         else if (EvandriaUpdate.level == 3)
         {
             _dayLength = 480;
-            _timeList = new int[] { 15, 30, 45, 60 };
+            _timeList = new int[] { 180, 300, 360, 420 };
         }
 
         myTimeSpan = new TimeSpan(0, 0, 0, 0, 0);

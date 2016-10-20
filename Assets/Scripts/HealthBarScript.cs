@@ -56,6 +56,11 @@ public class HealthBarScript : MonoBehaviour
         health = health < 0 ? 0 : health;
 
         delta = 0;
+
+        if (health < 20)
+        {
+            EvandriaUpdate.level = -1;
+        }
     }
 
     /// <summary>

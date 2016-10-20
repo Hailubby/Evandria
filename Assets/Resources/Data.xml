@@ -21,8 +21,8 @@
       <Occupation>Neurologist</Occupation>
       <Skills>PhD in Chemistry and Biology</Skills>
       <Description>- Was really nervous.
-        - Specialises in Neurological diseases.
-        - No close friends</Description>
+- Specialises in Neurological diseases.
+- No close friends</Description>
       <background>Lost wife and daughter in a tragic house break-in about six years ago.
         He finds it hard to get close to people due to this trauma. He now supports a child orphanage charity to help support children who has no family as he has lost his
         Spends his personal time looking at family photos and reliving his old happy memories.
@@ -48,8 +48,8 @@
       <Occupation>Accountant</Occupation>
       <Skills>Chartered Accountant</Skills>
       <Description>- Raised in a strict environment in China.
-        - Workaholic and Unmarried.
-        - Lives in a fairly small home</Description>
+- Workaholic and Unmarried.
+- Lives in a fairly small home</Description>
       <background>She has a tendency to resort to violence on animals to relieve her stress.
         She sometimes loses control and abuses her family members when they do see each other as she can be quite fierce with them.
         She also obtains drugs illegally to help deal with her out breaks (ADDERAll)
@@ -75,8 +75,8 @@
       <Occupation>Composer</Occupation>
       <Skills>Musical and Entertainment Knowledge</Skills>
       <Description>- Became a composer officially at 18.
-        - Composes music in many genres.
-        - Has made a name for himself in the industry.</Description>
+- Composes music in many genres.
+- Has made a name for himself in the industry.</Description>
       <background>Is a workaholic and very obsessive with his work to a fault.
         Is a perfectionist and will do any means possible to create the perfect piece,
         including aggressively bossing those who work under him as well as collaborators and makes everyone work overtime with no exceptions.
@@ -101,9 +101,9 @@
       </Traits>
       <Occupation>Cleaner</Occupation>
       <Skills>Diploma in Arts</Skills>
-      <Description>He has a small family: his son Jeffrey (aged 11) and his wife Emma, who unfortunately passed away last year. He wants to take his kid to Evandria for a better future.
-        His own childhood wasn't the best, and that's what drives his motives to get to Evandria, and also for his late wife.
-        He's a bit disappointed his Diploma in Arts didn't get him very far, but he thinks that everybody should know about and appreciate Arts.</Description>
+      <Description>- Lives with his 11yo son. Wife passed away last year.
+- Childhood was not exactly great.
+- Thinks that everybody should know about and appreciate Arts.</Description>
       <background>
         <!-- Missing Background -->
       </background>
@@ -125,9 +125,9 @@
       </Traits>
       <Occupation>Socialite</Occupation>
       <Skills>Retail shopping, schmoozing, Organising charity events</Skills>
-      <Description>Tara comes from an extremely wealthy family. 
-	  Tara loves shopping, hosting dinner parties and even occasionally hosting charity events. 
-	  Tara is a Commerce-Law student, and in this day and age, universities and higher education has become extremely rare and reserved for the wealthier.</Description>
+      <Description>- Comes from an extremely wealthy family. 
+- Loves shopping, hosting dinner parties and even occasionally hosting charity events. 
+- Is a Commerce-Law student.</Description>
       <background>
         <!-- Missing Background -->
       </background>
@@ -151,10 +151,10 @@
         <Trait>Naive</Trait>
       </Traits>
       <Occupation>Mechanic</Occupation>
-      <Skills>Qualified Mechanical Engineer</Skills>
-      <Description>Landon is a young man who believes he can do anything, anything you need repaired he'll construct a way to deal with it.
-        He's only ever worked one job in his life but his employer restricted him to working by the book to solve problems and wouldn't let him make use of his innovative ideas.
-        He sometimes gets ahead of himself and makes unrealistic designs which may not work in practice.</Description>
+      <Skills>Mechanical Engineer</Skills>
+      <Description>- Believes he can do anything, can deal with any repair jobs.
+- Only has had one job. Forced to work by the book.
+- Sometimes gets ahead of himself and makes unrealistic designs.</Description>
       <background>Although his ideas may not always seem to be grounded in real in-use solutions Landon thoroughly researches his ideas.
         He makes careful calculations to reduce the risk of their failure, but without actually having tested them practically there is no absolute guarantee they will work.
         Taking a chance on a guy like Landon could lead to great technological advancements, but great reward only comes from taking big risks.</background>
@@ -176,11 +176,11 @@
         <Trait>Crafty</Trait>
         <Trait>Short-Tempered</Trait>
       </Traits>
-      <Occupation>Graphics Designer</Occupation>
+      <Occupation>Designer</Occupation>
       <Skills>3D Modelling</Skills>
-      <Description>Holds a criminal record which shows that she has previously committed crimes of theft.
-        Has attended multiple sessions with a psychiatrist to deal with her ongoing anger management issues.
-        Works diligently and efficiently at work.</Description>
+      <Description>- Has criminal theft record.
+- Has attended multiple sessions with a psychiatrist to deal with anger issues.
+- Works diligently and efficiently at work.</Description>
       <background>
         <!-- Missing Background -->
       </background>
@@ -196,17 +196,17 @@
       <ItemName2>Phone</ItemName2>
       <Gender>Male</Gender>
       <DOB>03/9/2013</DOB>
-      <Ethnicity>Japanese</Ethnicity>
+      <Ethnicity>French</Ethnicity>
       <Traits>
         <Trait>Meticulous</Trait>
         <Trait>Obsessive</Trait>
         <Trait>Charismatic</Trait>
       </Traits>
-      <Occupation>Head Chef</Occupation>
+      <Occupation>Chef</Occupation>
       <Skills>Cooking</Skills>
-      <Description>World renowned chef with multiple restaurant chains around the world
-        Popular with the ladies
-        Girlfriend (Miranda) died in a serial killing case recently</Description>
+      <Description>- World renowned chef with multiple restaurant chains around the world
+- Popular with the ladies
+- Girlfriend (Miranda) died in a serial killing case recently</Description>
       <background>Actually a serial killer, not satisfied with just killing and cooking animals
         He actually killed his ex girlfriend</background>
     </Candidate>
@@ -227,11 +227,11 @@
         <Trait>Outspoken</Trait>
         <Trait>Blunt</Trait>
       </Traits>
-      <Occupation>Stay at home mother</Occupation>
-      <Skills>Extremely persuasive and resourceful</Skills>
-      <Description>Sara spends all her time taking care of her 2 young children, Tommy and Lara
-        She used to be a primary school teacher at her local school
-        Used to be with her husband a lot, but now he's nowhere to be seen</Description>
+      <Occupation>Housewife</Occupation>
+      <Skills>Extremely persuasive, resourceful</Skills>
+      <Description>- Spends all her time taking care of her 2 kids.
+- She used to be a primary school teacher at her local school
+- Used to be with her husband a lot, but now he's never seen</Description>
       <background><!-- Missing background --></background>
     </Candidate>
     <Candidate id="9">
@@ -251,10 +251,11 @@
         <Trait>Lazy</Trait>
         <Trait>Relaxed</Trait>
       </Traits>
-      <Occupation>Software Developer</Occupation>
+      <Occupation>Programmer</Occupation>
       <Skills>Accredited Software Engineer</Skills>
-      <Description>Francis is a professional software engineer, however he prefers to spend most of his time playing video games.
-        He has shown glimpses of brilliance in his work, and has the potential to create ground breaking products.</Description>
+      <Description>- Spends most of his time playing games.
+- Has shown glimpses of brilliance in his work. 
+- Has the potential to create ground breaking products.</Description>
       <background>Is unmotivated to do normal work, spends most of his time playing games instead. 
         Has a secret side project which has the ability to compile huge amounts of data on loanees to a large bank, and potentially wipe that debt.</background>
     </Candidate>
@@ -275,11 +276,11 @@
         <Trait>Unpredictable</Trait>
         <Trait>Arrogant</Trait>
       </Traits>
-      <Occupation>Software Tester</Occupation>
+      <Occupation>Debugger</Occupation>
       <Skills>Bachelor of (Computer) Science</Skills>
-      <Description>Works at a software company as an in-house tester/debugger.
-        Recently purchased a luxurious house.
-        His co-workers say he's hard to work with.
+      <Description>- Works at a software company as an in-house tester/debugger.
+- Recently purchased a luxurious house.
+- His co-workers say he's hard to work with.
 		</Description>
       <background><!-- Missing Background --></background>
     </Candidate>
