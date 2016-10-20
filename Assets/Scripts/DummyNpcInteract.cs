@@ -20,10 +20,55 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
     public bool stopPlayerMovement;
 
     public void interact()
+
     {
+        AssignText();
         stopPlayerMovement = true;
         RunDialogue();
 
+    }
+
+    public void AssignText() {
+        System.Random rnd = new System.Random();
+        int random = rnd.Next(10);
+
+        switch (random)
+        {
+            case 0:
+                node_text.GetComponentInChildren<Text>().text = "I wish I could go to Evandria.";
+                break;
+            case 1:
+                node_text.GetComponentInChildren<Text>().text = "Hey Alex! Haven't seen you in a while.";
+                break;
+            case 2:
+                node_text.GetComponentInChildren<Text>().text = "I hear Evandria is great this time of year!";
+                break;
+            case 3:
+                node_text.GetComponentInChildren<Text>().text = "People tell me Evandrian years are 420 days long!";
+                break;
+            case 4:
+                node_text.GetComponentInChildren<Text>().text = "My cousin's application to Evandria got rejected, could you put in a good word for him please?";
+                break;
+            case 5:
+                //Suitable for male and female npcs
+                node_text.GetComponentInChildren<Text>().text = "My wife got accepted to go to Evandria! She left me all alone, I'm so lonely.";
+                break;
+            case 6:
+                node_text.GetComponentInChildren<Text>().text = "Should I apply for Evandria? I don't know if I'll be suitable or not.";
+                break;
+            case 7:
+                node_text.GetComponentInChildren<Text>().text = "Can I take my dog with me to Evandria? I can't survive without him!";
+                break;
+            case 8:
+                node_text.GetComponentInChildren<Text>().text = "I'm late for work. Have to hurry!";
+                break;
+            case 9:
+                node_text.GetComponentInChildren<Text>().text = "I used to be an investigator just like you. But then I took a bribe and was fired.";
+                break;
+            default:
+                node_text.GetComponentInChildren<Text>().text = "Something feels off today...";
+                break;
+        }
     }
 
     public void RunDialogue()
@@ -97,7 +142,8 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
         npc_name = GameObject.Find("NPC_Name");
 
         npc_name.GetComponentInChildren<Text>().text = "Townsperson";
-        node_text.GetComponentInChildren<Text>().text = "Hello!";
+
+        
 
         player_name.SetActive(false);
         option_1.SetActive(false);

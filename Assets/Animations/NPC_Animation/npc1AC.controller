@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: npc1_female
+  m_Name: npc1AC
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend

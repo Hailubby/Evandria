@@ -24,8 +24,9 @@ GameObject:
   - 61: {fileID: 61000010720535920}
   - 50: {fileID: 50000010119719660}
   - 114: {fileID: 114000013481982760}
+  - 114: {fileID: 114000011299035406}
   m_Layer: 8
-  m_Name: npc1_male
+  m_Name: npc2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012050009592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -28.616234, y: 11.987912, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -84,7 +85,7 @@ Animator:
   m_GameObject: {fileID: 1000012050009592}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb0e4f44c1e0df54a80f3bf7a22a2f2b, type: 2}
+  m_Controller: {fileID: 9100000, guid: b5368985e31df814eb28d0d17d4b6a33, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92,6 +93,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000011299035406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012050009592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89f37e5f07a9234fbecf02e138bc15c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
+    type: 2}
+  player: {fileID: 0}
+  stopPlayerMovement: 0
 --- !u!114 &114000013481982760
 MonoBehaviour:
   m_ObjectHideFlags: 1

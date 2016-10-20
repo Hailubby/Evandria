@@ -24,9 +24,9 @@ GameObject:
   - 50: {fileID: 50000010082185054}
   - 114: {fileID: 114000010839803292}
   - 61: {fileID: 61000012425639950}
-  - 114: {fileID: 114000013712772092}
-  m_Layer: 0
-  m_Name: npc1_female
+  - 114: {fileID: 114000011810289082}
+  m_Layer: 8
+  m_Name: npc1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012934311424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.415135, y: -6.9127297, z: 0}
+  m_LocalPosition: {x: -26.940506, y: 11.859011, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 0}
---- !u!114 &114000013712772092
+--- !u!114 &114000011810289082
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,13 +114,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012934311424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
+  m_Script: {fileID: 11500000, guid: f89f37e5f07a9234fbecf02e138bc15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  journal: {fileID: 0}
-  clue_owner: 
-  dialogueFile: {fileID: 0}
-  DialogueWindowPrefab: {fileID: 0}
+  DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
+    type: 2}
   player: {fileID: 0}
   stopPlayerMovement: 0
 --- !u!212 &212000010326714474
@@ -150,7 +148,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1209406351
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7f406080d2779744e8e1edf561e38fca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
