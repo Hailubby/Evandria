@@ -198,7 +198,7 @@ public class AchievementScript : MonoBehaviour {
     }
 
     //Presents the menu, toggles visibility, if visible load in updates to achievements
-    void showAchieveMenu()
+    public void showAchieveMenu()
     {
         achievementMenu.SetActive(!achievementMenu.activeSelf);
 
