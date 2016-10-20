@@ -10,6 +10,7 @@ public class ContinueGameOverCanvasScript : MonoBehaviour {
     public GameObject gameOverPanel;
     public Text continueText;
     public Text congratulationsText;
+    public Text currentScore;
 
     
     // Use this for initialization
