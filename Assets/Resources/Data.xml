@@ -229,9 +229,9 @@
       </Traits>
       <Occupation>Housewife</Occupation>
       <Skills>Extremely persuasive, resourceful</Skills>
-      <Description>- Spends all her time taking care of her 2 young children, Tommy and Lara
+      <Description>- Spends all her time taking care of her 2 kids.
 - She used to be a primary school teacher at her local school
-- Used to be with her husband a lot, but now he's nowhere to be seen</Description>
+- Used to be with her husband a lot, but now he's never seen</Description>
       <background><!-- Missing background --></background>
     </Candidate>
     <Candidate id="9">
@@ -253,7 +253,7 @@
       </Traits>
       <Occupation>Programmer</Occupation>
       <Skills>Accredited Software Engineer</Skills>
-      <Description>- Is a professional software engineer, spends most of his time playing games.
+      <Description>- Spends most of his time playing games.
 - Has shown glimpses of brilliance in his work. 
 - Has the potential to create ground breaking products.</Description>
       <background>Is unmotivated to do normal work, spends most of his time playing games instead. 
