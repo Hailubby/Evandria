@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010435771526}
   - 61: {fileID: 61000010663162290}
   m_Layer: 8
-  m_Name: Asuna_award
+  m_Name: Asuna_Award
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010106979654}
   - 61: {fileID: 61000013421184090}
   m_Layer: 8
-  m_Name: Louis_phone
+  m_Name: Louis_Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
