@@ -41,7 +41,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         Debug.Log("This NPC has been interacted with!");
         
 
-        if (EvandriaUpdate.level == 1 || EvandriaUpdate.level == 2) {
+        if (EvandriaUpdate.level == 2 || EvandriaUpdate.level == 3) {
             wonGame = InteractionScript.wonTicTacToe;
             if (!wonGame)
             {
