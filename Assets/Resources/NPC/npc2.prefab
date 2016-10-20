@@ -25,7 +25,7 @@ GameObject:
   - 50: {fileID: 50000010119719660}
   - 114: {fileID: 114000013481982760}
   m_Layer: 8
-  m_Name: npc1_male 1
+  m_Name: npc2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ Animator:
   m_GameObject: {fileID: 1000012050009592}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb0e4f44c1e0df54a80f3bf7a22a2f2b, type: 2}
+  m_Controller: {fileID: 9100000, guid: b5368985e31df814eb28d0d17d4b6a33, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

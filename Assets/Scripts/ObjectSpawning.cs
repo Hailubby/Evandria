@@ -12,7 +12,7 @@ public class ObjectSpawning : MonoBehaviour {
 	int npcSpawnPoint;
 	List<bool> isPlacedInTown = new List<bool>();
 	bool placedNPC = false;
-	bool[] npcIsUsed = new bool[2];
+	bool[] npcIsUsed = new bool[16];
 
 	//Candidate A objects
 	List<string> itemsA;
@@ -118,14 +118,15 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 
 		// spawning non-interactable NPCs
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 4; i++) {
 			placedNPC = false;
-			npcToUse = Random.Range(1, 3);
+			npcToUse = Random.Range(1, 17);
 
 			while (npcIsUsed[npcToUse - 1]) {
-				npcToUse = Random.Range(1, 3);
+				npcToUse = Random.Range(1, 17);
 			}
 
+			Debug.Log ("Trying to instantiate npc" + npcToUse);
 			currentNPC = Instantiate(Resources.Load("NPC/npc" + npcToUse)) as GameObject;
 
 			while (!placedNPC) {

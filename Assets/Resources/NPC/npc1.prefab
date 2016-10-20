@@ -26,7 +26,7 @@ GameObject:
   - 61: {fileID: 61000012425639950}
   - 114: {fileID: 114000013712772092}
   m_Layer: 0
-  m_Name: npc1_female
+  m_Name: npc1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  player: {fileID: 0}
 --- !u!114 &114000013712772092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,8 +119,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 0}
   clue_owner: 
-  DialogueDataFilePath: 
+  dialogueFile: {fileID: 0}
   DialogueWindowPrefab: {fileID: 0}
+  player: {fileID: 0}
+  stopPlayerMovement: 0
 --- !u!212 &212000010326714474
 SpriteRenderer:
   m_ObjectHideFlags: 1
