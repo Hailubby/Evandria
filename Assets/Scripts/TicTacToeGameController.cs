@@ -76,107 +76,103 @@ public class TicTacToeGameController : MonoBehaviour {
         // Check the first row
         if (buttonList[0].text == playerSide && buttonList[1].text == playerSide && buttonList[2].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the second row
         else if (buttonList[3].text == playerSide && buttonList[4].text == playerSide && buttonList[5].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the third row
         else if (buttonList[6].text == playerSide && buttonList[7].text == playerSide && buttonList[8].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the first column
         else if (buttonList[0].text == playerSide && buttonList[3].text == playerSide && buttonList[6].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the second column
         else if (buttonList[1].text == playerSide && buttonList[4].text == playerSide && buttonList[7].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the third column
         else if (buttonList[2].text == playerSide && buttonList[5].text == playerSide && buttonList[8].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the left to right diagonal
         else if (buttonList[0].text == playerSide && buttonList[4].text == playerSide && buttonList[8].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         // Check the right to left diagonal
         else if (buttonList[2].text == playerSide && buttonList[4].text == playerSide && buttonList[6].text == playerSide)
         {
-            GameOver();
+            GameOver(playerSide);
         }
 
         else if (buttonList[0].text == computerSide && buttonList[1].text == computerSide && buttonList[2].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the second row
         else if (buttonList[3].text == computerSide && buttonList[4].text == computerSide && buttonList[5].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the third row
         else if (buttonList[6].text == computerSide && buttonList[7].text == computerSide && buttonList[8].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the first column
         else if (buttonList[0].text == computerSide && buttonList[3].text == computerSide && buttonList[6].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the second column
         else if (buttonList[1].text == computerSide && buttonList[4].text == computerSide && buttonList[7].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the third column
         else if (buttonList[2].text == computerSide && buttonList[5].text == computerSide && buttonList[8].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the left to right diagonal
         else if (buttonList[0].text == computerSide && buttonList[4].text == computerSide && buttonList[8].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Check the right to left diagonal
         else if (buttonList[2].text == computerSide && buttonList[4].text == computerSide && buttonList[6].text == computerSide)
         {
-            GameOver();
+            GameOver(computerSide);
         }
 
         // Checking for ties/draws
         else if (moveCount >= 9)
         {
-            GameOver();
-        }
-        // Checking for ties/draws
-        else if (moveCount >= 9)
-        {
-            GameOver();
+            // If game ties, player wins too
+            GameOver(playerSide);
         }
 
         else
@@ -186,15 +182,28 @@ public class TicTacToeGameController : MonoBehaviour {
         }
     }
 
-    void GameOver()
+    bool GameOver(string winner)
     {
+
         SetBoardInteractable(false);
         continueButton.gameObject.SetActive(true);
 
         //RestartGame();
         // TODO: Quit the scene   
-        //QuitScene();
-        // reminder: playerSide gets the winner
+        Debug.Log(winner);
+        // TO BE USED IN CONJUNCTION WITH THE FOLLOWING:
+        // Time.timeScale = 0; //pauses the current scene 
+        // Application.LoadLevelAdditive("YourNextScene"); //loads your desired other scene
+        // Time.timeScale = 1; 
+        Debug.Log("QUIT SCENE");
+        if (winner.Equals("X"))
+        {
+            // player won
+            return true;
+        } else
+        {
+            return false;
+        }
     }
 
     // Check what side we are on and change sides
@@ -203,15 +212,6 @@ public class TicTacToeGameController : MonoBehaviour {
         //playerSide = (playerSide == "X") ? "O" : "X";
         playerMove = (playerMove == true) ? false : true;
         delay = 10;
-    }
-
-    public void QuitScene()
-    {
-        // TO BE USED IN CONJUNCTION WITH THE FOLLOWING:
-        // Time.timeScale = 0; //pauses the current scene 
-        // Application.LoadLevelAdditive("YourNextScene"); //loads your desired other scene
-        // Time.timeScale = 1; 
-        Debug.Log("QUIT SCNEE");
     }
 
     public void RestartGame()
