@@ -13,7 +13,7 @@ public class ObjectSpawning : MonoBehaviour {
 	int npcSpawnPoint;
 	List<bool> isPlacedInTown = new List<bool>();
 	bool placedNPC = false;
-	bool[] npcIsUsed = new bool[4];
+	bool[] npcIsUsed = new bool[2];
 
 	//Candidate A objects
 	List<string> itemsA;
@@ -50,7 +50,8 @@ public class ObjectSpawning : MonoBehaviour {
 		npcNameA = candidateA + "_NPC";
 
 
-		itemsB = associations.itemNamesB;
+		//itemsB = associations.itemNamesB;
+		itemsB = new List<string> { "Knife", "Old Disc"};
 		candidateB = associations.CandidateBName;
 		houseB = associations.houseB;
 		foreach (Vector3 location in houseB.itemSpawnLocations) {
@@ -83,6 +84,7 @@ public class ObjectSpawning : MonoBehaviour {
 		for (int i = 0; i < itemsB.Count; i++) {
 			bool hasPlaced = false;
 			GameObject currentObject = GameObject.Find(itemsB[i]);
+			Debug.Log ("itemsB[" + i + "] is: " + itemsB [i]);
 
 			while (!hasPlaced) {
 				int place = rnd.Next(houseB.itemSpawnLocations.Length);
@@ -95,6 +97,7 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 
 		// spawning NPC for candidate A
+		Debug.Log("About to spawn NPC for candidate A: " + npcNameA);
 		GameObject currentNPC = Resources.Load("NPC/" + npcNameA) as GameObject;
 
 		while (!placedNPC) {
@@ -105,6 +108,7 @@ public class ObjectSpawning : MonoBehaviour {
 				placedNPC = true;
 			}
 		}
+		Debug.Log ("Placed NPC for candidate A and about to do candidate B NPC");
 
 		currentNPC = Resources.Load("NPC/" + npcNameA) as GameObject;
 		placedNPC = false;
@@ -122,19 +126,20 @@ public class ObjectSpawning : MonoBehaviour {
 			placedNPC = false;
 			npcToUse = Random.Range(1, 3);
 
-			while (!npcIsUsed[npcToUse]) {
+			while (npcIsUsed[npcToUse - 1]) {
 				npcToUse = Random.Range(1, 3);
 			}
 
+			Debug.Log ("npcToUse = " + npcToUse);
 			currentNPC = Resources.Load("NPC/npc" + npcToUse) as GameObject;
 
 			while (!placedNPC) {
 				npcSpawnPoint = rnd.Next(townSquare.itemSpawnLocations.Length);
 				if (!isPlacedInTown[npcSpawnPoint]) {
-					currentNPC.transform.position = houseA.itemSpawnLocations[npcSpawnPoint];
+					currentNPC.transform.position = townSquare.itemSpawnLocations[npcSpawnPoint];
 					isPlacedInTown[npcSpawnPoint] = true;
 					placedNPC = true;
-					npcIsUsed[npcToUse] = true;
+					npcIsUsed[npcToUse - 1] = true;
 				}
 			}
 		}
