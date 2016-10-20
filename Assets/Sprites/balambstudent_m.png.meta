@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 8f1390c1f1726684b918ef3ee75b2f00
-timeCreated: 1476946638
+guid: 53fae11b83f072443bb40ea8c1e15246
+timeCreated: 1476947341
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: officewoman2_0
-    21300002: officewoman2_1
-    21300004: officewoman2_2
-    21300006: officewoman2_3
-    21300008: officewoman2_4
-    21300010: officewoman2_5
-    21300012: officewoman2_6
-    21300014: officewoman2_7
-    21300016: officewoman2_8
-    21300018: officewoman2_9
-    21300020: officewoman2_10
-    21300022: officewoman2_11
-    21300024: officewoman2_12
-    21300026: officewoman2_13
-    21300028: officewoman2_14
-    21300030: officewoman2_15
+    21300000: balambstudent_m_0
+    21300002: balambstudent_m_1
+    21300004: balambstudent_m_2
+    21300006: balambstudent_m_3
+    21300008: balambstudent_m_4
+    21300010: balambstudent_m_5
+    21300012: balambstudent_m_6
+    21300014: balambstudent_m_7
+    21300016: balambstudent_m_8
+    21300018: balambstudent_m_9
+    21300020: balambstudent_m_10
+    21300022: balambstudent_m_11
+    21300024: balambstudent_m_12
+    21300026: balambstudent_m_13
+    21300028: balambstudent_m_14
+    21300030: balambstudent_m_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,208 +69,208 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: officewoman2_0
+      name: balambstudent_m_0
       rect:
         serializedVersion: 2
         x: 5
         y: 146
         width: 23
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_1
+      name: balambstudent_m_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 38
         y: 146
-        width: 22
-        height: 41
+        width: 21
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_2
+      name: balambstudent_m_2
       rect:
         serializedVersion: 2
         x: 69
         y: 146
         width: 23
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_3
+      name: balambstudent_m_3
       rect:
         serializedVersion: 2
         x: 102
         y: 146
-        width: 22
-        height: 41
+        width: 21
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_4
+      name: balambstudent_m_4
       rect:
         serializedVersion: 2
         x: 7
         y: 98
         width: 19
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_5
+      name: balambstudent_m_5
       rect:
         serializedVersion: 2
-        x: 38
+        x: 39
         y: 98
-        width: 21
-        height: 41
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_6
+      name: balambstudent_m_6
       rect:
         serializedVersion: 2
         x: 71
         y: 98
         width: 19
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_7
+      name: balambstudent_m_7
       rect:
         serializedVersion: 2
         x: 103
         y: 98
-        width: 20
-        height: 41
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_8
+      name: balambstudent_m_8
       rect:
         serializedVersion: 2
         x: 6
         y: 50
         width: 19
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_9
+      name: balambstudent_m_9
       rect:
         serializedVersion: 2
-        x: 37
+        x: 38
         y: 50
-        width: 21
-        height: 41
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_10
+      name: balambstudent_m_10
       rect:
         serializedVersion: 2
         x: 70
         y: 50
         width: 19
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_11
+      name: balambstudent_m_11
       rect:
         serializedVersion: 2
-        x: 101
+        x: 102
         y: 50
-        width: 20
-        height: 41
+        width: 19
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_12
+      name: balambstudent_m_12
       rect:
         serializedVersion: 2
         x: 5
         y: 2
         width: 23
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_13
+      name: balambstudent_m_13
       rect:
         serializedVersion: 2
         x: 38
         y: 2
         width: 21
-        height: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_14
+      name: balambstudent_m_14
       rect:
         serializedVersion: 2
         x: 69
         y: 2
         width: 23
-        height: 42
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: officewoman2_15
+      name: balambstudent_m_15
       rect:
         serializedVersion: 2
         x: 102
         y: 2
         width: 21
-        height: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
