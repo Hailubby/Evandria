@@ -67,7 +67,7 @@ public class PanelLightingColour : MonoBehaviour
 
         //Debug.Log("CURRENT LOCATION IS: " + currentLocation.GetComponent<Text>().text);
 
-        if (currentLocation.GetComponent<Text>().text.Equals("Office"))
+        if (currentLocation.GetComponent<Text>().text.Equals("Town Square"))
         {
             lightingPanel.SetActive(true);
         }
@@ -82,7 +82,7 @@ public class PanelLightingColour : MonoBehaviour
     bool colourChanged = false;
     void FixedUpdate()
     {
-        if (currentLocation.GetComponent<Text>().text.Equals("Office"))
+        if (currentLocation.GetComponent<Text>().text.Equals("Town Square"))
         {
             lightingPanel.SetActive(true);
         }

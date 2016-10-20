@@ -6,6 +6,10 @@
       <Moral>Good</Moral>
       <GoodArray>3,6,3,5,5</GoodArray>
       <BadArray>1,3,1,2,2</BadArray>
+      <HouseSize>Medium</HouseSize>
+      <NPCName>Claire</NPCName>
+      <ItemName1>Photo</ItemName1> <!-- filler data-->
+      <ItemName2>Diary</ItemName2> <!-- filler data-->
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>
       <Ethnicity>Norwegian</Ethnicity>
@@ -16,23 +20,23 @@
       </Traits>
       <Occupation>Neurologist</Occupation>
       <Skills>PhD in Chemistry and Biology</Skills>
-      <Description>
-        - Was really nervous.
+      <Description>- Was really nervous.
         - Specialises in Neurological diseases.
-        - No close friends
-      </Description>
-      <background>
-        Lost wife and daughter in a tragic house break-in about six years ago.
+        - No close friends</Description>
+      <background>Lost wife and daughter in a tragic house break-in about six years ago.
         He finds it hard to get close to people due to this trauma. He now supports a child orphanage charity to help support children who has no family as he has lost his
         Spends his personal time looking at family photos and reliving his old happy memories.
-        A man trapped in his past but with no ill-intent.
-      </background>
+        A man trapped in his past but with no ill-intent.</background>
     </Candidate>
     <Candidate id="1">
       <Name>Jessica Chang</Name>
       <Moral>Bad</Moral>
       <GoodArray>-2,-3,-2,5,-3</GoodArray>
       <BadArray>-5,-5,-5,2,-5</BadArray>
+      <HouseSize>Medium</HouseSize>
+      <NPCName>Sally</NPCName>
+      <ItemName1>Axe</ItemName1><!-- filler data-->
+      <ItemName2>Knife</ItemName2><!-- filler data-->
       <Gender>Female</Gender>
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
@@ -43,23 +47,23 @@
       </Traits>
       <Occupation>Accountant</Occupation>
       <Skills>Chartered Accountant</Skills>
-      <Description>
-        -Raised in a strict environment in China.
+      <Description>- Raised in a strict environment in China.
         - Workaholic and Unmarried.
-        - Lives in a fairly small home
-      </Description>
-      <background>
-        She has a tendency to resort to violence on animals to relieve her stress.
+        - Lives in a fairly small home</Description>
+      <background>She has a tendency to resort to violence on animals to relieve her stress.
         She sometimes loses control and abuses her family members when they do see each other as she can be quite fierce with them.
         She also obtains drugs illegally to help deal with her out breaks (ADDERAll)
-        Her life is wasted away as all her money goes towards drugs which barely keep her stable.
-      </background>
+        Her life is wasted away as all her money goes towards drugs which barely keep her stable.</background>
     </Candidate>
     <Candidate id="2">
       <Name>Thomas Reid</Name>
       <Moral>Good</Moral>
       <GoodArray>5,5,5,5,5</GoodArray>
       <BadArray>1,1,1,1,1</BadArray>
+      <HouseSize>Small</HouseSize>
+      <NPCName>Gary</NPCName>
+      <ItemName1>Schedule</ItemName1>
+      <ItemName2>Folder</ItemName2>
       <Gender>Male</Gender>
       <DOB>29/7/2003</DOB>
       <Ethnicity>Canadian</Ethnicity>
@@ -70,23 +74,23 @@
       </Traits>
       <Occupation>Composer</Occupation>
       <Skills>Musical and Entertainment Knowledge</Skills>
-      <Description>
-        - Became a composer officially at 18.
+      <Description>- Became a composer officially at 18.
         - Composes music in many genres.
-        - Has made a name for himself in the industry.
-      </Description>
-      <background>
-        Is a workaholic and very obsessive with his work to a fault.
+        - Has made a name for himself in the industry.</Description>
+      <background>Is a workaholic and very obsessive with his work to a fault.
         Is a perfectionist and will do any means possible to create the perfect piece,
         including aggressively bossing those who work under him as well as collaborators and makes everyone work overtime with no exceptions.
-        (Is not sympathetic and understanding towards others?)
-      </background>
+        (Is not sympathetic and understanding towards others?)</background>
     </Candidate>
     <Candidate id="3">
       <Name>Scott MacLeod</Name>
       <Moral>Neutral</Moral>
       <GoodArray>2,4,1,2,4</GoodArray>
       <BadArray>-2,0,-5,-1,-3</BadArray>
+      <HouseSize>Small</HouseSize>
+      <NPCName>Jeffrey</NPCName>
+      <ItemName1>Emma's Diary</ItemName1>
+      <ItemName2>Newspaper</ItemName2>
       <Gender>Male</Gender>
       <DOB>12/12/2012</DOB>
       <Ethnicity>American</Ethnicity>
@@ -97,12 +101,11 @@
       </Traits>
       <Occupation>Cleaner</Occupation>
       <Skills>Diploma in Arts</Skills>
-      <Description>
-        He has a small family: his son Jeffrey (aged 11) and his wife Emma, who unfortunately passed away last year. He wants to take his kid to Evandria for a better future.
+      <Description>He has a small family: his son Jeffrey (aged 11) and his wife Emma, who unfortunately passed away last year. He wants to take his kid to Evandria for a better future.
         His own childhood wasn't the best, and that's what drives his motives to get to Evandria, and also for his late wife.
-        He's a bit disappointed his Diploma in Arts didn't get him very far, but he thinks that everybody should know about and appreciate Arts.
-      </Description>
+        He's a bit disappointed his Diploma in Arts didn't get him very far, but he thinks that everybody should know about and appreciate Arts.</Description>
       <background>
+        <!-- Missing Background -->
       </background>
     </Candidate>
     <Candidate id="4">
@@ -110,6 +113,10 @@
       <Moral>Neutral</Moral>
       <GoodArray>0,0,2,3,5</GoodArray>
       <BadArray>0,0,-5,0,0</BadArray>
+      <HouseSize>Large</HouseSize>
+      <NPCName>Felicity</NPCName>
+      <ItemName1>Paper</ItemName1>
+      <ItemName2>Laptop</ItemName2>
       <Gender>Female</Gender>
       <DOB>1/2/2025</DOB>
       <Ethnicity>American</Ethnicity>
@@ -118,17 +125,21 @@
       </Traits>
       <Occupation>Socialite</Occupation>
       <Skills>Retail shopping, schmoozing, Organising charity events</Skills>
-      <Description>
-        Tara comes from an extremely wealthy family. The entire Williams bloodline would buy their way to Evandria if they could. Unfortunately for the Williams' everyone has
-        to be equally considered. In her spare time, Tara loves shopping, hosting dinner parties and even occasionaly hosting charity events. Tara is a Commerce-Law student,
-        and in this day and age, universities and higher education has become extremely rare and reserved for the wealthier.
-      </Description>
-      <background></background>
+      <Description>Tara comes from an extremely wealthy family. 
+	  Tara loves shopping, hosting dinner parties and even occasionally hosting charity events. 
+	  Tara is a Commerce-Law student, and in this day and age, universities and higher education has become extremely rare and reserved for the wealthier.</Description>
+      <background>
+        <!-- Missing Background -->
+      </background>
     </Candidate>
     <Candidate id="5">
       <Name>Landon Ortega</Name>
       <Moral>Neutral</Moral>
       <GoodArray>2,3,4,9,7</GoodArray>
+      <HouseSize>Small</HouseSize>
+      <NPCName>Bart</NPCName>
+      <ItemName1>Folder</ItemName1>
+      <ItemName2>Walkie Talkie</ItemName2>
       <BadArray>0,-1,2,-10,-5</BadArray>
       <Gender>Male</Gender>
       <DOB>3/8/2026</DOB>
@@ -141,22 +152,22 @@
       </Traits>
       <Occupation>Mechanic</Occupation>
       <Skills>Qualified Mechanical Engineer</Skills>
-      <Description>
-        Landon is a young man who believes he can do anything, anything you need repaired he'll construct a way to deal with it.
+      <Description>Landon is a young man who believes he can do anything, anything you need repaired he'll construct a way to deal with it.
         He's only ever worked one job in his life but his employer restricted him to working by the book to solve problems and wouldn't let him make use of his innovative ideas.
-        He sometimes gets ahead of himself and makes unrealistic designs which may not work in practice.
-      </Description>
-      <background>
-        Although his ideas may not always seem to be grounded in real in-use solutions Landon thoroughly researchs his ideas.
+        He sometimes gets ahead of himself and makes unrealistic designs which may not work in practice.</Description>
+      <background>Although his ideas may not always seem to be grounded in real in-use solutions Landon thoroughly researches his ideas.
         He makes careful calculations to reduce the risk of their failure, but without actually having tested them practically there is no absolute guarantee they will work.
-        Taking a chance on a guy like Landon could lead to great technological advancements, but great reward only comes from taking big risks.
-      </background>
+        Taking a chance on a guy like Landon could lead to great technological advancements, but great reward only comes from taking big risks.</background>
     </Candidate>
     <Candidate id="6">
       <Name>Asuna Touyama</Name>
       <Moral>Neutral</Moral>
       <GoodArray>2,3,4,9,7</GoodArray>
       <BadArray>0,-1,2,-10,-5</BadArray>
+      <HouseSize>Small</HouseSize>
+      <NPCName>Kirito</NPCName>
+      <ItemName1>Hospital Bills</ItemName1>
+      <ItemName2>Design Award</ItemName2>
       <Gender>Female</Gender>
       <DOB>19/8/2024</DOB>
       <Ethnicity>Japanese</Ethnicity>
@@ -167,43 +178,47 @@
       </Traits>
       <Occupation>Graphics Designer</Occupation>
       <Skills>3D Modelling</Skills>
-      <Description>
-        Holds a criminal record which shows that she has previously committed crimes of theft.
+      <Description>Holds a criminal record which shows that she has previously committed crimes of theft.
         Has attended multiple sessions with a psychiatrist to deal with her ongoing anger management issues.
-        Works dilligently and efficiently at work.
-      </Description>
-      <background></background>
+        Works diligently and efficiently at work.</Description>
+      <background>
+        <!-- Missing Background -->
+      </background>
     </Candidate>
     <Candidate id="7">
       <Name>Louis Dubois</Name>
       <Moral>Bad</Moral>
       <GoodArray>-4,-1,-7,2,1</GoodArray>
       <BadArray>-8,-5,-12,-3,-2</BadArray>
+      <HouseSize>Large</HouseSize>
+      <NPCName>Javier</NPCName>
+      <ItemName1>Picture of Miranda</ItemName1>
+      <ItemName2>Cellphone</ItemName2>
       <Gender>Male</Gender>
       <DOB>03/9/2013</DOB>
       <Ethnicity>Japanese</Ethnicity>
       <Traits>
         <Trait>Meticulous</Trait>
         <Trait>Obsessive</Trait>
-        <Trait>Vharasmatic</Trait>
+        <Trait>Charismatic</Trait>
       </Traits>
-      <Occupation>Head Chefr</Occupation>
+      <Occupation>Head Chef</Occupation>
       <Skills>Cooking</Skills>
-      <Description>
-        World reowned chef with multiple restaurant chains around the world
+      <Description>World renowned chef with multiple restaurant chains around the world
         Popular with the ladies
-        Girlfriend (Miranda) died in a serial killing case recently
-      </Description>
-      <background>
-        Actually a serial killer, not satified with just killing and cooking animals
-        He actually killed his ex girlfriend
-      </background>
+        Girlfriend (Miranda) died in a serial killing case recently</Description>
+      <background>Actually a serial killer, not satisfied with just killing and cooking animals
+        He actually killed his ex girlfriend</background>
     </Candidate>
     <Candidate id="8">
       <Name>Sara Van Haver</Name>
       <Moral>Neutral</Moral>
       <GoodArray>2,3,3,8,9</GoodArray>
       <BadArray>-2,-3,-5,-4,2</BadArray>
+      <HouseSize>Medium</HouseSize>
+      <NPCName>Paula</NPCName>
+      <ItemName1>Empty alcohol bottles</ItemName1>
+      <ItemName2>Family photo</ItemName2>
       <Gender>Female</Gender>
       <DOB>31/5/2018</DOB>
       <Ethnicity>Belgian</Ethnicity>
@@ -214,18 +229,20 @@
       </Traits>
       <Occupation>Stay at home mother</Occupation>
       <Skills>Extremely persuasive and resourceful</Skills>
-      <Description>
-        Sara spends all her time taking care of her 2 young children, Tommy and Lara
+      <Description>Sara spends all her time taking care of her 2 young children, Tommy and Lara
         She used to be a primary school teacher at her local school
-        Used to be with her husband a lot, but now he's nowhere to be seen
-      </Description>
-      <background></background>
+        Used to be with her husband a lot, but now he's nowhere to be seen</Description>
+      <background><!-- Missing background --></background>
     </Candidate>
     <Candidate id="9">
       <Name>Francis Smith</Name>
       <Moral>Neutral</Moral>
       <GoodArray>0,0,10,10,0</GoodArray>
       <BadArray>0,0,-10,-10,0</BadArray>
+      <HouseSize>Small</HouseSize>
+      <NPCName>Sarah McNeill</NPCName>
+      <ItemName1>Computer</ItemName1>
+      <ItemName2>Unopened letters</ItemName2>
       <Gender>Male</Gender>
       <DOB>01/09/2027</DOB>
       <Ethnicity>Australian</Ethnicity>
@@ -236,17 +253,20 @@
       </Traits>
       <Occupation>Software Developer</Occupation>
       <Skills>Accredited Software Engineer</Skills>
-      <Description>
-        Francis is a professional software engineer, however he prefers to spend most of his time playing video games.
-        He has shown glimpses of brilliance in his work, and has the potential to create groundbreaking products
-      </Description>
-      <background></background>
+      <Description>Francis is a professional software engineer, however he prefers to spend most of his time playing video games.
+        He has shown glimpses of brilliance in his work, and has the potential to create ground breaking products.</Description>
+      <background>Is unmotivated to do normal work, spends most of his time playing games instead. 
+        Has a secret side project which has the ability to compile huge amounts of data on loanees to a large bank, and potentially wipe that debt.</background>
     </Candidate>
     <Candidate id="10">
       <Name>Anzio Romano</Name>
       <Moral>Neutral</Moral>
       <GoodArray>0,3,1,4,3</GoodArray>
       <BadArray>-1,-2,-1,-3,-2</BadArray>
+      <HouseSize>Large</HouseSize>
+      <NPCName>James</NPCName>
+      <ItemName1>Bank Statement</ItemName1>
+      <ItemName2>Blackmail Letter</ItemName2>
       <Gender>Male</Gender>
       <DOB>22/01/2020</DOB>
       <Ethnicity>Italian</Ethnicity>
@@ -257,13 +277,11 @@
       </Traits>
       <Occupation>Software Tester</Occupation>
       <Skills>Bachelor of (Computer) Science</Skills>
-      <Description>
-        Works at a software company as an in-house tester/debugger.
-        Recently purchased a luxurious house, even though he doesn't seem to be making that much money as a game tester.
-        His coworkers are saying he's hard to work with due to his condescending personality, but his close friends are saying that he takes great care of his parents.
-        Which is the real him?
-      </Description>
-      <background></background>
+      <Description>Works at a software company as an in-house tester/debugger.
+        Recently purchased a luxurious house.
+        His co-workers say he's hard to work with.
+		</Description>
+      <background><!-- Missing Background --></background>
     </Candidate>
   </Candidates>
 </CandidateCollection>
