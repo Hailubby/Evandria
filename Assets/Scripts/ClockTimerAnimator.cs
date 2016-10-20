@@ -64,7 +64,11 @@ public class ClockTimerAnimator : MonoBehaviour {
             {
                 timeUp = true;
                 Warp warpScript = FindObjectOfType<Warp>();
-                warpScript.WarpTo(new Vector3(17.5f, 24.5f, 0), "Office");
+                StartCoroutine(warpScript.WarpTo(new Vector3(-13, -5, 0), "Office"));
+                LaptopScript laptopScript = FindObjectOfType<LaptopScript>();
+                laptopScript.interact();
+                GameObject investigateButton = GameObject.Find("Investigate Button");
+                investigateButton.GetComponent<Button>().interactable = false;
             }
         }
 

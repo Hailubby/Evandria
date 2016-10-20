@@ -28,6 +28,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
     public GameObject DialogueWindowPrefab;
+
     public MovementScript player;
     public bool stopPlayerMovement;
 
