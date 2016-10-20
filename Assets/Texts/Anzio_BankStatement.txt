@@ -1,0 +1,1 @@
+Bank Statement;Anzio;;A recently received statement from the bank. It indicates that Anzio received a large sum of money from an anonymous source;'Bank statement added to Journal'
