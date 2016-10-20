@@ -15,6 +15,8 @@ public class CandidateLoader : MonoBehaviour {
     private CandidateBController candidateBController;
     private CandidateContainer ic;
 
+    public Sprite[] sprites;
+
     void Start () {
         
         ic = CandidateContainer.Load(path);
@@ -51,6 +53,7 @@ public class CandidateLoader : MonoBehaviour {
 
                 try {
                     candidateAController = candidateA.GetComponent<CandidateAController>();
+                    candidateAController.sprite = sprites[randCandidateA];
                     candidateAController.fullname = candidate.fullname;
                     cAssociations.CandidateAName = candidate.fullname.Split(' ')[0];
                     candidateAController.moral = candidate.moral;
@@ -88,6 +91,7 @@ public class CandidateLoader : MonoBehaviour {
        
                 try {
                     candidateBController = candidateB.GetComponent<CandidateBController>();
+                    candidateBController.sprite = sprites[randCandidateB];
                     candidateBController.fullname = candidate.fullname;
                     cAssociations.CandidateBName = candidate.fullname.Split(' ')[0];
                     candidateBController.moral = candidate.moral;
