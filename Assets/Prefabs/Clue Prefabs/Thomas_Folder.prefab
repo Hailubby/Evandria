@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011913331212}
   - 114: {fileID: 114000013839371126}
+  - 61: {fileID: 61000013357505630}
   m_Layer: 8
-  m_Name: ThomasFolder
+  m_Name: Thomas_Folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +41,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &61000013357505630
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010958618308}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3}
 --- !u!114 &114000013839371126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,6 +73,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  puzzle: 0
   itemImage: {fileID: 21300000, guid: 85d2697d5d58711428dd193fbc141c2b, type: 3}
   textFile: {fileID: 4900000, guid: 9238eece85fe435468c71cdaab4f29d6, type: 3}
   textLines: []

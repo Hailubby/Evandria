@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000012152830538}
   - 61: {fileID: 61000010076008260}
   m_Layer: 8
-  m_Name: landon_walkietalkie
+  m_Name: Landon_walkietalkie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,6 +73,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  puzzle: 0
   itemImage: {fileID: 21300000, guid: 40bb422aae9048242bb22ad531af6960, type: 3}
   textFile: {fileID: 4900000, guid: d87f1fd72a8c10f4dabff9996a61b9b3, type: 3}
   textLines: []

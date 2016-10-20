@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010676910076}
   - 114: {fileID: 114000011518457904}
+  - 61: {fileID: 61000013042763650}
   m_Layer: 8
   m_Name: Scott_WifeDiary
   m_TagString: Untagged
@@ -40,6 +41,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &61000013042763650
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013051737420}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3}
 --- !u!114 &114000011518457904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -58,6 +73,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  puzzle: 0
   itemImage: {fileID: 21300000, guid: 3eb82ca36802cc049b7cd11f6bcd6d15, type: 3}
   textFile: {fileID: 4900000, guid: 3041226940242de4fa3fc258d91b7c5e, type: 3}
   textLines: []

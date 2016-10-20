@@ -14,4 +14,9 @@ public class ContinueAfterPuzzleCompleted : MonoBehaviour {
 	public void ShowButton () {
         continueButton.gameObject.SetActive(true);
     }
+
+    public void continueDestroyScene() {
+        ItemInteractScript.puzzleDone = true;
+        Destroy(GameObject.Find("PuzzleParent"));
+    }
 }

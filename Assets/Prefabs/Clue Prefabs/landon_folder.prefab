@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010076108140}
   - 61: {fileID: 61000010799151994}
   m_Layer: 8
-  m_Name: landon_folder
+  m_Name: Landon_folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,6 +73,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  puzzle: 0
   itemImage: {fileID: 21300000, guid: 85d2697d5d58711428dd193fbc141c2b, type: 3}
   textFile: {fileID: 4900000, guid: f7401cbd3b1b79949bb7e8f29ae3bad7, type: 3}
   textLines: []

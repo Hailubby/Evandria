@@ -73,6 +73,7 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
+  puzzle: 0
   itemImage: {fileID: 21300000, guid: c342ab0da12af7a49a0ec801ff7d40c1, type: 3}
   textFile: {fileID: 4900000, guid: d1c3b55ab064e144ab99017eaca1b1a6, type: 3}
   textLines: []

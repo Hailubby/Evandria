@@ -4,6 +4,7 @@ using System;
 using UnityEngine.UI;
 using System.Text;
 using System.Text.RegularExpressions;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
@@ -12,6 +13,9 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
     public Journal journal;
     public ItemCanvasScript canvas;
     public MovementScript player;
+
+    public bool puzzle;
+    public static bool puzzleDone = false;
 
     public Sprite itemImage;
     public TextAsset textFile;
@@ -39,12 +43,23 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
         {
             Debug.Log("An item has been interacted with!");
 
+
             // Textbox pops up upon interaction
             stopPlayerMovement = true;
             canvas.image.sprite = itemImage;
-            EnableTextBox();
-            isActive = true;
-            interacted = true;
+
+            if (puzzle)
+            {
+                SceneManager.LoadScene("Puzzle", LoadSceneMode.Additive);
+                StartCoroutine(waitPuzzle());
+            }
+            else {
+                EnableTextBox();
+                isActive = true;
+                interacted = true;
+            }
+
+            
 
             //Checks if the item is relevant to the investigation or not. If it is, it will add to the journal
             if (!itemOwner.Equals("Dummy"))
@@ -54,6 +69,17 @@ public class ItemInteractScript : MonoBehaviour, Assets.Scripts.Interactable
             }
             
         }
+    }
+
+    public IEnumerator waitPuzzle() {
+        while (!puzzleDone) {
+            yield return null;
+        }
+
+        EnableTextBox();
+        isActive = true;
+        interacted = true;
+        yield return null;
     }
 
     // Use this for initialization
