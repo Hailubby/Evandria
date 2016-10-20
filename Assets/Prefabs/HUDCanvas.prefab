@@ -90,6 +90,7 @@ GameObject:
   - 224: {fileID: 224000013509687308}
   - 222: {fileID: 222000011348956552}
   - 114: {fileID: 114000013315891438}
+  - 114: {fileID: 114000012183463614}
   m_Layer: 5
   m_Name: TopPanel
   m_TagString: Untagged
@@ -575,7 +576,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Alex's Notepad++
+  m_Text: Alex's Journal
 --- !u!114 &114000011052999046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,6 +726,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114000012183463614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011025548024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0374943940c384c9a653198edbd512, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopPanel: {fileID: 1000011025548024}
 --- !u!114 &114000012348431936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -927,7 +940,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 935962ddb1e44499dad00e5ca6b38823, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
