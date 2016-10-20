@@ -19,6 +19,8 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
     public MovementScript player;
     public bool stopPlayerMovement;
 
+    public NPCAudio npcAudio;
+
     public void interact()
 
     {
@@ -104,6 +106,8 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
     {
         dialogue_window.SetActive(true);
 
+        npcAudio.Play();
+
         if (stopPlayerMovement)
         {
             player.DisableMovement();
@@ -111,6 +115,8 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
         }
 
         yield return StartCoroutine(WaitForKeyDown());
+
+        npcAudio.Stop();
 
         //Reenable player movement
         player.EnableMovement();
@@ -123,6 +129,7 @@ public class DummyNpcInteract : MonoBehaviour, Assets.Scripts.Interactable
     void Start()
     {
         player = FindObjectOfType<MovementScript>();
+        npcAudio = GameObject.FindObjectOfType<NPCAudio>();
 
         var canvas = GameObject.Find("Canvas");
 

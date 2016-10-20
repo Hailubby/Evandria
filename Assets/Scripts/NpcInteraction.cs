@@ -35,6 +35,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public MovementScript player;
     public bool stopPlayerMovement;
 
+    public NPCAudio npcAudio;
 
     public void interact()
     {
@@ -70,6 +71,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         node_text.GetComponentInChildren<Text>().text = "First! Let me challenge you in a game of Tic-Tac-Toe";
         dialogue_window.SetActive(true);
 
+        npcAudio.Play();
+
         if (stopPlayerMovement)
         {
             player.DisableMovement();
@@ -77,6 +80,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         }
 
         yield return StartCoroutine(WaitForKeyDown());
+
+        npcAudio.Stop();
 
         //Reenable player movement
         player.EnableMovement();
@@ -91,6 +96,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     void Start ()
     {
         player = FindObjectOfType<MovementScript>();
+        npcAudio = FindObjectOfType<NPCAudio>();
 
         dialogue = Dialogue.LoadDialogue(new System.IO.StringReader(dialogueFile.text));
         journal = FindObjectOfType<Journal>();
@@ -180,7 +186,12 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
         while (node_id != -1) {
             node_text.GetComponentInChildren<Text>().text = dialogue.Nodes[node_id].Text;
 
+            npcAudio.Play();
+
             yield return StartCoroutine(WaitForKeyDown());
+
+            npcAudio.Stop();
+
             if (dialogue.Nodes[node_id].isClue && !foundClue)
             {
                 Clue clue = new Clue(clue_name, clue_owner, clue_description);
