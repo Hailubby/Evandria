@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Scenes/TimerWithLevels.unity
   - enabled: 0
     path: Assets/Scenes/LevelGeneration.unity
+  - enabled: 1
+    path: Assets/Scenes/TicTacToe.unity

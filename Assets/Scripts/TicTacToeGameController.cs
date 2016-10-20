@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 // The Game Controller will set the starting player's side, either "X" or "O", 
@@ -182,10 +183,18 @@ public class TicTacToeGameController : MonoBehaviour {
         }
     }
 
-    bool GameOver(string winner)
+    void GameOver(string winner)
     {
 
         SetBoardInteractable(false);
+
+        Debug.Log("QUIT SCENE");
+        if (winner.Equals("X"))
+        {
+            // player won
+            InteractionScript.wonTicTacToe = true;
+        }
+
         continueButton.gameObject.SetActive(true);
 
         //RestartGame();
@@ -195,15 +204,10 @@ public class TicTacToeGameController : MonoBehaviour {
         // Time.timeScale = 0; //pauses the current scene 
         // Application.LoadLevelAdditive("YourNextScene"); //loads your desired other scene
         // Time.timeScale = 1; 
-        Debug.Log("QUIT SCENE");
-        if (winner.Equals("X"))
-        {
-            // player won
-            return true;
-        } else
-        {
-            return false;
-        }
+    }
+
+    public void destroyTicTacToe() {
+        Destroy(GameObject.Find("TicTacToeParent"));
     }
 
     // Check what side we are on and change sides
