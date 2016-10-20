@@ -75,5 +75,6 @@ public class MovementScript : MonoBehaviour {
     public void DisableMovement()
     {
         canMove = false;
+        anim.SetBool("iswalking", false);
     }
 }

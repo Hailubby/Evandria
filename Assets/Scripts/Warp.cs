@@ -9,6 +9,8 @@ public class Warp : MonoBehaviour
     public GameObject WarpUI;
     public GameObject Content;
     public GameObject buttonPrefab;
+    public MovementScript player;
+    public InteractionScript interactor;
     Collider2D other;
     Locations locations;
     ScreenFader sf;
@@ -22,6 +24,9 @@ public class Warp : MonoBehaviour
         locations = player.GetComponent<Locations>();
         sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
         this.other = player.GetComponent<Collider2D>();
+        this.player = player.GetComponent<MovementScript>();
+        this.interactor = player.GetComponent<InteractionScript>();
+        
     }
 
 
@@ -34,6 +39,8 @@ public class Warp : MonoBehaviour
 
     void OpenTheGui()
     {
+        player.DisableMovement();
+        interactor.interacting = true;
         if (!isGenerated)
         {
             //Create the menu from locations
@@ -54,6 +61,8 @@ public class Warp : MonoBehaviour
                 thisButton.onClick.AddListener(() => {
                     StartCoroutine(WarpTo(capturedLocation, capturedString));
                     WarpUI.SetActive(false);
+                    player.EnableMovement();
+                    interactor.interacting = false;
                 });
             }
             other.GetComponent<Locations>().isGenerated = true;
