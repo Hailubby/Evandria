@@ -14,8 +14,8 @@ public class Locations : MonoBehaviour {
         Vector3[] small_1Spawn = { new Vector3(-102.3f, -73, 0), new Vector3(-99, -73, 0), new Vector3(-95.8f, -73, 0), new Vector3(-108.5f, -73, 0), new Vector3(-112, -73, 0) };
         Vector3[] medium_2Spawn = { new Vector3(95.9f, -91.2f, 0), new Vector3(73.5f, -84.7f, 0), new Vector3(67, -84.7f, 0), new Vector3(131, -75, 0), new Vector3(134.2f, -75, 0) };
         Vector3[] small_2Spawn = { new Vector3(-86.5f, 16.5f, 0), new Vector3(83.4f, 16.5f, 0), new Vector3(-80.2f, 16, 0), new Vector3(-77, 16, 0), new Vector3(-76.9f, -3, 0) };
-        Vector3[] large_1Spawn = { new Vector3(95.9f, -91.2f, 0), new Vector3(73.5f, -84.7f, 0), new Vector3(67, -84.7f, 0), new Vector3(131, -75, 0), new Vector3(134.2f, -75, 0) };
-        Vector3[] large_2Spawn = { new Vector3(-86.5f, 16.5f, 0), new Vector3(83.4f, 16.5f, 0), new Vector3(-80.2f, 16, 0), new Vector3(-77, 16, 0), new Vector3(-76.9f, -3, 0) };
+        Vector3[] large_1Spawn = { new Vector3(-348.8f, 23.9f, 0), new Vector3(-346.3f, 23.9f, 0), new Vector3(-253, 27.1f, 0), new Vector3(-250.3f, 27.1f, 0), new Vector3(-244, 27.1f, 0) };
+        Vector3[] large_2Spawn = { new Vector3(-336.6f, -91.5f, 0), new Vector3(-327.4f, -91.7f, 0), new Vector3(-321.3f, -91.5f, 0), new Vector3(-253.5f, -126.6f, 0), new Vector3(-250.6f, -127.2f, 0) };
 
         locations = new ArrayList();
         locations.Add(new Location(new Vector3(-13, -5, 0), "Office", officeSpawn));
