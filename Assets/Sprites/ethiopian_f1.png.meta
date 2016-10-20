@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 69d7d2f40bf366e4bb256455c772fdf0
-timeCreated: 1476949183
+guid: c1965fef7fb62714e9a57c12cc71df04
+timeCreated: 1476949873
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: vanessa_0
-    21300002: vanessa_1
-    21300004: vanessa_2
-    21300006: vanessa_3
-    21300008: vanessa_4
-    21300010: vanessa_5
-    21300012: vanessa_6
-    21300014: vanessa_7
-    21300016: vanessa_8
-    21300018: vanessa_9
-    21300020: vanessa_10
-    21300022: vanessa_11
-    21300024: vanessa_12
-    21300026: vanessa_13
-    21300028: vanessa_14
-    21300030: vanessa_15
+    21300000: ethiopian_f1_0
+    21300002: ethiopian_f1_1
+    21300004: ethiopian_f1_2
+    21300006: ethiopian_f1_3
+    21300008: ethiopian_f1_4
+    21300010: ethiopian_f1_5
+    21300012: ethiopian_f1_6
+    21300014: ethiopian_f1_7
+    21300016: ethiopian_f1_8
+    21300018: ethiopian_f1_9
+    21300020: ethiopian_f1_10
+    21300022: ethiopian_f1_11
+    21300024: ethiopian_f1_12
+    21300026: ethiopian_f1_13
+    21300028: ethiopian_f1_14
+    21300030: ethiopian_f1_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,25 +69,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vanessa_0
+      name: ethiopian_f1_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 146
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 146
-        width: 26
+        width: 23
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -95,64 +82,142 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: vanessa_2
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 146
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_3
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 146
-        width: 26
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_4
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 99
-        width: 22
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_5
+      name: ethiopian_f1_1
       rect:
         serializedVersion: 2
         x: 38
-        y: 99
-        width: 24
-        height: 40
+        y: 146
+        width: 20
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: vanessa_6
+      name: ethiopian_f1_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 146
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 146
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 98
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 98
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 98
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 98
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 50
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 50
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_10
       rect:
         serializedVersion: 2
         x: 70
-        y: 99
-        width: 22
+        y: 50
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 50
+        width: 20
         height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,117 +225,52 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: vanessa_7
+      name: ethiopian_f1_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ethiopian_f1_15
       rect:
         serializedVersion: 2
         x: 102
-        y: 99
-        width: 23
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_8
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 51
-        width: 22
+        y: 2
+        width: 21
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_9
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 51
-        width: 24
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_10
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 51
-        width: 22
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_11
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 51
-        width: 23
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_12
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 2
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_13
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 2
-        width: 25
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_14
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 2
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: vanessa_15
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 2
-        width: 25
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
