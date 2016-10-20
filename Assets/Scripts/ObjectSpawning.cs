@@ -6,14 +6,13 @@ public class ObjectSpawning : MonoBehaviour {
 	
 	CandidateAssociations associations;
 	Locations.Location townSquare;
-	int numberOfAvailableNPC = 2;
 
 	//Town square variables for spawning NPC
 	int npcToUse;
 	int npcSpawnPoint;
 	List<bool> isPlacedInTown = new List<bool>();
 	bool placedNPC = false;
-	bool[] npcIsUsed = new bool[2];
+	bool[] npcIsUsed = new bool[16];
 
 	//Candidate A objects
 	List<string> itemsA;
@@ -37,11 +36,8 @@ public class ObjectSpawning : MonoBehaviour {
 			npcIsUsed[i] = false;
 		}
 
-		/**
-         * Change the below code to dynamically change items
-         **/
-		//itemsA = associations.itemNamesA;
-		itemsA = new List<string> { "Pill", "Diary" };
+		// generating objects for candidate A
+		itemsA = associations.itemNamesA;
 		candidateA = associations.CandidateAName;
 		houseA = associations.houseA;
 		foreach (Vector3 location in houseA.itemSpawnLocations) {
@@ -49,9 +45,8 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 		npcNameA = candidateA + "_NPC";
 
-
-		//itemsB = associations.itemNamesB;
-		itemsB = new List<string> { "Knife", "Old Disc"};
+		// generating objects for candidate B
+		itemsB = associations.itemNamesB;
 		candidateB = associations.CandidateBName;
 		houseB = associations.houseB;
 		foreach (Vector3 location in houseB.itemSpawnLocations) {
@@ -97,10 +92,7 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 
 		// spawning NPC for candidate A
-		Debug.Log("About to spawn NPC for candidate A: " + npcNameA);
 		GameObject currentNPC = Instantiate(Resources.Load("NPC/" + npcNameA)) as GameObject;
-		Debug.Log ("Successfully spawned NPC for candidate A");
-
 		while (!placedNPC) {
 			npcSpawnPoint = rnd.Next(townSquare.itemSpawnLocations.Length);
 			if (!isPlacedInTown[npcSpawnPoint]) {
@@ -109,8 +101,8 @@ public class ObjectSpawning : MonoBehaviour {
 				placedNPC = true;
 			}
 		}
-		Debug.Log ("Placed NPC for candidate A and about to do candidate B NPC");
 
+		// spawning NPC for candidate B
 		currentNPC = Instantiate(Resources.Load("NPC/" + npcNameB)) as GameObject;
 		placedNPC = false;
 
@@ -123,15 +115,15 @@ public class ObjectSpawning : MonoBehaviour {
 			}
 		}
 
-		for (int i = 0; i < 2; i++) {
+		// spawning non-interactable NPCs
+		for (int i = 0; i < 16; i++) {
 			placedNPC = false;
-			npcToUse = Random.Range(1, 3);
+			npcToUse = Random.Range(1, 17);
 
 			while (npcIsUsed[npcToUse - 1]) {
-				npcToUse = Random.Range(1, 3);
+				npcToUse = Random.Range(1, 17);
 			}
 
-			Debug.Log ("Currently trying to load npc" + npcToUse);
 			currentNPC = Instantiate(Resources.Load("NPC/npc" + npcToUse)) as GameObject;
 
 			while (!placedNPC) {
@@ -143,7 +135,6 @@ public class ObjectSpawning : MonoBehaviour {
 					npcIsUsed[npcToUse - 1] = true;
 				}
 			}
-			Debug.Log ("Successfully loaded npc" + npcToUse);
 		}
 	}
 
