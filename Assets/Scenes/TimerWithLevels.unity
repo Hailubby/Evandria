@@ -343,7 +343,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013000603034, guid: 5de2c4473c4994046a962325f7eededd, type: 2}
       propertyPath: m_Name
-      value: Landon_Folderold
+      value: Landon_Folder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5de2c4473c4994046a962325f7eededd, type: 2}
@@ -2252,7 +2252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010411004464, guid: 64a56944252176c43ae64f4f9ce253a2, type: 2}
       propertyPath: m_Name
-      value: Asuna_HospitalBillsold
+      value: Asuna_HospitalBills
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64a56944252176c43ae64f4f9ce253a2, type: 2}
@@ -2583,7 +2583,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013913048710, guid: 2b26ad354c317234280b9c0c86d8dd20, type: 2}
       propertyPath: m_Name
-      value: Landon_WalkieTalkieold
+      value: Landon_WalkieTalkie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b26ad354c317234280b9c0c86d8dd20, type: 2}
@@ -3132,7 +3132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014081866424, guid: 3ea6a05419d3dcd4b8039b55da87b65e, type: 2}
       propertyPath: m_Name
-      value: Louis_Phoneold
+      value: Louis_Phone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ea6a05419d3dcd4b8039b55da87b65e, type: 2}
@@ -5788,7 +5788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011723131508, guid: 7546787972277d34987c901317b5e727, type: 2}
       propertyPath: m_Name
-      value: Asuna_Awardold
+      value: Asuna_Award
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7546787972277d34987c901317b5e727, type: 2}
