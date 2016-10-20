@@ -5,11 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Animations/NPC_Animation/npc1_male_idledown.anim
-  m_Name: npc1_male_idledown
-=======
-  m_Name: npc2_idleright
->>>>>>> e767bab42a8508026e91c6d18283d1d867e15a3f:Assets/Animations/NPC_Animation/npc2_idleright.anim
+  m_Name: npc1_male_idleright
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
