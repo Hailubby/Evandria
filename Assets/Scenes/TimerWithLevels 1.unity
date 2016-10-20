@@ -355,7 +355,7 @@ Prefab:
       objectReference: {fileID: 2133459423}
     - target: {fileID: 1000012870771954, guid: 8b98197a4a552864fac12ef973f09088, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b98197a4a552864fac12ef973f09088, type: 2}
@@ -703,6 +703,7 @@ MonoBehaviour:
   moral: 
   goodArray: 
   badArray: 
+  houseSize: 
 --- !u!1 &223089438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,6 +2299,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d28bf69e06fc2c54bbf35af11cf454af, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &680436748 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011371015890, guid: 05bb57275ec8ff149b230c61598c0389,
+    type: 2}
+  m_PrefabInternal: {fileID: 1772846108}
+--- !u!114 &680436752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 680436748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fedc27e754d30a48bc93f51bf2fea52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &682746080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3043,7 @@ MonoBehaviour:
   moral: 
   goodArray: 
   badArray: 
+  houseSize: 
 --- !u!1 &833661361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7668,6 +7686,36 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00001168251
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.08400001
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.44387805
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013714576110, guid: 05bb57275ec8ff149b230c61598c0389,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05bb57275ec8ff149b230c61598c0389, type: 2}
