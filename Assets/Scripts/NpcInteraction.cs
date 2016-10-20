@@ -2,6 +2,7 @@
 using System.Collections;
 using DialogueTree;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 {
@@ -24,6 +25,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public string clue_owner;
     private string clue_description;
 
+    public bool wonGame = false;
+
     //NPC dialogue
     public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
@@ -36,10 +39,53 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public void interact()
     {
         Debug.Log("This NPC has been interacted with!");
-        stopPlayerMovement = true;
-        RunDialogue();
+        
+
+        if (EvandriaUpdate.level == 2 || EvandriaUpdate.level == 3) {
+            wonGame = InteractionScript.wonTicTacToe;
+            if (!wonGame)
+            {
+                stopPlayerMovement = true;
+                StartCoroutine(runTicTacToeDialogue());
+            }
+            else
+            {
+                stopPlayerMovement = true;
+                RunDialogue();
+            }
+        }
+        else
+        {
+            stopPlayerMovement = true;
+            RunDialogue();
+        }
+        
         
     }
+
+    public IEnumerator runTicTacToeDialogue()
+    {
+        Debug.Log("Run the tic tac toe dialogue");
+
+        node_text.GetComponentInChildren<Text>().text = "First! Let me challenge you in a game of Tic-Tac-Toe";
+        dialogue_window.SetActive(true);
+
+        if (stopPlayerMovement)
+        {
+            player.DisableMovement();
+            player.GetComponent<InteractionScript>().interacting = true;
+        }
+
+        yield return StartCoroutine(WaitForKeyDown());
+
+        //Reenable player movement
+        player.EnableMovement();
+        player.GetComponent<InteractionScript>().interacting = false;
+        dialogue_window.SetActive(false);
+        SceneManager.LoadScene("TicTacToe", LoadSceneMode.Additive);
+
+    }
+
 
     // Use this for initialization
     void Start ()
@@ -90,18 +136,22 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
 
     public IEnumerator WaitForKeyDown()
     {
+        Debug.Log("waiting for user input");
         while (true)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                Debug.Log("cancelled by button");
                 break;
             }
             else if (Input.GetKeyDown(KeyCode.Return))
             {
+                Debug.Log("cancelled by button");
                 break;
             }
             else if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("cancelled by button");
                 break;
             }
             else
@@ -109,6 +159,7 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
                 yield return null;
             }
         }
+        Debug.Log("WHY WHY WHY");
         yield return null;
     }
 

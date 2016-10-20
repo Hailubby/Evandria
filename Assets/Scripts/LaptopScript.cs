@@ -16,10 +16,13 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
     public Text secondClue2;
     public Text secondClue3;
 
+    private bool interacted = false;
+
     public void interact()
     {
         decisionCanvas.SetActive(true);
         player.DisableMovement();
+		player.GetComponent<InteractionScript>().interacting = true;
 
         firstClue1 = GameObject.Find("First Clue 1").GetComponent<Text>();
         firstClue2 = GameObject.Find("First Clue 2").GetComponent<Text>();
@@ -69,6 +72,12 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
                     secondClue3.text = "Clue 3: " + journal.journal[i].clueName;
                 }
             }
+        }
+        if (interacted == false)
+        {
+            FindObjectOfType<Warp>().isGenerated = false;
+            FindObjectOfType<Locations>().isGenerated = false;
+            interacted = true;
         }
     }
 }

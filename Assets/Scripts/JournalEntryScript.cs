@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class JournalEntryScript : MonoBehaviour {
 
+    public Text index;
     public Text title;
     public Text candidate;
     public Text description;
@@ -19,11 +20,20 @@ public class JournalEntryScript : MonoBehaviour {
 	}
 
     /// <summary>
+    /// Set the index of JournalEntry
+    /// </summary>
+    /// <param name="index"></param>
+    public void SetIndex(string index)
+    {
+        this.index.text = index;
+    }
+
+    /// <summary>
     /// Set the title of JournalEntry
     /// </summary>
-    public void SetTitle(string text)
+    public void SetTitle(string title)
     {
-        this.title.text = text;
+        this.title.text = title;
     }
 
     /// <summary>

@@ -6,6 +6,8 @@ using System.Collections;
     */
 public class InteractionScript : MonoBehaviour {
 
+    public static bool wonTicTacToe = false;
+
     MovementScript move;
     Rigidbody2D rigidBody;
     string facing;
@@ -76,5 +78,9 @@ public class InteractionScript : MonoBehaviour {
 
             }
         }
+	}
+
+	public void DisableInteracting() {
+		interacting = false;
 	}
 }

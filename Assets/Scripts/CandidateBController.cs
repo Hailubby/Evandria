@@ -16,9 +16,12 @@ public class CandidateBController : MonoBehaviour{
     public string moral;
     public string goodArray;
     public string badArray;
+    public string houseSize;
+    public Sprite sprite;
 
     private string traitString;
 
+    private Transform ImagePic;
     private Transform Name;
     private Transform DOB;
     private Transform Ethinicity;
@@ -29,6 +32,7 @@ public class CandidateBController : MonoBehaviour{
 
     void Start()
     {
+        ImagePic = transform.Find("Second Profile/Second Image");
         Name = transform.Find("Second Profile/Second Name");
         DOB = transform.Find("Second Profile/Second DOB");
         Ethinicity = transform.Find("Second Profile/Second Ethinicity");
@@ -40,6 +44,7 @@ public class CandidateBController : MonoBehaviour{
 
     void Update()
     {
+        ImagePic.GetComponent<Image>().sprite = sprite;
         Name.GetComponent<Text>().text = fullname;
         DOB.GetComponent<Text>().text = birthdate;
         Ethinicity.GetComponent<Text>().text = ethnicity;

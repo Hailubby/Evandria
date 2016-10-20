@@ -9,22 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000011425414522}
+  m_RootGameObject: {fileID: 1000010973119596}
   m_IsPrefabParent: 1
---- !u!1 &1000011425414522
+--- !u!1 &1000010973119596
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000011129887048}
-  - 212: {fileID: 212000013632341476}
-  - 95: {fileID: 95000011371648638}
-  - 61: {fileID: 61000011564609444}
-  - 50: {fileID: 50000013575434096}
-  - 114: {fileID: 114000011869017658}
-  - 114: {fileID: 114000010036927650}
+  - 4: {fileID: 4000011618881240}
+  - 212: {fileID: 212000011264831482}
+  - 95: {fileID: 95000012702468734}
+  - 61: {fileID: 61000010488324152}
+  - 50: {fileID: 50000013287655474}
+  - 114: {fileID: 114000010789695998}
+  - 114: {fileID: 114000012231506384}
   m_Layer: 8
   m_Name: Tara_NPC
   m_TagString: Untagged
@@ -32,12 +32,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000011129887048
+--- !u!4 &4000011618881240
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -45,13 +45,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &50000013575434096
+--- !u!50 &50000013287655474
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -62,12 +62,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61000011564609444
+--- !u!61 &61000010488324152
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -76,13 +76,13 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.23, y: 0.42}
---- !u!95 &95000011371648638
+--- !u!95 &95000012702468734
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 6d1d727b35e1eda4b8d431cfc0d8a701, type: 2}
@@ -93,30 +93,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010036927650
+--- !u!114 &114000010789695998
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  journal: {fileID: 0}
-  clue_owner: Tara
-  dialogueFile: {fileID: 4900000, guid: c2a3f61d417bf3b4ebb08fc279857be1, type: 3}
-  DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
-    type: 2}
-  player: {fileID: 0}
-  stopPlayerMovement: 0
---- !u!114 &114000011869017658
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85d366f9be2848b4ebe2aaff5a80735a, type: 3}
@@ -124,12 +106,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 0}
---- !u!212 &212000013632341476
+--- !u!114 &114000012231506384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010973119596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  journal: {fileID: 0}
+  clue_owner: Tara
+  wonGame: 0
+  dialogueFile: {fileID: 4900000, guid: c2a3f61d417bf3b4ebb08fc279857be1, type: 3}
+  DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
+    type: 2}
+  player: {fileID: 0}
+  stopPlayerMovement: 0
+--- !u!212 &212000011264831482
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011425414522}
+  m_GameObject: {fileID: 1000010973119596}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
