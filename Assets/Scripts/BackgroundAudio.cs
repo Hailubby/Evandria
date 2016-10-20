@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AudioMute : MonoBehaviour {
+public class BackgroundAudio : MonoBehaviour {
 
     bool isMute;
 
