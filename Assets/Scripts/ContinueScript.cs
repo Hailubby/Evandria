@@ -100,6 +100,8 @@ public class ContinueScript : MonoBehaviour {
         Debug.Log("current score: " + EvandriaUpdate.score);
         EvandriaUpdate.score += (EvandriaUpdate.level * 10 + HealthBarScript.health);
 
+        //Reseting tic tac toe game variable
+        InteractionScript.wonTicTacToe = false;
         // If players decision reached a game over
         if (day == -1)
         {
@@ -170,7 +172,7 @@ public class ContinueScript : MonoBehaviour {
         EvandriaUpdate.score = 0;
         HealthBarScript.health = 50;
         int[] temp = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        CandidateLoader.availableCandidates = temp; 
+        CandidateLoader.availableCandidates = temp;
         SceneManager.LoadScene(0);
     }
 }
