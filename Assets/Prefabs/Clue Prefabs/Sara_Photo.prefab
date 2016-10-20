@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000011901311166}
   - 61: {fileID: 61000012091127358}
   m_Layer: 8
-  m_Name: SaraPhoto
+  m_Name: Sara_Photo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
