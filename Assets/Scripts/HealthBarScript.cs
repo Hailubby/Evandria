@@ -14,6 +14,8 @@ public class HealthBarScript : MonoBehaviour
     [SerializeField]
     private Color fillColorMax;
     [SerializeField]
+    private Color fillColorHalf;
+    [SerializeField]
     private Color fillColorMin;
 
     // Custom value for animSpeed
@@ -23,16 +25,13 @@ public class HealthBarScript : MonoBehaviour
     private float delta = 0;
 
     // Initial value for health
-    [SerializeField]
-    private int initialHealth;
-    private int health;
+    public static int health = 50;
 
     // Use this for initialization
     void Start()
     {
-        health = initialHealth;
-        healthBar.value = initialHealth;
-        fillObject.color = Color.Lerp(fillColorMin, fillColorMax, initialHealth / 100.0f);
+        healthBar.value = health;
+        fillObject.color = Color.Lerp(fillColorMin, fillColorMax, healthBar.value / 100.0f);
     }
 
     // Update is called once per frame
@@ -76,5 +75,21 @@ public class HealthBarScript : MonoBehaviour
             delta += 0.005f * animSpeed;
         }
 
+    }
+
+    private void SetColor()
+    {
+        if (healthBar.value > 60)
+        {
+            fillObject.color = Color.green;
+        }
+        else if (healthBar.value < 40)
+        {
+            fillObject.color = Color.Lerp(fillColorMin, fillColorHalf, healthBar.value / 20.0f);
+        }
+        else if (healthBar.value >= 40)
+        {
+            fillObject.color = Color.Lerp(fillColorHalf, fillColorMax, healthBar.value / 40.0f);
+        }
     }
 }
