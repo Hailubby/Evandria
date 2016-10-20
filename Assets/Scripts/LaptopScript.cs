@@ -22,6 +22,7 @@ public class LaptopScript : MonoBehaviour, Assets.Scripts.Interactable
     {
         decisionCanvas.SetActive(true);
         player.DisableMovement();
+		player.GetComponent<InteractionScript>().interacting = true;
 
         firstClue1 = GameObject.Find("First Clue 1").GetComponent<Text>();
         firstClue2 = GameObject.Find("First Clue 2").GetComponent<Text>();
