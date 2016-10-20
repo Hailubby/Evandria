@@ -8,7 +8,7 @@
       <BadArray>1,3,1,2,2</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Claire</NPCName>
-      <ItemName1>Photo</ItemName1> <!-- filler data-->
+      <ItemName1>Disk</ItemName1> <!-- filler data-->
       <ItemName2>Diary</ItemName2> <!-- filler data-->
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>
@@ -35,8 +35,8 @@
       <BadArray>-5,-5,-5,2,-5</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Sally</NPCName>
-      <ItemName1>Axe</ItemName1><!-- filler data-->
-      <ItemName2>Knife</ItemName2><!-- filler data-->
+      <ItemName1>Computer</ItemName1><!-- filler data-->
+      <ItemName2>Pill</ItemName2><!-- filler data-->
       <Gender>Female</Gender>
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
@@ -89,7 +89,7 @@
       <BadArray>-2,0,-5,-1,-3</BadArray>
       <HouseSize>Small</HouseSize>
       <NPCName>Jeffrey</NPCName>
-      <ItemName1>Emma's Diary</ItemName1>
+      <ItemName1>WifeDiary</ItemName1>
       <ItemName2>Newspaper</ItemName2>
       <Gender>Male</Gender>
       <DOB>12/12/2012</DOB>
@@ -115,7 +115,7 @@
       <BadArray>0,0,-5,0,0</BadArray>
       <HouseSize>Large</HouseSize>
       <NPCName>Felicity</NPCName>
-      <ItemName1>Paper</ItemName1>
+      <ItemName1>ExamTimetable</ItemName1>
       <ItemName2>Laptop</ItemName2>
       <Gender>Female</Gender>
       <DOB>1/2/2025</DOB>
@@ -139,7 +139,7 @@
       <HouseSize>Small</HouseSize>
       <NPCName>Bart</NPCName>
       <ItemName1>Folder</ItemName1>
-      <ItemName2>Walkie Talkie</ItemName2>
+      <ItemName2>WalkieTalkie</ItemName2>
       <BadArray>0,-1,2,-10,-5</BadArray>
       <Gender>Male</Gender>
       <DOB>3/8/2026</DOB>
@@ -166,8 +166,8 @@
       <BadArray>0,-1,2,-10,-5</BadArray>
       <HouseSize>Small</HouseSize>
       <NPCName>Kirito</NPCName>
-      <ItemName1>Hospital Bills</ItemName1>
-      <ItemName2>Design Award</ItemName2>
+      <ItemName1>HospitalBills</ItemName1>
+      <ItemName2>Award</ItemName2>
       <Gender>Female</Gender>
       <DOB>19/8/2024</DOB>
       <Ethnicity>Japanese</Ethnicity>
@@ -192,8 +192,8 @@
       <BadArray>-8,-5,-12,-3,-2</BadArray>
       <HouseSize>Large</HouseSize>
       <NPCName>Javier</NPCName>
-      <ItemName1>Picture of Miranda</ItemName1>
-      <ItemName2>Cellphone</ItemName2>
+      <ItemName1>Photo</ItemName1>
+      <ItemName2>Phone</ItemName2>
       <Gender>Male</Gender>
       <DOB>03/9/2013</DOB>
       <Ethnicity>Japanese</Ethnicity>
@@ -217,8 +217,8 @@
       <BadArray>-2,-3,-5,-4,2</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Paula</NPCName>
-      <ItemName1>Empty alcohol bottles</ItemName1>
-      <ItemName2>Family photo</ItemName2>
+      <ItemName1>Alcohol</ItemName1>
+      <ItemName2>Photo</ItemName2>
       <Gender>Female</Gender>
       <DOB>31/5/2018</DOB>
       <Ethnicity>Belgian</Ethnicity>
@@ -242,7 +242,7 @@
       <HouseSize>Small</HouseSize>
       <NPCName>Sarah McNeill</NPCName>
       <ItemName1>Computer</ItemName1>
-      <ItemName2>Unopened letters</ItemName2>
+      <ItemName2>Letters</ItemName2>
       <Gender>Male</Gender>
       <DOB>01/09/2027</DOB>
       <Ethnicity>Australian</Ethnicity>
@@ -265,8 +265,8 @@
       <BadArray>-1,-2,-1,-3,-2</BadArray>
       <HouseSize>Large</HouseSize>
       <NPCName>James</NPCName>
-      <ItemName1>Bank Statement</ItemName1>
-      <ItemName2>Blackmail Letter</ItemName2>
+      <ItemName1>BankStatement</ItemName1>
+      <ItemName2>BlackmailLetter</ItemName2>
       <Gender>Male</Gender>
       <DOB>22/01/2020</DOB>
       <Ethnicity>Italian</Ethnicity>

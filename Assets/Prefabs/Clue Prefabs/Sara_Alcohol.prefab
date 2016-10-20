@@ -9,30 +9,31 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000012362814146}
+  m_RootGameObject: {fileID: 1000014183481034}
   m_IsPrefabParent: 1
---- !u!1 &1000012362814146
+--- !u!1 &1000014183481034
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000012459357712}
-  - 114: {fileID: 114000010079423406}
+  - 4: {fileID: 4000012752090542}
+  - 114: {fileID: 114000011705819930}
+  - 61: {fileID: 61000010486552340}
   m_Layer: 8
-  m_Name: Louis_photoid
+  m_Name: SaraAlcohol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000012459357712
+--- !u!4 &4000012752090542
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012362814146}
+  m_GameObject: {fileID: 1000014183481034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.8317943, y: 11.472303, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,12 +41,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &114000010079423406
+--- !u!61 &61000010486552340
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014183481034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3}
+--- !u!114 &114000011705819930
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012362814146}
+  m_GameObject: {fileID: 1000014183481034}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fb22d9c55bc9cc4f8366cf9c6db4b3e, type: 3}
@@ -58,8 +73,8 @@ MonoBehaviour:
   journal: {fileID: 0}
   canvas: {fileID: 0}
   player: {fileID: 0}
-  itemImage: {fileID: 21300000, guid: 12b3a4063d790cb4289c83fc6fc77f80, type: 3}
-  textFile: {fileID: 4900000, guid: 443114558dacf7649962932488e51236, type: 3}
+  itemImage: {fileID: 21300000, guid: 690afbb13cc1f7b4c839ca4704952e81, type: 3}
+  textFile: {fileID: 4900000, guid: 4ddd65bc819388d4d8726b2189cbef25, type: 3}
   textLines: []
   itemName: 
   itemOwner: 
