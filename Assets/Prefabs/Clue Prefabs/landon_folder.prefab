@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010076108140}
   - 61: {fileID: 61000010799151994}
   m_Layer: 8
-  m_Name: landon_folder
+  m_Name: Landon_Folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

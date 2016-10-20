@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000012152830538}
   - 61: {fileID: 61000010076008260}
   m_Layer: 8
-  m_Name: landon_walkietalkie
+  m_Name: Landon_WalkieTalkie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -708,6 +708,7 @@ MonoBehaviour:
   goodArray: 
   badArray: 
   houseSize: 
+  sprite: {fileID: 0}
 --- !u!1001 &270711945
 Prefab:
   m_ObjectHideFlags: 0
@@ -2295,6 +2296,7 @@ MonoBehaviour:
   goodArray: 
   badArray: 
   houseSize: 
+  sprite: {fileID: 0}
 --- !u!1001 &853732872
 Prefab:
   m_ObjectHideFlags: 0
@@ -7294,6 +7296,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d1dc72fd9307c4b80cb5a8a12d4395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300002, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300004, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300006, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300008, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300010, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300012, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300014, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300016, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300018, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
+  - {fileID: 21300020, guid: 5d37d76b694ed2e4fb0ea55a13ae4a6c, type: 3}
 --- !u!1001 &2014890000
 Prefab:
   m_ObjectHideFlags: 0
