@@ -11,12 +11,12 @@ public class HealthBarScript : MonoBehaviour
 
     // For Color.Lerp
     // http://answers.unity3d.com/questions/861100/unity-46-how-to-change-slider-color-via-script.html
-    [SerializeField]
-    private Color fillColorMax;
-    [SerializeField]
-    private Color fillColorHalf;
-    [SerializeField]
-    private Color fillColorMin;
+    //[SerializeField]
+    private Color fillColorMax = Color.green;
+    //[SerializeField]
+    private Color fillColorHalf = new Color(1.0f, 0.47f, 0);
+    //[SerializeField]
+    private Color fillColorMin = Color.red;
 
     // Custom value for animSpeed
     [SerializeField]
