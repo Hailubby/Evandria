@@ -51,7 +51,7 @@ public class ObjectSpawning : MonoBehaviour {
 
 
 		//itemsB = associations.itemNamesB;
-		itemsB = new List<string> { "Knife", "Old Disc"};
+		itemsB = new List<string> { "Old Disc" };
 		candidateB = associations.CandidateBName;
 		houseB = associations.houseB;
 		foreach (Vector3 location in houseB.itemSpawnLocations) {
