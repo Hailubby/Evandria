@@ -98,7 +98,8 @@ public class ObjectSpawning : MonoBehaviour {
 
 		// spawning NPC for candidate A
 		Debug.Log("About to spawn NPC for candidate A: " + npcNameA);
-		GameObject currentNPC = Resources.Load("NPC/" + npcNameA) as GameObject;
+		GameObject currentNPC = Instantiate(Resources.Load("NPC/" + npcNameA)) as GameObject;
+		Debug.Log ("Successfully spawned NPC for candidate A");
 
 		while (!placedNPC) {
 			npcSpawnPoint = rnd.Next(townSquare.itemSpawnLocations.Length);
@@ -110,7 +111,7 @@ public class ObjectSpawning : MonoBehaviour {
 		}
 		Debug.Log ("Placed NPC for candidate A and about to do candidate B NPC");
 
-		currentNPC = Resources.Load("NPC/" + npcNameA) as GameObject;
+		currentNPC = Instantiate(Resources.Load("NPC/" + npcNameB)) as GameObject;
 		placedNPC = false;
 
 		while (!placedNPC) {
@@ -130,8 +131,8 @@ public class ObjectSpawning : MonoBehaviour {
 				npcToUse = Random.Range(1, 3);
 			}
 
-			Debug.Log ("npcToUse = " + npcToUse);
-			currentNPC = Resources.Load("NPC/npc" + npcToUse) as GameObject;
+			Debug.Log ("Currently trying to load npc" + npcToUse);
+			currentNPC = Instantiate(Resources.Load("NPC/npc" + npcToUse)) as GameObject;
 
 			while (!placedNPC) {
 				npcSpawnPoint = rnd.Next(townSquare.itemSpawnLocations.Length);
@@ -142,6 +143,7 @@ public class ObjectSpawning : MonoBehaviour {
 					npcIsUsed[npcToUse - 1] = true;
 				}
 			}
+			Debug.Log ("Successfully loaded npc" + npcToUse);
 		}
 	}
 
