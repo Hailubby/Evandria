@@ -1,9 +1,25 @@
 fileFormatVersion: 2
 guid: 77b368750d7a47b43a702e9879d9804d
-timeCreated: 1475405124
+timeCreated: 1476941237
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: jael_0
+    21300002: jael_1
+    21300004: jael_2
+    21300006: jael_3
+    21300008: jael_4
+    21300010: jael_5
+    21300012: jael_6
+    21300014: jael_7
+    21300016: jael_8
+    21300018: jael_9
+    21300020: jael_10
+    21300022: jael_11
+    21300024: jael_12
+    21300026: jael_13
+    21300028: jael_14
+    21300030: jael_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,8 +45,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +54,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +67,215 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: jael_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 146
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 147
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 146
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 146
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 98
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_5
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 98
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 98
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_7
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 99
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 50
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_9
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 50
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 50
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_11
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 51
+        width: 19
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jael_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

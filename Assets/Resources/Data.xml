@@ -8,7 +8,7 @@
       <BadArray>1,3,1,2,2</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Claire</NPCName>
-      <ItemName1>Disk</ItemName1> <!-- filler data-->
+      <ItemName1>Disc</ItemName1> <!-- filler data-->
       <ItemName2>Diary</ItemName2> <!-- filler data-->
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>

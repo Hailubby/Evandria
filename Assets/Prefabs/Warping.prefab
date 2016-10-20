@@ -575,7 +575,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013344484736}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1501.7, y: -1181.8, z: -1309.0917}
+  m_LocalPosition: {x: -1501.7, y: -1139, z: -1309.0917}
   m_LocalScale: {x: 14.545454, y: 14.545454, z: 14.545454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -804,6 +804,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000010472703464
@@ -987,6 +989,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000011345658452
@@ -1004,6 +1008,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000011381964920
@@ -1021,6 +1027,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000011731533740
@@ -1069,6 +1077,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000012450955642
@@ -1086,6 +1096,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000012491906046
@@ -1119,6 +1131,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000012672768730
@@ -1163,6 +1177,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000012932494770
@@ -1207,6 +1223,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000013170871258
@@ -1271,6 +1289,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000013566567196
@@ -1288,6 +1308,8 @@ MonoBehaviour:
   Content: {fileID: 1000012954238700}
   buttonPrefab: {fileID: 1000011564557128, guid: d9325a678e44f1841a72857c11dde6b9,
     type: 2}
+  player: {fileID: 0}
+  interactor: {fileID: 0}
   isGenerated: 0
   isNotRegen: 1
 --- !u!114 &114000013693274548
