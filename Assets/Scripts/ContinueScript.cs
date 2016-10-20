@@ -181,7 +181,7 @@ public class ContinueScript : MonoBehaviour {
     public void Reset()
     {
         EvandriaUpdate.level = 1;
-        int[] temp = { 0, 1, 2 };
+        int[] temp = { 0, 1, 2, 3, 4 };
         CandidateLoader.availableCandidates = temp; 
         SceneManager.LoadScene(0);
     }
