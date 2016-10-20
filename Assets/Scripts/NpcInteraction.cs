@@ -24,6 +24,8 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     public string clue_owner;
     private string clue_description;
 
+    public bool wonGame = false;
+
     //NPC dialogue
     public TextAsset dialogueFile;
     //Prefab being used to instantiate a new window
@@ -37,7 +39,23 @@ public class NpcInteraction : MonoBehaviour, Assets.Scripts.Interactable
     {
         Debug.Log("This NPC has been interacted with!");
         stopPlayerMovement = true;
-        RunDialogue();
+
+        if (EvandriaUpdate.level == 2 || EvandriaUpdate.level == 3) {
+            if (!wonGame)
+            {
+                //call amys stuff
+
+            }
+            else
+            {
+                RunDialogue();
+            }
+        }
+        else
+        {
+            RunDialogue();
+        }
+        
         
     }
 
