@@ -11,7 +11,7 @@ public class ChangeTheme : MonoBehaviour {
 
         // Read if light or dark theme and change colours accordingly
         GlobalConfigSettings settings = GameObject.FindObjectOfType<GlobalConfigSettings>();
-        Image img =  TopPanel.GetComponent<Image>();
+        Image img =  this.TopPanel.GetComponent<Image>();
         string bgColorHex = null;
         string fontColorHex = null;
 
@@ -32,16 +32,14 @@ public class ChangeTheme : MonoBehaviour {
         img.color = bgColor;
 
         // Set the font color
-        GameObject canvasObject = GameObject.Find("HUDCanvas/TopPanel");
-
         Color fontColor = new Color();
         ColorUtility.TryParseHtmlString(fontColorHex, out fontColor);
 
-        Debug.Log(canvasObject.transform.childCount);
+        Debug.Log(TopPanel.transform.childCount);
 
-        for (int i = 0; i < canvasObject.transform.childCount; i++)
+        for (int i = 0; i < TopPanel.transform.childCount; i++)
         {
-            GameObject child = canvasObject.transform.GetChild(i).gameObject;
+            GameObject child = TopPanel.transform.GetChild(i).gameObject;
             if (child.transform.childCount == 1 || child.transform.childCount == 2)
             {
                 child.transform.GetChild(0).gameObject.GetComponent<Text>().color = fontColor;
