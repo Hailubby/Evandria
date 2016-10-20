@@ -9,22 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000012305306584}
+  m_RootGameObject: {fileID: 1000012735443754}
   m_IsPrefabParent: 1
---- !u!1 &1000012305306584
+--- !u!1 &1000012735443754
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000013528909964}
-  - 212: {fileID: 212000012263149656}
-  - 95: {fileID: 95000011792324090}
-  - 50: {fileID: 50000013803858124}
-  - 61: {fileID: 61000013197080550}
-  - 114: {fileID: 114000012473838718}
-  - 114: {fileID: 114000012427516128}
+  - 4: {fileID: 4000013557740762}
+  - 212: {fileID: 212000012483561008}
+  - 50: {fileID: 50000013333035566}
+  - 61: {fileID: 61000010061856328}
+  - 114: {fileID: 114000014128851544}
+  - 114: {fileID: 114000010939750504}
+  - 95: {fileID: 95000013994301226}
   m_Layer: 8
   m_Name: Francis_NPC
   m_TagString: Untagged
@@ -32,12 +32,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000013528909964
+--- !u!4 &4000013557740762
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
@@ -45,13 +45,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &50000013803858124
+--- !u!50 &50000013333035566
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -62,12 +62,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61000013197080550
+--- !u!61 &61000010061856328
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -76,16 +76,16 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.44}
---- !u!95 &95000011792324090
+--- !u!95 &95000013994301226
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f04b64bbfd3952a4697345fee4105ed0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 86fe20c0c1bb2e041bbdd77a38a94ec9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -93,12 +93,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000012427516128
+--- !u!114 &114000010939750504
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
@@ -111,12 +111,12 @@ MonoBehaviour:
     type: 2}
   player: {fileID: 0}
   stopPlayerMovement: 0
---- !u!114 &114000012473838718
+--- !u!114 &114000014128851544
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85d366f9be2848b4ebe2aaff5a80735a, type: 3}
@@ -124,12 +124,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 0}
---- !u!212 &212000012263149656
+--- !u!212 &212000012483561008
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012305306584}
+  m_GameObject: {fileID: 1000012735443754}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
