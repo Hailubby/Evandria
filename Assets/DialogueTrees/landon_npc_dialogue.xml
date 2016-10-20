@@ -100,7 +100,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>7</NodeID>
-      <Text>His custome design managed to completely ruin the customer's engine due to a minor miscalculation he made within his design. The customer was severely injured.</Text>
+      <Text>His custom design managed to completely ruin the customer's engine due to a minor miscalculation he made within his design. The customer was severely injured.</Text>
       <isClue>true</isClue>
       <Options>
         <DialogueOption>

@@ -61,7 +61,7 @@ public class AchievementScript : MonoBehaviour {
 	void Update () {
 
         //Only called if Num 1-6 are to be used to test the achievement unlock popups
-        testAchievements();
+        //testAchievements();
 
         //If popup is being displayed, after specified popupTime close the popup
         if (executionTime != 0f)
