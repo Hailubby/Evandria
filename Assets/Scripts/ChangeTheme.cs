@@ -7,11 +7,16 @@ public class ChangeTheme : MonoBehaviour {
     public GameObject TopPanel;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
+        UpdateTheme();
+    }
 
+    public void UpdateTheme()
+    {
         // Read if light or dark theme and change colours accordingly
         GlobalConfigSettings settings = GameObject.FindObjectOfType<GlobalConfigSettings>();
-        Image img =  this.TopPanel.GetComponent<Image>();
+        Image img = this.TopPanel.GetComponent<Image>();
         string bgColorHex = null;
         string fontColorHex = null;
 
@@ -51,9 +56,9 @@ public class ChangeTheme : MonoBehaviour {
             }
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 	
 	}
 }
