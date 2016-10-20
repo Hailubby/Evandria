@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <Text>Hello!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Excuse me Madam, do you know a Miss Tara Williams?</Text>
+          <DestinationNodeID>1</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I'm a special investigatior on a mission to find information on Tara Willaims. Could you help me?</Text>
+          <DestinationNodeID>2</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <Text>I might, who are you?!</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me what you know about Tara Williams.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How do you know Tara?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <Text>I might be able to help you. What do you need?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me what you know about Tara Williams.</Text>
+          <DestinationNodeID>3</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>How do you know Tara?</Text>
+          <DestinationNodeID>4</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <Text>Ha, she's too good looking and rich for you. Who are you anyway? And what do you want with Tara?</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>How would you describe Tara?</Text>
+          <DestinationNodeID>5</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What kind of impression did you get when you met her?</Text>
+          <DestinationNodeID>6</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <Text>I only just met Tara through a mutual friend at a charity event last wekk. We were participating in a fundraiser.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Tell me more about this fundraiser?</Text>
+          <DestinationNodeID>9</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What did she do at this fundraiser?</Text>
+          <DestinationNodeID>10</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <Text>Well she's a Williams. You know them right? Wealthiest family in the city. They're always flaunting their wealth and like to spend big. Tara's no different. What's ironic is no amount of money can save health or get them out of this polluted planet.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>What do you mean?</Text>
+          <DestinationNodeID>7</DestinationNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Is she involved with anyone?</Text>
+          <DestinationNodeID>8</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <Text>She's a Williams, you should already know what she's like. Wealthy, popular and basically has the world at ehr hand. What's surprising is the amount of charity work she does.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Alright, thank you for your help!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <Text>Look around you, this place is in shambles. Everyone is sick or diseased. You can't even get a nutritious meal nowadays. I've already applied for Evandria but I'm still waiting to hear back from them.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Alright, thank you for your help!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <Text>Do you mean romantically, or with the mob? Either way, I wouldn't know. I only did just meet her last week.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Alright, thank you for your help!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <Text>Well it was raising funds for all the orphan children in the city. Tara seemed like she wanted to help those poor homeless kids.</Text>
+      <isClue>false</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Alright, thank you for your help!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <Text>We just spent a day with the orphans of the city and raised funds for them. One of the kids from the shelter Tom was there, and Tara was absolutely in love with him. Here’s a photo of the event.</Text>
+      <isClue>true</isClue>
+      <Options>
+        <DialogueOption>
+          <Text>Alright, thank you for your help!</Text>
+          <DestinationNodeID>-1</DestinationNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+  <npcName>Felicity</npcName>
+  <clue>Tara was at a charity event on 11/11/2048 at 10am</clue>
+</Dialogue>
