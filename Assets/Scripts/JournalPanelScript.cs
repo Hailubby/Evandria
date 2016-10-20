@@ -19,6 +19,9 @@ public class JournalPanelScript : MonoBehaviour
     // Panels which hold the entries
     public GameObject entriesPanel;
 
+    // To enable/disable his movement
+    public MovementScript player;
+
     // Use this for initialization
     void Start()
     {
@@ -67,6 +70,8 @@ public class JournalPanelScript : MonoBehaviour
         anim.Play("JournalSlideIn");
         // Freeze the timescale
         Time.timeScale = 0;
+        // Disable player movement
+        player.canMove = false;
     }
 
     // Method to resume the game and hide the journal
@@ -78,6 +83,8 @@ public class JournalPanelScript : MonoBehaviour
         anim.Play("JournalSlideOut");
         // Set back the time scale to normal time scale
         Time.timeScale = 1;
+        // Enable player movement
+        player.canMove = true;
     }
 
     // Method for (re)populating the journal with player's interactions
