@@ -109,6 +109,7 @@ GameObject:
   - 224: {fileID: 224000010492877364}
   - 222: {fileID: 222000010992317342}
   - 114: {fileID: 114000013820017438}
+  - 114: {fileID: 114000012135665200}
   m_Layer: 5
   m_Name: NumberText
   m_TagString: Untagged
@@ -794,6 +795,17 @@ MonoBehaviour:
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
+--- !u!114 &114000012135665200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011371015890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fedc27e754d30a48bc93f51bf2fea52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012334704956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1624,9 +1636,9 @@ RectTransform:
   - {fileID: 224000010492877364}
   m_Father: {fileID: 224000011004186146}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0.44387805, y: 0.057394374}
+  m_AnchorMin: {x: 0.44387805, y: 0.08400001}
   m_AnchorMax: {x: 0.53421956, y: 0.791}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00001168251}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013741291056
