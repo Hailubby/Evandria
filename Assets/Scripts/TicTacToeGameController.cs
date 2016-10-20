@@ -13,6 +13,8 @@ public class TicTacToeGameController : MonoBehaviour {
 
     public Text[] buttonList;
     public Button continueButton;
+    public GameObject gameOverPanel;
+    public Text gameOverText;
 
     private string playerSide;
     private string computerSide;
@@ -32,6 +34,7 @@ public class TicTacToeGameController : MonoBehaviour {
         playerSide = "X";
         computerSide = "O";
         moveCount = 0;
+        gameOverPanel.SetActive(false);
         continueButton.gameObject.SetActive(false);
     }
 
@@ -173,7 +176,7 @@ public class TicTacToeGameController : MonoBehaviour {
         else if (moveCount >= 9)
         {
             // If game ties, player wins too
-            GameOver(playerSide);
+            GameOver("Tie");
         }
 
         else
@@ -183,9 +186,17 @@ public class TicTacToeGameController : MonoBehaviour {
         }
     }
 
-    void GameOver(string winner)
-    {
+    void GameOver(string winner) { 
+    
 
+        gameOverPanel.SetActive(true);
+        if (winner.Equals("X")){
+            gameOverText.text = "\"GRR...it looks like you beat me this time\"";
+        } else if (winner.Equals("Tie")){
+            gameOverText.text = "\"It's a draw...i'M FEELING GENEROUS TODAY....\"";
+        } else {
+            gameOverText.text = "\"You lost... too bad.\"";
+        }
         SetBoardInteractable(false);
 
         Debug.Log("QUIT SCENE");
