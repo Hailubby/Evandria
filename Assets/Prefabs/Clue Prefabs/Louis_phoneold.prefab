@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000010106979654}
   - 61: {fileID: 61000013421184090}
   m_Layer: 8
-  m_Name: Louis_Phone
+  m_Name: Louis_phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014081866424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8317943, y: 11.472303, z: 0}
+  m_LocalPosition: {x: 191.97762, y: -196.19519, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
