@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <ThemeCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Themes>
-    <Theme selected="true">
+    <Theme selected="false">
       <Name>Light</Name>
       <FontColour>#000000</FontColour>
       <BGColour>#FFFFFF</BGColour>
     </Theme>
-    <Theme selected="false">
+    <Theme selected="true">
       <Name>Dark</Name>
       <FontColour>#FFFFFF</FontColour>
       <BGColour>#003387FF</BGColour>

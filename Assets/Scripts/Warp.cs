@@ -82,9 +82,8 @@ public class Warp : MonoBehaviour
                 Button thisButton = newButton.GetComponent<Button>();
 
                 Vector3 capturedLocation = loco.entrance;
-                string capturedString = loco.size;
                 thisButton.onClick.AddListener(() => {
-                    StartCoroutine(WarpTo(capturedLocation, capturedString));
+                    StartCoroutine(WarpTo(capturedLocation, thisButton.GetComponentInChildren<Text>().text));
                     WarpUI.SetActive(false);
                 });
             }

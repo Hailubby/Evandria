@@ -113,7 +113,7 @@
       <Moral>Neutral</Moral>
       <GoodArray>0,0,2,3,5</GoodArray>
       <BadArray>0,0,-5,0,0</BadArray>
-      <HouseSize>Medium</HouseSize>
+      <HouseSize>Large</HouseSize>
       <NPCName>Felicity</NPCName>
       <ItemName1>Paper</ItemName1>
       <ItemName2>Laptop</ItemName2>
