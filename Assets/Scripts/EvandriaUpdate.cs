@@ -5,7 +5,9 @@ public class EvandriaUpdate : MonoBehaviour {
 
     HealthBarScript sliderScript;
     public static int level = 1;
+    public static int score = 0;
     public int level1;
+    public int score1;
     public string chosenCandidate;
     public string chosenCandidateName;
     public string rejectCandidateName;
@@ -22,6 +24,7 @@ public class EvandriaUpdate : MonoBehaviour {
     {
         sliderScript = FindObjectOfType<HealthBarScript>();
         level1 = level;
+        score1 = score;
     }
 
 	
@@ -97,9 +100,9 @@ public class EvandriaUpdate : MonoBehaviour {
             }
         }
         
-        //Call UpdateSlider on morale slider with input changeInMorale
+        // Call UpdateSlider on morale slider with input changeInMorale
+        // If health goes below 20, then no next level. They will be taken to game over screen.
         sliderScript.UpdateHealth(changeInMorale);
-
         // TODO if Evadndria health go below 0, Then set day=-1 else day++
 
         decisionCanvas.SetActive(false);
