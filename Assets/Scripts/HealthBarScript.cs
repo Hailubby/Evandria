@@ -4,35 +4,21 @@ using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour
 {
-    [SerializeField]
-    private Slider healthBar;
-    [SerializeField]
-    private Image fillObject;
 
-    // For Color.Lerp
-    // http://answers.unity3d.com/questions/861100/unity-46-how-to-change-slider-color-via-script.html
-    [SerializeField]
-    private Color fillColorMax;
-    [SerializeField]
-    private Color fillColorMin;
+    public Slider healthBar;
 
     // Custom value for animSpeed
-    [SerializeField]
-    private float animSpeed;
+    public float animSpeed;
     // Used for Mathf.Lerp t value
     private float delta = 0;
 
     // Initial value for health
-    [SerializeField]
-    private int initialHealth;
-    private int health;
+    public static int health = 50;
 
     // Use this for initialization
     void Start()
     {
-        health = initialHealth;
-        healthBar.value = initialHealth;
-        fillObject.color = Color.Lerp(fillColorMin, fillColorMax, initialHealth / 100.0f);
+
     }
 
     // Update is called once per frame
@@ -50,13 +36,13 @@ public class HealthBarScript : MonoBehaviour
     public void UpdateHealth(int value)
     {
         health = (int) healthBar.value + value;
-
-        // hmmm...
-        // checking making sure values are ok
-        health = health > 100 ? 100 : health;
-        health = health < 0 ? 0 : health;
-
         delta = 0;
+
+        // If health reaches below threshold of 20, then they game over. 
+        if (health < 20)
+        {
+            EvandriaUpdate.level = -1;
+        }
     }
 
     /// <summary>
@@ -71,8 +57,7 @@ public class HealthBarScript : MonoBehaviour
         //Debug.Log(delta);
         if (health != healthBar.value)
         {
-            healthBar.value = Mathf.Lerp(healthBar.value, health, delta);      
-            fillObject.color = Color.Lerp(fillColorMin, fillColorMax, healthBar.value / 100.0f);
+            healthBar.value = Mathf.Lerp(healthBar.value, health, delta);
             delta += 0.005f * animSpeed;
         }
 
