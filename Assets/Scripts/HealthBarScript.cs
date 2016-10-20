@@ -18,7 +18,7 @@ public class HealthBarScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        healthBar.value = health;
     }
 
     // Update is called once per frame

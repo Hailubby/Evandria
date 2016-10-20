@@ -77,4 +77,8 @@ public class InteractionScript : MonoBehaviour {
             }
         }
 	}
+
+	public void DisableInteracting() {
+		interacting = false;
+	}
 }

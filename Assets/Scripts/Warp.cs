@@ -13,7 +13,8 @@ public class Warp : MonoBehaviour
     Locations locations;
     ScreenFader sf;
 
-    private bool isGenerated = false;
+    public bool isGenerated = false;
+    public bool isNotRegen = true;
 
     void Start()
     {
@@ -36,23 +37,53 @@ public class Warp : MonoBehaviour
     {
         if (!isGenerated)
         {
-            //Create the menu from locations
-            foreach (Locations.Location loco in locations.locations)
+            //Create the menu from stored locations
+            CandidateAssociations cAssociations = FindObjectOfType<CandidateAssociations>();
+            for(int i = 0; i < cAssociations.locations.Count; i++)
             {
+                Locations.Location loco = (Locations.Location) cAssociations.locations[0];
                 // To instantiate
                 GameObject newButton = (GameObject)Instantiate(buttonPrefab);
                 newButton.transform.SetParent(Content.transform, false);
                 newButton.transform.localScale = new Vector3(1, 1, 1);
-                newButton.name = loco.name;
+                if (i == 0)
+                {
+                    if (isNotRegen)
+                    {
+                        newButton.name = "Office";
+                        newButton.GetComponentInChildren<Text>().text = "Office";
+                        isNotRegen = false;
+                    }
+                    else
+                    {
+                        GameObject.Destroy(newButton);
+                    }
+                }
 
-                newButton.GetComponentInChildren<Text>().text = loco.name;
+                else if (i == 1)
+                {
+                    newButton.name = "Town Square";
+                    newButton.GetComponentInChildren<Text>().text = "Town Square";
+                    loco = (Locations.Location) cAssociations.locations[1];
+                }
+                
+                else if (i == 2)
+                {
+                    newButton.name = cAssociations.CandidateAName;
+                    newButton.GetComponentInChildren<Text>().text = cAssociations.CandidateAName + "'s House";
+                    loco = cAssociations.houseA;
+                }
+                else
+                {
+                    newButton.name = cAssociations.CandidateBName;
+                    newButton.GetComponentInChildren<Text>().text = cAssociations.CandidateBName + "'s House";
+                    loco = cAssociations.houseB;
+                }
                 Button thisButton = newButton.GetComponent<Button>();
 
-
                 Vector3 capturedLocation = loco.entrance;
-                string capturedString = loco.name;
                 thisButton.onClick.AddListener(() => {
-                    StartCoroutine(WarpTo(capturedLocation, capturedString));
+                    StartCoroutine(WarpTo(capturedLocation, thisButton.GetComponentInChildren<Text>().text));
                     WarpUI.SetActive(false);
                 });
             }
