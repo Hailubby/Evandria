@@ -24,7 +24,7 @@ GameObject:
   - 50: {fileID: 50000010082185054}
   - 114: {fileID: 114000010839803292}
   - 61: {fileID: 61000012425639950}
-  - 114: {fileID: 114000013712772092}
+  - 114: {fileID: 114000012609222622}
   m_Layer: 0
   m_Name: npc1
   m_TagString: Untagged
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   player: {fileID: 0}
---- !u!114 &114000013712772092
+--- !u!114 &114000012609222622
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,13 +114,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000012934311424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5cf3218ec18eb84da5d3cb2d2fe7b23, type: 3}
+  m_Script: {fileID: 11500000, guid: f89f37e5f07a9234fbecf02e138bc15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  journal: {fileID: 0}
-  clue_owner: 
-  dialogueFile: {fileID: 0}
-  DialogueWindowPrefab: {fileID: 0}
+  DialogueWindowPrefab: {fileID: 1000011701598098, guid: 4c60a284cb2bd6a4fb2872a9741c971f,
+    type: 2}
   player: {fileID: 0}
   stopPlayerMovement: 0
 --- !u!212 &212000010326714474
