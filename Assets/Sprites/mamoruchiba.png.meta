@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 9161be53ba1a0bc49841b3b82ddeb442
-timeCreated: 1476948145
+guid: d42b22dc3ac88664d9072e525e2be054
+timeCreated: 1476948745
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ffxnpc_f2_0
-    21300002: ffxnpc_f2_1
-    21300004: ffxnpc_f2_2
-    21300006: ffxnpc_f2_3
-    21300008: ffxnpc_f2_4
-    21300010: ffxnpc_f2_5
-    21300012: ffxnpc_f2_6
-    21300014: ffxnpc_f2_7
-    21300016: ffxnpc_f2_8
-    21300018: ffxnpc_f2_9
-    21300020: ffxnpc_f2_10
-    21300022: ffxnpc_f2_11
-    21300024: ffxnpc_f2_12
-    21300026: ffxnpc_f2_13
-    21300028: ffxnpc_f2_14
-    21300030: ffxnpc_f2_15
+    21300000: mamoruchiba_0
+    21300002: mamoruchiba_1
+    21300004: mamoruchiba_2
+    21300006: mamoruchiba_3
+    21300008: mamoruchiba_4
+    21300010: mamoruchiba_5
+    21300012: mamoruchiba_6
+    21300014: mamoruchiba_7
+    21300016: mamoruchiba_8
+    21300018: mamoruchiba_9
+    21300020: mamoruchiba_10
+    21300022: mamoruchiba_11
+    21300024: mamoruchiba_12
+    21300026: mamoruchiba_13
+    21300028: mamoruchiba_14
+    21300030: mamoruchiba_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,12 +69,25 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ffxnpc_f2_0
+      name: mamoruchiba_0
       rect:
         serializedVersion: 2
         x: 5
         y: 146
         width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 21
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -82,51 +95,25 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 146
-        width: 20
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_2
+      name: mamoruchiba_2
       rect:
         serializedVersion: 2
         x: 69
         y: 146
         width: 23
-        height: 42
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_3
+      name: mamoruchiba_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 146
-        width: 20
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_4
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 98
-        width: 19
+        width: 21
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,64 +121,25 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_5
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 97
-        width: 19
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_6
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 98
-        width: 19
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_7
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 98
-        width: 19
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_8
+      name: mamoruchiba_4
       rect:
         serializedVersion: 2
         x: 6
-        y: 50
+        y: 98
         width: 19
-        height: 42
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_9
+      name: mamoruchiba_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 49
-        width: 19
+        x: 37
+        y: 98
+        width: 22
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -199,12 +147,25 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_10
+      name: mamoruchiba_6
       rect:
         serializedVersion: 2
         x: 70
-        y: 50
+        y: 98
         width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 98
+        width: 20
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,51 +173,77 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_11
+      name: mamoruchiba_8
       rect:
         serializedVersion: 2
-        x: 102
+        x: 7
         y: 50
         width: 19
-        height: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_12
+      name: mamoruchiba_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 50
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 50
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_11
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 50
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_12
       rect:
         serializedVersion: 2
         x: 5
         y: 2
         width: 23
-        height: 42
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_13
+      name: mamoruchiba_13
       rect:
         serializedVersion: 2
         x: 38
         y: 2
         width: 21
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ffxnpc_f2_14
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 2
-        width: 23
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -264,13 +251,26 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ffxnpc_f2_15
+      name: mamoruchiba_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mamoruchiba_15
       rect:
         serializedVersion: 2
         x: 102
         y: 2
         width: 21
-        height: 41
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
