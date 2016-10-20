@@ -6,10 +6,12 @@ public class GlobalConfigSettings : MonoBehaviour {
 
     public ThemeContainer themeContainer;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
  
         DontDestroyOnLoad(this);
+
+        Debug.Log(Application.dataPath + "/StreamingAssets/ThemeOptions.xml HI");
         // Load XML
         themeContainer = ThemeContainer.Load(Application.dataPath + "/StreamingAssets/ThemeOptions.xml");
 
