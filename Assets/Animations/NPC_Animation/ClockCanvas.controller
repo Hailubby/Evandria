@@ -5,11 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Assets/Animations/NPC_Animation/npc1_maleAC.controller
   m_Name: npc1_maleAC
-=======
-  m_Name: ClockCanvas
->>>>>>> e767bab42a8508026e91c6d18283d1d867e15a3f:Assets/Animations/NPC_Animation/ClockCanvas.controller
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers: []

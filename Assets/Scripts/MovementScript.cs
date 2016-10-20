@@ -6,7 +6,7 @@ public class MovementScript : MonoBehaviour {
 
 	Rigidbody2D rigidBody;
 	Animator anim;
-    public string facing = "down";
+    public string facing = "up";
 	public float speed = 4.0f;
 
     // Used to prevent movement when dialog popup is active
@@ -75,5 +75,6 @@ public class MovementScript : MonoBehaviour {
     public void DisableMovement()
     {
         canMove = false;
+        anim.SetBool("iswalking", false);
     }
 }

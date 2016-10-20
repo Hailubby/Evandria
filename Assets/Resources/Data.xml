@@ -8,7 +8,7 @@
       <BadArray>1,3,1,2,2</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Claire</NPCName>
-      <ItemName1>Photo</ItemName1> <!-- filler data-->
+      <ItemName1>Disk</ItemName1> <!-- filler data-->
       <ItemName2>Diary</ItemName2> <!-- filler data-->
       <Gender>Male</Gender>
       <DOB>06/11/1990</DOB>
@@ -35,8 +35,8 @@
       <BadArray>-5,-5,-5,2,-5</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Sally</NPCName>
-      <ItemName1>Axe</ItemName1><!-- filler data-->
-      <ItemName2>Knife</ItemName2><!-- filler data-->
+      <ItemName1>Computer</ItemName1><!-- filler data-->
+      <ItemName2>Pill</ItemName2><!-- filler data-->
       <Gender>Female</Gender>
       <DOB>13/6/2020</DOB>
       <Ethnicity>Chinese</Ethnicity>
@@ -89,7 +89,7 @@
       <BadArray>-2,0,-5,-1,-3</BadArray>
       <HouseSize>Small</HouseSize>
       <NPCName>Jeffrey</NPCName>
-      <ItemName1>Emma's Diary</ItemName1>
+      <ItemName1>WifeDiary</ItemName1>
       <ItemName2>Newspaper</ItemName2>
       <Gender>Male</Gender>
       <DOB>12/12/2012</DOB>
@@ -113,9 +113,9 @@
       <Moral>Neutral</Moral>
       <GoodArray>0,0,2,3,5</GoodArray>
       <BadArray>0,0,-5,0,0</BadArray>
-      <HouseSize>Medium</HouseSize>
+      <HouseSize>Large</HouseSize>
       <NPCName>Felicity</NPCName>
-      <ItemName1>Paper</ItemName1>
+      <ItemName1>ExamTimetable</ItemName1>
       <ItemName2>Laptop</ItemName2>
       <Gender>Female</Gender>
       <DOB>1/2/2025</DOB>
@@ -125,9 +125,9 @@
       </Traits>
       <Occupation>Socialite</Occupation>
       <Skills>Retail shopping, schmoozing, Organising charity events</Skills>
-      <Description>Tara comes from an extremely wealthy family. The entire Williams bloodline would buy their way to Evandria if they could. Unfortunately for the Williams' everyone has
-        to be equally considered. In her spare time, Tara loves shopping, hosting dinner parties and even occasionaly hosting charity events. Tara is a Commerce-Law student,
-        and in this day and age, universities and higher education has become extremely rare and reserved for the wealthier.</Description>
+      <Description>Tara comes from an extremely wealthy family. 
+	  Tara loves shopping, hosting dinner parties and even occasionally hosting charity events. 
+	  Tara is a Commerce-Law student, and in this day and age, universities and higher education has become extremely rare and reserved for the wealthier.</Description>
       <background>
         <!-- Missing Background -->
       </background>
@@ -139,7 +139,7 @@
       <HouseSize>Small</HouseSize>
       <NPCName>Bart</NPCName>
       <ItemName1>Folder</ItemName1>
-      <ItemName2>Walkie Talkie</ItemName2>
+      <ItemName2>WalkieTalkie</ItemName2>
       <BadArray>0,-1,2,-10,-5</BadArray>
       <Gender>Male</Gender>
       <DOB>3/8/2026</DOB>
@@ -155,7 +155,7 @@
       <Description>Landon is a young man who believes he can do anything, anything you need repaired he'll construct a way to deal with it.
         He's only ever worked one job in his life but his employer restricted him to working by the book to solve problems and wouldn't let him make use of his innovative ideas.
         He sometimes gets ahead of himself and makes unrealistic designs which may not work in practice.</Description>
-      <background>Although his ideas may not always seem to be grounded in real in-use solutions Landon thoroughly researchs his ideas.
+      <background>Although his ideas may not always seem to be grounded in real in-use solutions Landon thoroughly researches his ideas.
         He makes careful calculations to reduce the risk of their failure, but without actually having tested them practically there is no absolute guarantee they will work.
         Taking a chance on a guy like Landon could lead to great technological advancements, but great reward only comes from taking big risks.</background>
     </Candidate>
@@ -166,8 +166,8 @@
       <BadArray>0,-1,2,-10,-5</BadArray>
       <HouseSize>Small</HouseSize>
       <NPCName>Kirito</NPCName>
-      <ItemName1>Hospital Bills</ItemName1>
-      <ItemName2>Design Award</ItemName2>
+      <ItemName1>HospitalBills</ItemName1>
+      <ItemName2>Award</ItemName2>
       <Gender>Female</Gender>
       <DOB>19/8/2024</DOB>
       <Ethnicity>Japanese</Ethnicity>
@@ -180,7 +180,7 @@
       <Skills>3D Modelling</Skills>
       <Description>Holds a criminal record which shows that she has previously committed crimes of theft.
         Has attended multiple sessions with a psychiatrist to deal with her ongoing anger management issues.
-        Works dilligently and efficiently at work.</Description>
+        Works diligently and efficiently at work.</Description>
       <background>
         <!-- Missing Background -->
       </background>
@@ -192,22 +192,22 @@
       <BadArray>-8,-5,-12,-3,-2</BadArray>
       <HouseSize>Large</HouseSize>
       <NPCName>Javier</NPCName>
-      <ItemName1>Picture of Miranda</ItemName1>
-      <ItemName2>Cellphone</ItemName2>
+      <ItemName1>Photo</ItemName1>
+      <ItemName2>Phone</ItemName2>
       <Gender>Male</Gender>
       <DOB>03/9/2013</DOB>
       <Ethnicity>Japanese</Ethnicity>
       <Traits>
         <Trait>Meticulous</Trait>
         <Trait>Obsessive</Trait>
-        <Trait>Vharasmatic</Trait>
+        <Trait>Charismatic</Trait>
       </Traits>
-      <Occupation>Head Chefr</Occupation>
+      <Occupation>Head Chef</Occupation>
       <Skills>Cooking</Skills>
-      <Description>World reowned chef with multiple restaurant chains around the world
+      <Description>World renowned chef with multiple restaurant chains around the world
         Popular with the ladies
         Girlfriend (Miranda) died in a serial killing case recently</Description>
-      <background>Actually a serial killer, not satified with just killing and cooking animals
+      <background>Actually a serial killer, not satisfied with just killing and cooking animals
         He actually killed his ex girlfriend</background>
     </Candidate>
     <Candidate id="8">
@@ -217,8 +217,8 @@
       <BadArray>-2,-3,-5,-4,2</BadArray>
       <HouseSize>Medium</HouseSize>
       <NPCName>Paula</NPCName>
-      <ItemName1>Empty alcohol bottles</ItemName1>
-      <ItemName2>Family photo</ItemName2>
+      <ItemName1>Alcohol</ItemName1>
+      <ItemName2>Photo</ItemName2>
       <Gender>Female</Gender>
       <DOB>31/5/2018</DOB>
       <Ethnicity>Belgian</Ethnicity>
@@ -242,7 +242,7 @@
       <HouseSize>Small</HouseSize>
       <NPCName>Sarah McNeill</NPCName>
       <ItemName1>Computer</ItemName1>
-      <ItemName2>Unopened letters</ItemName2>
+      <ItemName2>Letters</ItemName2>
       <Gender>Male</Gender>
       <DOB>01/09/2027</DOB>
       <Ethnicity>Australian</Ethnicity>
@@ -254,7 +254,7 @@
       <Occupation>Software Developer</Occupation>
       <Skills>Accredited Software Engineer</Skills>
       <Description>Francis is a professional software engineer, however he prefers to spend most of his time playing video games.
-        He has shown glimpses of brilliance in his work, and has the potential to create groundbreaking products.</Description>
+        He has shown glimpses of brilliance in his work, and has the potential to create ground breaking products.</Description>
       <background>Is unmotivated to do normal work, spends most of his time playing games instead. 
         Has a secret side project which has the ability to compile huge amounts of data on loanees to a large bank, and potentially wipe that debt.</background>
     </Candidate>
@@ -265,8 +265,8 @@
       <BadArray>-1,-2,-1,-3,-2</BadArray>
       <HouseSize>Large</HouseSize>
       <NPCName>James</NPCName>
-      <ItemName1>Bank Statement</ItemName1>
-      <ItemName2>Blackmail Letter</ItemName2>
+      <ItemName1>BankStatement</ItemName1>
+      <ItemName2>BlackmailLetter</ItemName2>
       <Gender>Male</Gender>
       <DOB>22/01/2020</DOB>
       <Ethnicity>Italian</Ethnicity>
@@ -278,9 +278,9 @@
       <Occupation>Software Tester</Occupation>
       <Skills>Bachelor of (Computer) Science</Skills>
       <Description>Works at a software company as an in-house tester/debugger.
-        Recently purchased a luxurious house, even though he doesn't seem to be making that much money as a game tester.
-        His coworkers are saying he's hard to work with due to his condescending personality, but his close friends are saying that he takes great care of his parents.
-        Which is the real him?</Description>
+        Recently purchased a luxurious house.
+        His co-workers say he's hard to work with.
+		</Description>
       <background><!-- Missing Background --></background>
     </Candidate>
   </Candidates>

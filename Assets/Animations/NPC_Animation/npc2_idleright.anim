@@ -5,7 +5,11 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/Animations/NPC_Animation/npc2_idleright.anim
   m_Name: npc2_idleright
+=======
+  m_Name: sarah_idleleft
+>>>>>>> fa6aa6b6fe585ba315602cf0e46c5b666ac9543f:Assets/Animations/Interactable NPC Animation/sarah_idleleft.anim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
